@@ -3,6 +3,7 @@
 
 <!DOCTYPE rdf:RDF [
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
@@ -11,11 +12,34 @@
 
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/EMO#"
      xml:base="http://purl.obolibrary.org/obo/EMO"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/EMO"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/EMO">
+        <dc:contributor rdf:datatype="&rdf;PlainLiteral">Barry Smith</dc:contributor>
+        <dc:contributor rdf:datatype="&rdf;PlainLiteral">Janna Hastings</dc:contributor>
+        <dc:contributor rdf:datatype="&rdf;PlainLiteral">Kevin Mulligan</dc:contributor>
+        <dc:title rdf:datatype="&rdf;PlainLiteral">The Emotion Ontology is an ontology for affective phenomena such as emotions and moods.  It is being developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. It builds on the Ontology of Mental Disease (OMD) and the Basic Formal Ontology (BFO). 
+
+The latest version of the ontology can always be found at http://code.google.com/p/emotion-ontology/source/browse/#svn%2Ftrunk%2Fontology. </dc:title>
+        <dc:contributor rdf:datatype="&rdf;PlainLiteral">Werner Ceusters</dc:contributor>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/OMD"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
 </rdf:RDF>
 
 
