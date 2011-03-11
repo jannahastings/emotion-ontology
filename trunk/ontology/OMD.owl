@@ -1,13 +1,37 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/OMD#"
-     xml:base="http://purl.obolibrary.org/obo/OMD"
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY OMD "http://purl.obolibrary.org/obo/OMD#" >
+    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;OMD#"
+     xml:base="&obo;OMD"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:OMD="http://purl.obolibrary.org/obo/OMD#"
+     xmlns:OMD="&obo;OMD#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/OMD"/>
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
+    <owl:Ontology rdf:about="&obo;OMD">
+        <dc:contributor rdf:datatype="&rdf;PlainLiteral">Barry Smith</dc:contributor>
+        <dc:title rdf:datatype="&rdf;PlainLiteral">The Ontology of Mental Disease (OMD) was described in the publication available at http://www.jbiomedsem.com/content/1/1/10 entitled &#39;Foundations for a realist ontology of mental disease&#39;. </dc:title>
+        <rdfs:comment rdf:datatype="&rdf;PlainLiteral">This OWL version of the OMD was created by Janna Hastings</rdfs:comment>
+        <dc:contributor rdf:datatype="&rdf;PlainLiteral">Werner Ceusters</dc:contributor>
+        <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
+    </owl:Ontology>
     
 
 
@@ -19,17 +43,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
     
 
 
@@ -46,67 +63,67 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD#hasAgent -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMD#hasAgent"/>
+    <owl:ObjectProperty rdf:about="&obo;OMD#hasAgent"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD#hasPart -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMD#hasPart"/>
+    <owl:ObjectProperty rdf:about="&obo;OMD#hasPart"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD#hasParticipant -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMD#hasParticipant"/>
+    <owl:ObjectProperty rdf:about="&obo;OMD#hasParticipant"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD#inhererOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMD#inhererOf"/>
+    <owl:ObjectProperty rdf:about="&obo;OMD#inhererOf"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD#inheresIn -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMD#inheresIn"/>
+    <owl:ObjectProperty rdf:about="&obo;OMD#inheresIn"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD#isAbout -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMD#isAbout"/>
+    <owl:ObjectProperty rdf:about="&obo;OMD#isAbout"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD#manifestationOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMD#manifestationOf"/>
+    <owl:ObjectProperty rdf:about="&obo;OMD#manifestationOf"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD#partOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMD#partOf"/>
+    <owl:ObjectProperty rdf:about="&obo;OMD#partOf"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD#participantOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMD#participantOf"/>
+    <owl:ObjectProperty rdf:about="&obo;OMD#participantOf"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD#realizationOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMD#realizationOf"/>
+    <owl:ObjectProperty rdf:about="&obo;OMD#realizationOf"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD#specificallyDependsOn -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMD#specificallyDependsOn"/>
+    <owl:ObjectProperty rdf:about="&obo;OMD#specificallyDependsOn"/>
     
 
 
@@ -123,13 +140,13 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000000 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000000">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mental Functioning Related Anatomical Structure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000007"/>
+    <owl:Class rdf:about="&obo;OMD_0000000">
+        <rdfs:label rdf:datatype="&xsd;string">Mental Functioning Related Anatomical Structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#inhererOf"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000001"/>
+                <owl:onProperty rdf:resource="&obo;OMD#inhererOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -138,13 +155,13 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000001">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disposition to be agentOf Mental Process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000008"/>
+    <owl:Class rdf:about="&obo;OMD_0000001">
+        <rdfs:label rdf:datatype="&xsd;string">Disposition to be agentOf Mental Process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Disposition"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#inheresIn"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000000"/>
+                <owl:onProperty rdf:resource="&obo;OMD#inheresIn"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -153,28 +170,28 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000002 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000002">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disposition to lead to Pathological Mental Processes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000006"/>
+    <owl:Class rdf:about="&obo;OMD_0000002">
+        <rdfs:label rdf:datatype="&xsd;string">Disposition to lead to Pathological Mental Processes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000006"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000003 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000003">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behavior Inducing State</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000009"/>
+    <owl:Class rdf:about="&obo;OMD_0000003">
+        <rdfs:label rdf:datatype="&xsd;string">Behavior Inducing State</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000009"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#participantOf"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000022"/>
+                <owl:onProperty rdf:resource="&obo;OMD#participantOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#inheresIn"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000000"/>
+                <owl:onProperty rdf:resource="&obo;OMD#inheresIn"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -183,13 +200,13 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000004 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000004">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mental Disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000010"/>
+    <owl:Class rdf:about="&obo;OMD_0000004">
+        <rdfs:label rdf:datatype="&xsd;string">Mental Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000010"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#partOf"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000000"/>
+                <owl:onProperty rdf:resource="&obo;OMD#partOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -198,55 +215,46 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000005 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000005">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mental Disease</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000002"/>
+    <owl:Class rdf:about="&obo;OMD_0000005">
+        <rdfs:label rdf:datatype="&xsd;string">Mental Disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000002"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000006 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000006">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disposition to lead to Pathological Processes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000008"/>
+    <owl:Class rdf:about="&obo;OMD_0000006">
+        <rdfs:label rdf:datatype="&xsd;string">Disposition to lead to Pathological Processes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Disposition"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000007 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000007">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical Structure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000018"/>
+    <owl:Class rdf:about="&obo;OMD_0000007">
+        <rdfs:label rdf:datatype="&xsd;string">Anatomical Structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;IndependentContinuant"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#partOf"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000015"/>
+                <owl:onProperty rdf:resource="&obo;OMD#partOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMD_0000008 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000008">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disposition</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000019"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OMD_0000009 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000009">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bodily Quality</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:Class rdf:about="&obo;OMD_0000009">
+        <rdfs:label rdf:datatype="&xsd;string">Bodily Quality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Quality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#inheresIn"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000012"/>
+                <owl:onProperty rdf:resource="&obo;OMD#inheresIn"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -255,109 +263,73 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000010 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000010">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000012"/>
+    <owl:Class rdf:about="&obo;OMD_0000010">
+        <rdfs:label rdf:datatype="&xsd;string">Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000012"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000011 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000011">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000006"/>
+    <owl:Class rdf:about="&obo;OMD_0000011">
+        <rdfs:label rdf:datatype="&xsd;string">Disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000006"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000012 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000012">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bodily Component</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000014"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMD_0000013 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000013">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quality</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000019"/>
+    <owl:Class rdf:about="&obo;OMD_0000012">
+        <rdfs:label rdf:datatype="&xsd;string">Bodily Component</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000014"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000014 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000014">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Material Object</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000018"/>
+    <owl:Class rdf:about="&obo;OMD_0000014">
+        <rdfs:label rdf:datatype="&xsd;string">Material Object</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;IndependentContinuant"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000015 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000015">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000014"/>
+    <owl:Class rdf:about="&obo;OMD_0000015">
+        <rdfs:label rdf:datatype="&xsd;string">Organism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000014"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000016 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000016">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human Being</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000015"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMD_0000017 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000017">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Continuant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMD_0000018 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000018">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Independent Continuant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000017"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMD_0000019 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000019">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dependent Continuant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000017"/>
+    <owl:Class rdf:about="&obo;OMD_0000016">
+        <rdfs:label rdf:datatype="&xsd;string">Human Being</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000015"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000020 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000020">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mental Process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000026"/>
+    <owl:Class rdf:about="&obo;OMD_0000020">
+        <rdfs:label rdf:datatype="&xsd;string">Mental Process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000026"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#realizationOf"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000001"/>
+                <owl:onProperty rdf:resource="&obo;OMD#realizationOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#hasParticipant"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000003"/>
+                <owl:onProperty rdf:resource="&obo;OMD#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -366,13 +338,13 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000021 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000021">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interpersonal Process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000027"/>
+    <owl:Class rdf:about="&obo;OMD_0000021">
+        <rdfs:label rdf:datatype="&xsd;string">Interpersonal Process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;Process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#hasParticipant"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000016"/>
+                <owl:onProperty rdf:resource="&obo;OMD#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -381,19 +353,13 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000022 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000022">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behavior</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000027"/>
+    <owl:Class rdf:about="&obo;OMD_0000022">
+        <rdfs:label rdf:datatype="&xsd;string">Behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;Process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#hasAgent"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000015"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#hasPart"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000027"/>
+                <owl:onProperty rdf:resource="&obo;OMD#hasAgent"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -402,13 +368,13 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000023 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000023">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interpersonal Behavior</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000022"/>
+    <owl:Class rdf:about="&obo;OMD_0000023">
+        <rdfs:label rdf:datatype="&xsd;string">Interpersonal Behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000022"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#hasPart"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000021"/>
+                <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000021"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -417,13 +383,13 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000024 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000024">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathological Mental Process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000020"/>
+    <owl:Class rdf:about="&obo;OMD_0000024">
+        <rdfs:label rdf:datatype="&xsd;string">Pathological Mental Process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000020"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#manifestationOf"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000004"/>
+                <owl:onProperty rdf:resource="&obo;OMD#manifestationOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -432,13 +398,13 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000025 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000025">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mental Disease Course</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000029"/>
+    <owl:Class rdf:about="&obo;OMD_0000025">
+        <rdfs:label rdf:datatype="&xsd;string">Mental Disease Course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000029"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#hasPart"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000024"/>
+                <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -447,37 +413,28 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000026 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000026">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bodily Process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000027"/>
+    <owl:Class rdf:about="&obo;OMD_0000026">
+        <rdfs:label rdf:datatype="&xsd;string">Bodily Process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;Process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#hasParticipant"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000012"/>
+                <owl:onProperty rdf:resource="&obo;OMD#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMD_0000027 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000027">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OMD_0000028 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000028">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathological Process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000026"/>
+    <owl:Class rdf:about="&obo;OMD_0000028">
+        <rdfs:label rdf:datatype="&xsd;string">Pathological Process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000026"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#manifestationOf"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000010"/>
+                <owl:onProperty rdf:resource="&obo;OMD#manifestationOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -486,13 +443,13 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000029 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000029">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease Course</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000027"/>
+    <owl:Class rdf:about="&obo;OMD_0000029">
+        <rdfs:label rdf:datatype="&xsd;string">Disease Course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;Process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#hasPart"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000028"/>
+                <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -501,22 +458,22 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000030 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000030">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Representation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000019"/>
+    <owl:Class rdf:about="&obo;OMD_0000030">
+        <rdfs:label rdf:datatype="&xsd;string">Representation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;GenericallyDependentContinuant"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000031 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000031">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cognitive Representation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000030"/>
+    <owl:Class rdf:about="&obo;OMD_0000031">
+        <rdfs:label rdf:datatype="&xsd;string">Cognitive Representation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#specificallyDependsOn"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000007"/>
+                <owl:onProperty rdf:resource="&obo;OMD#specificallyDependsOn"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -525,13 +482,13 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000032 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000032">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000031"/>
+    <owl:Class rdf:about="&obo;OMD_0000032">
+        <rdfs:label rdf:datatype="&xsd;string">Observation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000031"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#isAbout"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000009"/>
+                <owl:onProperty rdf:resource="&obo;OMD#isAbout"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -540,13 +497,13 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000033 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000033">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diagnosis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000030"/>
+    <owl:Class rdf:about="&obo;OMD_0000033">
+        <rdfs:label rdf:datatype="&xsd;string">Diagnosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#isAbout"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000011"/>
+                <owl:onProperty rdf:resource="&obo;OMD#isAbout"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -555,13 +512,13 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000034 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000034">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease Picture</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000030"/>
+    <owl:Class rdf:about="&obo;OMD_0000034">
+        <rdfs:label rdf:datatype="&xsd;string">Disease Picture</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#isAbout"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000042"/>
+                <owl:onProperty rdf:resource="&obo;OMD#isAbout"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000042"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -570,28 +527,28 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000035 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000035">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Representational Unit</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000030"/>
+    <owl:Class rdf:about="&obo;OMD_0000035">
+        <rdfs:label rdf:datatype="&xsd;string">Representational Unit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000030"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000036 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000036">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease Picture Component</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000035"/>
+    <owl:Class rdf:about="&obo;OMD_0000036">
+        <rdfs:label rdf:datatype="&xsd;string">Disease Picture Component</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000035"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#partOf"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000034"/>
+                <owl:onProperty rdf:resource="&obo;OMD#isAbout"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#isAbout"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000009"/>
+                <owl:onProperty rdf:resource="&obo;OMD#partOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000034"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -600,13 +557,13 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000037 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000037">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical Picture</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000030"/>
+    <owl:Class rdf:about="&obo;OMD_0000037">
+        <rdfs:label rdf:datatype="&xsd;string">Clinical Picture</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#isAbout"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000043"/>
+                <owl:onProperty rdf:resource="&obo;OMD#isAbout"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -615,13 +572,13 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000038 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000038">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marker features</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000030"/>
+    <owl:Class rdf:about="&obo;OMD_0000038">
+        <rdfs:label rdf:datatype="&xsd;string">Marker features</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#hasPart"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000036"/>
+                <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000036"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -630,31 +587,31 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000039 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000039">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Affective Representation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000031"/>
+    <owl:Class rdf:about="&obo;OMD_0000039">
+        <rdfs:label rdf:datatype="&xsd;string">Affective Representation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000031"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000040 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000040">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diagnosis of Mental Disease</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000033"/>
+    <owl:Class rdf:about="&obo;OMD_0000040">
+        <rdfs:label rdf:datatype="&xsd;string">Diagnosis of Mental Disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000033"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000041 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000041">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manifestation of a Mental Disease</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000009"/>
+    <owl:Class rdf:about="&obo;OMD_0000041">
+        <rdfs:label rdf:datatype="&xsd;string">Manifestation of a Mental Disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000009"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMD#realizationOf"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMD_0000005"/>
+                <owl:onProperty rdf:resource="&obo;OMD#realizationOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -663,31 +620,61 @@
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000042 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000042">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease Phenotype</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000043"/>
+    <owl:Class rdf:about="&obo;OMD_0000042">
+        <rdfs:label rdf:datatype="&xsd;string">Disease Phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000043"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000043 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000043">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical Phenotype</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000047"/>
+    <owl:Class rdf:about="&obo;OMD_0000043">
+        <rdfs:label rdf:datatype="&xsd;string">Clinical Phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000047"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000047 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMD_0000047">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMD_0000009"/>
+    <owl:Class rdf:about="&obo;OMD_0000047">
+        <rdfs:label rdf:datatype="&xsd;string">Phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000009"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Disposition -->
+
+    <owl:Class rdf:about="&snap;Disposition"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant -->
+
+    <owl:Class rdf:about="&snap;GenericallyDependentContinuant"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant -->
+
+    <owl:Class rdf:about="&snap;IndependentContinuant"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Quality -->
+
+    <owl:Class rdf:about="&snap;Quality"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#Process -->
+
+    <owl:Class rdf:about="&span;Process"/>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.2.2.1502) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
 
