@@ -3,21 +3,27 @@
 
 <!DOCTYPE rdf:RDF [
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY OMD "http://purl.obolibrary.org/obo/OMD#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
 
 
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/EMO#"
-     xml:base="http://purl.obolibrary.org/obo/EMO"
+<rdf:RDF xmlns="&obo;EMO#"
+     xml:base="&obo;EMO"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:OMD="&obo;OMD#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/EMO">
+    <owl:Ontology rdf:about="&obo;EMO">
         <dc:contributor rdf:datatype="&rdf;PlainLiteral">Barry Smith</dc:contributor>
         <dc:contributor rdf:datatype="&rdf;PlainLiteral">Janna Hastings</dc:contributor>
         <dc:contributor rdf:datatype="&rdf;PlainLiteral">Kevin Mulligan</dc:contributor>
@@ -25,7 +31,7 @@
 
 The latest version of the ontology can always be found at http://code.google.com/p/emotion-ontology/source/browse/#svn%2Ftrunk%2Fontology. </dc:title>
         <dc:contributor rdf:datatype="&rdf;PlainLiteral">Werner Ceusters</dc:contributor>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/OMD"/>
+        <owl:imports rdf:resource="&obo;OMD"/>
     </owl:Ontology>
     
 
@@ -39,7 +45,205 @@ The latest version of the ontology can always be found at http://code.google.com
      -->
 
     <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     <owl:AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000008 -->
+
+    <owl:ObjectProperty rdf:about="&obo;EMO_000008">
+        <rdfs:label>isOutputOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMD#hasAgent -->
+
+    <owl:ObjectProperty rdf:about="&obo;OMD#hasAgent"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMD#hasPart -->
+
+    <owl:ObjectProperty rdf:about="&obo;OMD#hasPart"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMD#inheresIn -->
+
+    <owl:ObjectProperty rdf:about="&obo;OMD#inheresIn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000001 -->
+
+    <owl:Class rdf:about="&obo;EMO_000001">
+        <rdfs:label>emotion occurrent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OMD#hasAgent"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;EMO_000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;EMO_000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;EMO_000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition: An emotion occurrent is a mental process that is a synchronized aggregate of constituent mental processes including an appraisal process as part, and which gives rise to an action tendency.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000002 -->
+
+    <owl:Class rdf:about="&obo;EMO_000002">
+        <rdfs:label>appraisal process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000020"/>
+        <rdfs:comment>An appraisal process is a mental process that gives rise to an appraisal.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000003 -->
+
+    <owl:Class rdf:about="&obo;EMO_000003">
+        <rdfs:label>emotional system regulation process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000026"/>
+        <rdfs:comment>Definition: An emotional system regulation process is a bodily process which encompasses all the neurophysiological changes caused by the appraisal, which take place in the central nervous system (CNS), neuro-endocrine system (NES) and autonomous nervous system (ANS).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000004 -->
+
+    <owl:Class rdf:about="&obo;EMO_000004">
+        <rdfs:label>emotional behavioural process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000022"/>
+        <rdfs:comment>Definition: An emotional behavioural process is the behaviour of the organism in response to the appraisal, which includes the characteristic facial expressions for particular emotion types.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000005 -->
+
+    <owl:Class rdf:about="&obo;EMO_000005">
+        <rdfs:label>appraisal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;EMO_000008"/>
+                <owl:someValuesFrom rdf:resource="&obo;EMO_000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition: An appraisal is a cognitive representation which has as its specic representational content an evaluation of the relevance of some triggering object or event to the organism.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000006 -->
+
+    <owl:Class rdf:about="&obo;EMO_000006">
+        <rdfs:label>subjective emotional feeling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMD_0000039"/>
+        <rdfs:comment>Definition: The subjective emotional feeling is an affective representation, that is, a representation that the organism has about its own affect.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000007 -->
+
+    <owl:Class rdf:about="&obo;EMO_000007">
+        <rdfs:label>emotional action tendencies</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Disposition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OMD#inheresIn"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition: Emotional action tendencies are dispositions to behaviour which inhere in an organism by virtue of an emotion process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMD_0000015 -->
+
+    <owl:Class rdf:about="&obo;OMD_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMD_0000020 -->
+
+    <owl:Class rdf:about="&obo;OMD_0000020"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMD_0000022 -->
+
+    <owl:Class rdf:about="&obo;OMD_0000022"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMD_0000026 -->
+
+    <owl:Class rdf:about="&obo;OMD_0000026"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMD_0000031 -->
+
+    <owl:Class rdf:about="&obo;OMD_0000031"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMD_0000039 -->
+
+    <owl:Class rdf:about="&obo;OMD_0000039"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Disposition -->
+
+    <owl:Class rdf:about="&snap;Disposition"/>
 </rdf:RDF>
 
 
