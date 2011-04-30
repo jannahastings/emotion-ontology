@@ -149,6 +149,11 @@
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+ANATOMICAL STRUCTURE in which there inheres the DISPOSITION to be the agent
+of a MENTAL PROCESS.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -184,16 +189,22 @@
         <rdfs:subClassOf rdf:resource="&obo;OMD_0000009"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OMD#participantOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;OMD_0000022"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OMD#inheresIn"/>
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OMD#participantOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+BODILY QUALITY inhering in a MENTAL
+FUNCTIONING RELATED ANATOMICAL STRUCTURE which leads to BEHAVIOR of some
+specific sort.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -209,6 +220,11 @@
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+DISORDER in a MENTAL FUNCTIONING
+RELATED ANATOMICAL STRUCTURE.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -218,6 +234,11 @@
     <owl:Class rdf:about="&obo;OMD_0000005">
         <rdfs:label rdf:datatype="&xsd;string">Mental Disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMD_0000002"/>
+        <rdfs:comment>Definition:
+a DISEASE which is a DISPOSITION to undergo
+PATHOLOGICAL MENTAL PROCESSES.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -257,6 +278,11 @@
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Definition: 
+QUALITY inhering in a BODILY COMPONENT.
+Source:
+http://www.jbiomedsem.com/content/1/1/10.</rdfs:comment>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
     </owl:Class>
     
 
@@ -266,6 +292,12 @@
     <owl:Class rdf:about="&obo;OMD_0000010">
         <rdfs:label rdf:datatype="&xsd;string">Disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMD_0000012"/>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
+        <rdfs:comment>Definition:
+A combination of BODILY COMPONENTS of or in
+an ORGANISM that is clinically abnormal.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -275,6 +307,15 @@
     <owl:Class rdf:about="&obo;OMD_0000011">
         <rdfs:label rdf:datatype="&xsd;string">Disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMD_0000006"/>
+        <rdfs:comment>Definition:
+a DISPOSITION (i) to undergo PATHOLOGICAL
+PROCESSES that (ii) exists in an ORGANISM
+because of one or more DISORDERS in that
+ORGANISM.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+        <rdfs:comment>(from OGMS)
+</rdfs:comment>
     </owl:Class>
     
 
@@ -284,6 +325,13 @@
     <owl:Class rdf:about="&obo;OMD_0000012">
         <rdfs:label rdf:datatype="&xsd;string">Bodily Component</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMD_0000014"/>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
+        <rdfs:comment>Definition: MATERIAL OBJECT within or on the surface of an
+ORGANISM, including ANATOMICAL
+STRUCTURES, body flora, pathogens, toxins, and
+their combinations, potentially including also the
+organism as a whole.
+Source: http://www.jbiomedsem.com/content/1/1/10.</rdfs:comment>
     </owl:Class>
     
 
@@ -322,16 +370,22 @@
         <rdfs:subClassOf rdf:resource="&obo;OMD_0000026"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OMD#realizationOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;OMD_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OMD#hasParticipant"/>
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OMD#realizationOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+BODILY PROCESS which brings into being,
+sustains or modifies a COGNITIVE REPRESENTATION or a BEHAVIOR INDUCING
+STATE.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -344,9 +398,15 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OMD#hasParticipant"/>
-                <owl:someValuesFrom rdf:resource="&obo;OMD_0000016"/>
+                <owl:onClass rdf:resource="&obo;OMD_0000016"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+PROCESS in which at least two HUMAN
+BEINGS are agents.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -362,6 +422,14 @@
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+a PROCESS having PROCESSES as parts in which an
+ORGANISM participates as agent in response to external or internal stimuli and
+following some pattern which is dependent upon some combination of that
+ORGANISM’s internal state and external conditions. (Derived from the Gene
+Ontology).
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -377,6 +445,11 @@
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000021"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+BEHAVIOR having INTERPERSONAL
+PROCESSES as parts, each involving the same instances of HUMAN BEING.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -392,6 +465,11 @@
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+PATHOLOGICAL PROCESS
+which is the manifestation of a MENTAL DISORDER.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -407,6 +485,10 @@
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+DISEASE COURSE of a MENTAL DISEASE.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -422,6 +504,13 @@
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
+        <rdfs:comment>Definition:
+PROCESS in which at least one BODILY
+COMPONENT of an ORGANISM participates.
+Source:
+http://www.jbiomedsem.com/content/1/1/10
+</rdfs:comment>
     </owl:Class>
     
 
@@ -437,6 +526,13 @@
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
+        <rdfs:comment>Definition:
+a BODILY PROCESS that is a manifestation of a
+DISORDER.
+Source:
+http://www.jbiomedsem.com/content/1/1/10
+</rdfs:comment>
     </owl:Class>
     
 
@@ -452,6 +548,14 @@
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+the totality of all PROCESSES through which a
+given DISEASE instance is realized.
+Source:
+http://www.jbiomedsem.com/content/1/1/10
+
+</rdfs:comment>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
     </owl:Class>
     
 
@@ -461,6 +565,11 @@
     <owl:Class rdf:about="&obo;OMD_0000030">
         <rdfs:label rdf:datatype="&xsd;string">Representation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;GenericallyDependentContinuant"/>
+        <rdfs:comment>Definition:
+DEPENDENT CONTINUANT which is about a
+portion of reality.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -476,6 +585,12 @@
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+REPRESENTATION which
+specifically depends on an ANATOMICAL STRUCTURE in the cognitive system of an
+ORGANISM.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -491,6 +606,13 @@
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>(from OGMS)
+</rdfs:comment>
+        <rdfs:comment>Definition:
+COGNITIVE REPRESENTATION about a BODILY
+FEATURE resulting from an act of perception.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -506,6 +628,14 @@
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+REPRESENTATION asserting the presence of an
+instance of DISEASE in a given ORGANISM
+resulting from an interpretive process that has as
+input a CLINICAL PICTURE of that ORGANISM.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
     </owl:Class>
     
 
@@ -521,6 +651,11 @@
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000042"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+REPRESENTATION of a DISEASE PHENOTYPE
+concretized in some information artifact.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -551,6 +686,14 @@
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000034"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+REPRESENTATIONAL UNIT which
+is a part of some DISEASE PICTURE and which either (1) represents (or is believed to
+represent) a BODILY FEATURE that is believed to be manifested in the DISEASE
+PHENOTYPE represented by the DISEASE PICTURE of which it is a component or (2)
+expresses a negative finding. 
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -566,6 +709,14 @@
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+a REPRESENTATION of a CLINICAL PHENOTYPE
+that is inferred from the combination of laboratory,
+image and clinical findings about a given
+ORGANISM.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
     </owl:Class>
     
 
@@ -581,6 +732,12 @@
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000036"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+REPRESENTATION which is a collection of DISEASE PICTURE COMPONENTS which
+are characteristic for DISEASE X (where ‘X’ serves as placeholder for some disease
+name).
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -590,6 +747,11 @@
     <owl:Class rdf:about="&obo;OMD_0000039">
         <rdfs:label rdf:datatype="&xsd;string">Affective Representation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMD_0000031"/>
+        <rdfs:comment>Definition: 
+COGNITIVE REPRESENTATION
+sustained by an ORGANISM about its own emotions.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -599,6 +761,11 @@
     <owl:Class rdf:about="&obo;OMD_0000040">
         <rdfs:label rdf:datatype="&xsd;string">Diagnosis of Mental Disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMD_0000033"/>
+        <rdfs:comment>Definition:
+DIAGNOSIS asserting the
+presence of an instance of MENTAL DISEASE in a given ORGANISM.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -614,6 +781,12 @@
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+a BODILY FEATURE of
+an ORGANISM that is (a) a deviation from clinical normality that is the realization of
+a MENTAL DISEASE and is (b) observable.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
@@ -623,6 +796,13 @@
     <owl:Class rdf:about="&obo;OMD_0000042">
         <rdfs:label rdf:datatype="&xsd;string">Disease Phenotype</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMD_0000043"/>
+        <rdfs:comment>Definition:
+a CLINICAL PHENOTYPE that is characteristic of a
+single DISEASE.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+        <rdfs:comment>(from OGMS)
+</rdfs:comment>
     </owl:Class>
     
 
@@ -632,6 +812,12 @@
     <owl:Class rdf:about="&obo;OMD_0000043">
         <rdfs:label rdf:datatype="&xsd;string">Clinical Phenotype</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMD_0000047"/>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
+        <rdfs:comment>Definition:
+a clinically abnormal PHENOTYPE.
+Source:
+http://www.jbiomedsem.com/content/1/1/10
+</rdfs:comment>
     </owl:Class>
     
 
@@ -641,6 +827,13 @@
     <owl:Class rdf:about="&obo;OMD_0000047">
         <rdfs:label rdf:datatype="&xsd;string">Phenotype</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMD_0000009"/>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
+        <rdfs:comment>Definition:
+a combination of one or more BODILY FEATURES
+of an ORGANISM determined by the interaction of
+its genetic make-up and environment.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
     </owl:Class>
     
 
