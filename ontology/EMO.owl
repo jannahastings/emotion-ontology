@@ -27,6 +27,9 @@
         <dc:contributor rdf:datatype="&rdf;PlainLiteral">Barry Smith</dc:contributor>
         <dc:contributor rdf:datatype="&rdf;PlainLiteral">Janna Hastings</dc:contributor>
         <dc:contributor rdf:datatype="&rdf;PlainLiteral">Kevin Mulligan</dc:contributor>
+        <rdfs:comment rdf:datatype="&rdf;PlainLiteral">Sources for definitions:
+OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sander and Klaus Scherer, Oxford University Press, 2009.
+</rdfs:comment>
         <dc:title rdf:datatype="&rdf;PlainLiteral">The Emotion Ontology is an ontology for affective phenomena such as emotions and moods.  It is being developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. It builds on the Ontology of Mental Disease (OMD) and the Basic Formal Ontology (BFO). 
 
 The latest version of the ontology can always be found at http://code.google.com/p/emotion-ontology/source/browse/#svn%2Ftrunk%2Fontology. </dc:title>
@@ -45,8 +48,14 @@ The latest version of the ontology can always be found at http://code.google.com
      -->
 
     <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    <owl:AnnotationProperty rdf:about="&obo;EMO_000010">
+        <rdfs:label>synonym</rdfs:label>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&obo;EMO_000016">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&dc;title"/>
     
 
@@ -113,13 +122,13 @@ The latest version of the ontology can always be found at http://code.google.com
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;EMO_000002"/>
+                <owl:someValuesFrom rdf:resource="&obo;EMO_000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;EMO_000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;EMO_000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -201,6 +210,525 @@ The latest version of the ontology can always be found at http://code.google.com
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Definition: Emotional action tendencies are dispositions to behaviour which inhere in an organism by virtue of an emotion process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000009 -->
+
+    <owl:Class rdf:about="&obo;EMO_000009">
+        <rdfs:label xml:lang="en">anger</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000016>Anger is a negative emotion, characterised by feelings of unpleasantness and high arousal, in the form of antagonistic feelings and action tendencies. [Source: OCEAS]
+</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">wut</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">ira</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">colère</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000011 -->
+
+    <owl:Class rdf:about="&obo;EMO_000011">
+        <rdfs:label>irritation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000016>An unpleasant emotion closely related to anger but lower in intensity and without the moral dimension of blame and seriousness that is implicated in anger. [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">Ärger</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">irritación</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">irritation</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000012 -->
+
+    <owl:Class rdf:about="&obo;EMO_000012">
+        <rdfs:label>annoyance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000009"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000013 -->
+
+    <owl:Class rdf:about="&obo;EMO_000013">
+        <rdfs:label>fury</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000009"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000014 -->
+
+    <owl:Class rdf:about="&obo;EMO_000014">
+        <rdfs:label>rage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000009"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000015 -->
+
+    <owl:Class rdf:about="&obo;EMO_000015">
+        <rdfs:label>aggression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000004"/>
+        <obo:EMO_000016>Any behaviour that is intended to harm another person who wants to avoid the harm. [Source: OCEAS]</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000017 -->
+
+    <owl:Class rdf:about="&obo;EMO_000017">
+        <rdfs:label>violence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000015"/>
+        <obo:EMO_000016>Violence is aggression that has extreme physical harm as its goal. [Source: OCEAS]</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000018 -->
+
+    <owl:Class rdf:about="&obo;EMO_000018">
+        <rdfs:label>contempt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000016>A negative emotion generally elicited by the negative evaluation of others and their actions. Usually elicited by violations of community codes. Closely related to anger and disgust. [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">verachtung</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">desprecio</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">mépris</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000019 -->
+
+    <owl:Class rdf:about="&obo;EMO_000019">
+        <rdfs:label>disgust</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000016>A negative emotion which guards the body against dangerous foods and microbial infections. The basic physiological disgust has also culturally evolved to incorporate moral disgust which protects the self from nonphysical threats such as moral violations.  [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">ekel</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">asco</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">dégoût</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000020 -->
+
+    <owl:Class rdf:about="&obo;EMO_000020">
+        <rdfs:label>core disgust</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000019"/>
+        <obo:EMO_000016>Disgust elicited by &quot;contaminated&quot; food substances: rotten food, culturally variable &quot;bad&quot; food, certain animals associated with rotten food (maggots, rats), and every body product except tears. [Source: OCEAS]</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000021 -->
+
+    <owl:Class rdf:about="&obo;EMO_000021">
+        <rdfs:label>animal-nature disgust</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000019"/>
+        <obo:EMO_000016>Disgust elicited by poor hygeine, inappropriate sex, gore or violations of bodily boundaries, and death or the odor of decay. [Source: OCEAS]</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000022 -->
+
+    <owl:Class rdf:about="&obo;EMO_000022">
+        <rdfs:label>interpersonal disgust</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000019"/>
+        <obo:EMO_000016>Disgust elicited by contact with others, especially contact with strangers or other individuals or groups we are averse to. [Source: OCEAS]</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000023 -->
+
+    <owl:Class rdf:about="&obo;EMO_000023">
+        <rdfs:label>moral disgust</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000019"/>
+        <obo:EMO_000016>Disgust elicited by some kinds of especially egregious moral violations. [Source: OCEAS]</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000024 -->
+
+    <owl:Class rdf:about="&obo;EMO_000024">
+        <rdfs:label>hate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <rdfs:comment>The linguistic use of the verb &#39;hate&#39; in English is ambiguous between registering any kind of aversion (e.g. in the sentence &#39;I hate spinach&#39;), and the much stronger meaning which is associated with descriptions of the emotion hatred. [Source: OCEAS]</rdfs:comment>
+        <obo:EMO_000016>A strong, negatively valenced emotion directed against a whole person for who or what they are. Often directed at whole groups based on religion, ethnicity, or race. [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">hass</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">odio</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">haine</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000025 -->
+
+    <owl:Class rdf:about="&obo;EMO_000025">
+        <rdfs:label>jealousy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000016>A negative emotion aroused when a person feels threatened by a rival in his or her relationship with another individual, in particular an intimate partner. Involves feelings of threat, fear, suspicion, distrust, anxiety, anger, betrayal, and rejection. [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">eifersucht</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">celos</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">jalousie</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000026 -->
+
+    <owl:Class rdf:about="&obo;EMO_000026">
+        <rdfs:label>fear</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000016>An activated, aversive emotion that motivates attempts to cope with events that provide threats to the survival or well-being of organisms. Characterised by feelings of threat and impending doom, and by an urge to get out of the situation. [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">angst</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">miedo</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">peur</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000027 -->
+
+    <owl:Class rdf:about="&obo;EMO_000027">
+        <rdfs:label>terror</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000026"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000028 -->
+
+    <owl:Class rdf:about="&obo;EMO_000028">
+        <rdfs:label>anxiety</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000016>A negative, aversive emotion provoked by the prospect of future threat. Distinguished from fear since it is triggered by a distal threat whereas fear is triggered by an immediate threat. Often gradual and long-lasting, whereas fear usually has sudden onset and offset.   [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">besorgnis</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">ansiedad</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">anxiété</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000029 -->
+
+    <owl:Class rdf:about="&obo;EMO_000029">
+        <rdfs:label>stress (emotion)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000016>A negative emotion in response to a stressful elicitor. May be acute or chronic.  Associated with health implications, such as impaired resistance to infectious diseases. [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">stress</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">estrés</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">stress</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000030 -->
+
+    <owl:Class rdf:about="&obo;EMO_000030">
+        <rdfs:label>despair</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000016>A negative, high intensity emotion characterised by loss of hope and loss of interest. Associated with action tendencies of harm to self or others. [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">verzweiflung</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">desesperación</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">désespoir</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000031 -->
+
+    <owl:Class rdf:about="&obo;EMO_000031">
+        <rdfs:label>crying</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000004"/>
+        <obo:EMO_000016>A multimodal behaviour consisting of tears, non-verbal vocalisations (wails, sobs), and facial expressions of distress. [Source: OCEAS]</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000032 -->
+
+    <owl:Class rdf:about="&obo;EMO_000032">
+        <rdfs:label>surprise</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000016>Surprise is a neutral emotion caused by encountering unexpected events of all kinds. May be experienced as negative if the surprising event is evaluated as negative, or positive if the surprising event is evaluated as positive. [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">Überraschung</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">sorpresa</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">surprise</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000033 -->
+
+    <owl:Class rdf:about="&obo;EMO_000033">
+        <rdfs:label>interest</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000016>Interest is a positive emotion which motivates learning, exploration and curiosity. Feelings of interest are associated with the novelty and complexity of stimuli. [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">interesse</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">interés</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">intérêt</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000034 -->
+
+    <owl:Class rdf:about="&obo;EMO_000034">
+        <rdfs:label>joy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000042"/>
+        <obo:EMO_000016>A pleasant, positive emotion which arises in safe and familiar circumstances, when people have made progress towards important personal goals, especially when the progress is better than expected. [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">freude</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">gozo</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">joie</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000035 -->
+
+    <owl:Class rdf:about="&obo;EMO_000035">
+        <rdfs:label>pleasure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000016>A positively experienced emotion which is sought out (approached) and is associated with happiness, enjoyment, and satisfaction.  [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">vergnügen</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">placer</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">plaisir</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000036 -->
+
+    <owl:Class rdf:about="&obo;EMO_000036">
+        <rdfs:label>sensory pleasure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000035"/>
+        <obo:EMO_000016>Pleasure in smell, touch, sight, sound and taste. [Source: OCEAS]</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000037 -->
+
+    <owl:Class rdf:about="&obo;EMO_000037">
+        <rdfs:label>mastery pleasure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000035"/>
+        <obo:EMO_000016>Pleasure derived from mastery, including the experience of flow. [Source: OCEAS]</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000038 -->
+
+    <owl:Class rdf:about="&obo;EMO_000038">
+        <rdfs:label>social pleasure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000035"/>
+        <obo:EMO_000016>Pleasure derived from social contact. [Source: OCEAS]</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000039 -->
+
+    <owl:Class rdf:about="&obo;EMO_000039">
+        <rdfs:label>aesthetic pleasure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000035"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000040 -->
+
+    <owl:Class rdf:about="&obo;EMO_000040">
+        <rdfs:label>sexual pleasure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000035"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000041 -->
+
+    <owl:Class rdf:about="&obo;EMO_000041">
+        <rdfs:label>pride</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000016>A positive emotion associated with the appraisal of one&#39;s positive social worth, a signal that one is likely to be socially accepted. [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">stolz</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">orgullo</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">fierté</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000042 -->
+
+    <owl:Class rdf:about="&obo;EMO_000042">
+        <rdfs:label>happiness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000016>A positive emotion which is experienced in reaction to a positive experience or event. [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">glück</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">felicidad</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">bonheur</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000043 -->
+
+    <owl:Class rdf:about="&obo;EMO_000043">
+        <rdfs:label>serenity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000042"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000044 -->
+
+    <owl:Class rdf:about="&obo;EMO_000044">
+        <rdfs:label>amusement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000042"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000045 -->
+
+    <owl:Class rdf:about="&obo;EMO_000045">
+        <rdfs:label>elation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000042"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000046 -->
+
+    <owl:Class rdf:about="&obo;EMO_000046">
+        <rdfs:label>euphoria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000042"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000047 -->
+
+    <owl:Class rdf:about="&obo;EMO_000047">
+        <rdfs:label>contentment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000042"/>
+        <obo:EMO_000016>A pleasant emotion, which can be defined as a milder form of joy. Associated with physical inactivity (&#39;do nothing&#39; action tendencies). [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">zufriedenheit</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">satisfacción</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">contentement</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000048 -->
+
+    <owl:Class rdf:about="&obo;EMO_000048">
+        <rdfs:label>love</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000016>A strong emotion associated with feelings of desire, warmth and intimacy for another person. [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">liebe</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">amor</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">amour</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000049 -->
+
+    <owl:Class rdf:about="&obo;EMO_000049">
+        <rdfs:label>companionate love</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000048"/>
+        <obo:EMO_000016>Less intense, longer-lasting love which is characterised by affection, commitment, intimacy and a concern for the welfare of the loved one. [Source: OCEAS]</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000050 -->
+
+    <owl:Class rdf:about="&obo;EMO_000050">
+        <rdfs:label>passionate love</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000048"/>
+        <obo:EMO_000016>A powerful longing for union with the beloved, characterised by a confusion of feelings -- elation and pain, tenderness and sexuality, altruism and jealousy.</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000051 -->
+
+    <owl:Class rdf:about="&obo;EMO_000051">
+        <rdfs:label>disappointment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000016>Disappointment is a negative emotion which is triggered by the disconfirmation of the prospect of a desirable event. [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">enttäuschung</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">desilusión</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">Déception</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000052 -->
+
+    <owl:Class rdf:about="&obo;EMO_000052">
+        <rdfs:label>compassion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000010 xml:lang="de">mitgefühl</obo:EMO_000010>
+        <obo:EMO_000016 xml:lang="es">An emotion evoked for a person who is in distress. The conditions for compassion involve perceiving the other as in need, and valuing the other&#39;s welfare. Associated with altruistic motivation. [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="es">compasión</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">compassion</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000053 -->
+
+    <owl:Class rdf:about="&obo;EMO_000053">
+        <rdfs:label>guilt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000016>A self-conscious emotion that occurs when a person brings about a negative outcome by acts of commission or omission. Associated wtih violations of internal or external moral standards. Closely related to embarrassment and shame. [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">schuld</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">culpa</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">culpabilité</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000054 -->
+
+    <owl:Class rdf:about="&obo;EMO_000054">
+        <rdfs:label>embarrassment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000055 -->
+
+    <owl:Class rdf:about="&obo;EMO_000055">
+        <rdfs:label>shame</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000010 xml:lang="de">scham</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">vengüenza</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">honte</obo:EMO_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000056 -->
+
+    <owl:Class rdf:about="&obo;EMO_000056">
+        <rdfs:label>sadness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000001"/>
+        <obo:EMO_000016>A negative emotion felt when an event is appraised as unpleasant, obstructive to one&#39;s goals and concerns, and one feels unable to cope with it or modify it. [Source: OCEAS]</obo:EMO_000016>
+        <obo:EMO_000010 xml:lang="de">trauer</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="es">tristeza</obo:EMO_000010>
+        <obo:EMO_000010 xml:lang="fr">tristesse</obo:EMO_000010>
     </owl:Class>
     
 
