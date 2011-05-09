@@ -115,8 +115,14 @@ The latest version of the ontology can always be found at http://code.google.com
         <rdfs:subClassOf rdf:resource="&obo;OMD_0000020"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OMD#hasAgent"/>
-                <owl:someValuesFrom rdf:resource="&obo;OMD_0000015"/>
+                <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;EMO_000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;EMO_000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -127,14 +133,8 @@ The latest version of the ontology can always be found at http://code.google.com
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;EMO_000002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;EMO_000004"/>
+                <owl:onProperty rdf:resource="&obo;OMD#hasAgent"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Definition: An emotion occurrent is a mental process that is a synchronized aggregate of constituent mental processes including an appraisal process as part, and which gives rise to an action tendency.</rdfs:comment>
@@ -155,9 +155,9 @@ The latest version of the ontology can always be found at http://code.google.com
     <!-- http://purl.obolibrary.org/obo/EMO_000003 -->
 
     <owl:Class rdf:about="&obo;EMO_000003">
-        <rdfs:label>emotional system regulation process</rdfs:label>
+        <rdfs:label>physiological response to emotion process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMD_0000026"/>
-        <rdfs:comment>Definition: An emotional system regulation process is a bodily process which encompasses all the neurophysiological changes caused by the appraisal, which take place in the central nervous system (CNS), neuro-endocrine system (NES) and autonomous nervous system (ANS).</rdfs:comment>
+        <rdfs:comment>Definition: A physiological response to emotion process is a bodily process which encompasses all the neurophysiological changes caused by the appraisal, which take place in the central nervous system (CNS), neuro-endocrine system (NES) and autonomous nervous system (ANS).</rdfs:comment>
     </owl:Class>
     
 
