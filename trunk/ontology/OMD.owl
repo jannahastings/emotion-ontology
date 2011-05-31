@@ -46,6 +46,7 @@
     <owl:AnnotationProperty rdf:about="&dc;contributor"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&obo;EMO_000016"/>
     <owl:AnnotationProperty rdf:about="&dc;title"/>
     
 
@@ -189,14 +190,14 @@ http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
         <rdfs:subClassOf rdf:resource="&obo;OMD_0000009"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OMD#inheresIn"/>
-                <owl:someValuesFrom rdf:resource="&obo;OMD_0000000"/>
+                <owl:onProperty rdf:resource="&obo;OMD#participantOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OMD#participantOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;OMD_0000022"/>
+                <owl:onProperty rdf:resource="&obo;OMD#inheresIn"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Definition:
@@ -370,14 +371,14 @@ Source: http://www.jbiomedsem.com/content/1/1/10.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="&obo;OMD_0000026"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OMD#hasParticipant"/>
-                <owl:someValuesFrom rdf:resource="&obo;OMD_0000003"/>
+                <owl:onProperty rdf:resource="&obo;OMD#realizationOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OMD#realizationOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;OMD_0000001"/>
+                <owl:onProperty rdf:resource="&obo;OMD#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Definition:
@@ -585,12 +586,11 @@ http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Definition:
-REPRESENTATION which
+        <obo:EMO_000016>REPRESENTATION which
 specifically depends on an ANATOMICAL STRUCTURE in the cognitive system of an
 ORGANISM.
 Source:
-http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+http://www.jbiomedsem.com/content/1/1/10</obo:EMO_000016>
     </owl:Class>
     
 
@@ -676,14 +676,14 @@ http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
         <rdfs:subClassOf rdf:resource="&obo;OMD_0000035"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OMD#isAbout"/>
-                <owl:someValuesFrom rdf:resource="&obo;OMD_0000009"/>
+                <owl:onProperty rdf:resource="&obo;OMD#partOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000034"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OMD#partOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;OMD_0000034"/>
+                <owl:onProperty rdf:resource="&obo;OMD#isAbout"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMD_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Definition:
@@ -709,8 +709,7 @@ http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Definition:
-a REPRESENTATION of a CLINICAL PHENOTYPE
+        <rdfs:comment>A CLINICAL PICTURE is a REPRESENTATION of a CLINICAL PHENOTYPE
 that is inferred from the combination of laboratory,
 image and clinical findings about a given
 ORGANISM.
