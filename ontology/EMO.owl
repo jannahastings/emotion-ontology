@@ -122,13 +122,13 @@ The latest version of the ontology can always be found at http://code.google.com
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;EMO_000004"/>
+                <owl:someValuesFrom rdf:resource="&obo;EMO_000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;EMO_000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;EMO_000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -183,7 +183,7 @@ The latest version of the ontology can always be found at http://code.google.com
                 <owl:someValuesFrom rdf:resource="&obo;EMO_000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Definition: An appraisal is a cognitive representation which has as its specic representational content an evaluation of the relevance of some triggering object or event to the organism.</rdfs:comment>
+        <obo:EMO_000016>An appraisal is a cognitive representation which represents an evaluation of the relevance of some triggering object or event to the organism. </obo:EMO_000016>
     </owl:Class>
     
 
@@ -733,6 +733,494 @@ The latest version of the ontology can always be found at http://code.google.com
     
 
 
+    <!-- http://purl.obolibrary.org/obo/EMO_000057 -->
+
+    <owl:Class rdf:about="&obo;EMO_000057">
+        <rdfs:label>appraisal of suddenness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000005"/>
+        <obo:EMO_000016>An appraisal which represents an evaluation of how suddenly an event occurred. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000058 -->
+
+    <owl:Class rdf:about="&obo;EMO_000058">
+        <rdfs:label>appraisal of familiarity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000005"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation of how familiar an object or event is. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000059 -->
+
+    <owl:Class rdf:about="&obo;EMO_000059">
+        <rdfs:label>appraisal of predictability</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000005"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation of how predictable an event was. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000060 -->
+
+    <owl:Class rdf:about="&obo;EMO_000060">
+        <rdfs:label>appraisal of expectedness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000005"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation of whether an event was expected to occur. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000061 -->
+
+    <owl:Class rdf:about="&obo;EMO_000061">
+        <rdfs:label>appraisal of pleasantness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000005"/>
+        <rdfs:comment>GRID questionnaire distinguishes between appraisal of pleasantness FOR SELF and appraisal of pleasantness FOR SOME OTHER.  So far we have defined appraisal as evaluation of relevance FOR SELF, thus, we only include one appraisal of pleasantness (for the time being), although we may expand this later -- although I suspect that all or most of the appraisal types would have to be so qualified. </rdfs:comment>
+        <obo:EMO_000016>An appraisal that represents an evaluation of the pleasantness of an object or event. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000062 -->
+
+    <owl:Class rdf:about="&obo;EMO_000062">
+        <rdfs:label>appraisal as sudden</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000057"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an event occurred suddenly. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000063 -->
+
+    <owl:Class rdf:about="&obo;EMO_000063">
+        <rdfs:label>appraisal as not sudden</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000057"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an event did not occur suddenly. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000064 -->
+
+    <owl:Class rdf:about="&obo;EMO_000064">
+        <rdfs:label>appraisal as familiar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000058"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an object or event is familiar. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000065 -->
+
+    <owl:Class rdf:about="&obo;EMO_000065">
+        <rdfs:label>appraisal as not familiar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000058"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an object or event is not familiar. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000066 -->
+
+    <owl:Class rdf:about="&obo;EMO_000066">
+        <rdfs:label>appraisal as predictable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000059"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an event was easy to predict. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000067 -->
+
+    <owl:Class rdf:about="&obo;EMO_000067">
+        <rdfs:label>appraisal as not predictable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000059"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an event was not easy to predict. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000068 -->
+
+    <owl:Class rdf:about="&obo;EMO_000068">
+        <rdfs:label>appraisal as expected</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000060"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an event was expected. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000069 -->
+
+    <owl:Class rdf:about="&obo;EMO_000069">
+        <rdfs:label>appraisal as not expected</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000060"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an event was not expected.</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000070 -->
+
+    <owl:Class rdf:about="&obo;EMO_000070">
+        <rdfs:label>appraisal as pleasant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000061"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an object or event is pleasant.</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000071 -->
+
+    <owl:Class rdf:about="&obo;EMO_000071">
+        <rdfs:label>appraisal as unpleasant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000061"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an object or event is unpleasant.</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000072 -->
+
+    <owl:Class rdf:about="&obo;EMO_000072">
+        <rdfs:label>appraisal of goal importance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000005"/>
+        <rdfs:comment>An appraisal that represents an evaluation of whether an event or object is important to the person&#39;s goals or needs. </rdfs:comment>
+        <rdfs:comment>Like pleasantness, the GRID questionnaire distinguishes between evaluations of goal importance/relevance for SELF and for an OTHER. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000073 -->
+
+    <owl:Class rdf:about="&obo;EMO_000073">
+        <rdfs:label>evaluation as important to goals</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000072"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that the event or object is important to the person&#39;s goals or needs. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000074 -->
+
+    <owl:Class rdf:about="&obo;EMO_000074">
+        <rdfs:label>evaluation as not important to goals</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000072"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that the event or object is not important to the person&#39;s goals or needs. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000075 -->
+
+    <owl:Class rdf:about="&obo;EMO_000075">
+        <rdfs:label>appraisal of causal agency</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000005"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation of who or what caused an event. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000076 -->
+
+    <owl:Class rdf:about="&obo;EMO_000076">
+        <rdfs:label>appraisal as caused by self</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000075"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an event was caused by the self. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000077 -->
+
+    <owl:Class rdf:about="&obo;EMO_000077">
+        <rdfs:label>appraisal as caused by chance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000075"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an event was caused by chance. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000078 -->
+
+    <owl:Class rdf:about="&obo;EMO_000078">
+        <rdfs:label>appraisal as caused by an other</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000075"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an event was caused by another person.</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000081 -->
+
+    <owl:Class rdf:about="&obo;EMO_000081">
+        <rdfs:label>appraisal as caused supernaturally</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000075"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an event was caused by a supernatural agent (God, the ancestors, ghosts...).</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000082 -->
+
+    <owl:Class rdf:about="&obo;EMO_000082">
+        <rdfs:label>appraisal of causal intent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000005"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation of the causal intent of the person who (is evaluated to have) caused an event.</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000083 -->
+
+    <owl:Class rdf:about="&obo;EMO_000083">
+        <rdfs:label>appraisal as deliberate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000082"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an event was deliberately (intentionally) caused. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000084 -->
+
+    <owl:Class rdf:about="&obo;EMO_000084">
+        <rdfs:label>appraisal as unintended</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000082"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an event was caused unintentionally.</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000085 -->
+
+    <owl:Class rdf:about="&obo;EMO_000085">
+        <rdfs:label>appraisal of desirability of consequences</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000005"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation of the desirability of the expected consequences of an event. </obo:EMO_000016>
+        <rdfs:comment>Distinguished in GRID questionnaire between FOR SELF and FOR OTHER. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000086 -->
+
+    <owl:Class rdf:about="&obo;EMO_000086">
+        <rdfs:label>appraisal as desirable consequences</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000085"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that the expected consequences of an event are desirable. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000087 -->
+
+    <owl:Class rdf:about="&obo;EMO_000087">
+        <rdfs:label>appraisal as undesirable consequences</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000085"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that the expected consequences of an event are undesirable. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000088 -->
+
+    <owl:Class rdf:about="&obo;EMO_000088">
+        <rdfs:label>appraisal of urgency of response</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000005"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation of the urgency of responding to an event. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000089 -->
+
+    <owl:Class rdf:about="&obo;EMO_000089">
+        <rdfs:label>appraisal as urgent response</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000088"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an event requires an urgent (immediate) response. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000090 -->
+
+    <owl:Class rdf:about="&obo;EMO_000090">
+        <rdfs:label>appraisal as not urgent response</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000088"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an event does not require an urgent response. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000091 -->
+
+    <owl:Class rdf:about="&obo;EMO_000091">
+        <rdfs:label>appraisal of avoidability of consequences</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000005"/>
+        <obo:EMO_000016>An appraisal which represents a judgement about how avoidable the expected consequences of an event will be. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000092 -->
+
+    <owl:Class rdf:about="&obo;EMO_000092">
+        <rdfs:label>appraisal as avoidable consequences</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000091"/>
+        <obo:EMO_000016>An appraisal that represents a judgement that the expected consequences of an event are in principle avoidable or modfiable. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000093 -->
+
+    <owl:Class rdf:about="&obo;EMO_000093">
+        <rdfs:label>appraisal as unavoidable consequences</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000091"/>
+        <obo:EMO_000016>An appraisal that represents a judgement that the expected consequences of an event will be difficult to avoid or modify. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000094 -->
+
+    <owl:Class rdf:about="&obo;EMO_000094">
+        <rdfs:label>appraisal of congruence with ideals</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000005"/>
+        <rdfs:comment>May want to distinguish violation of &#39;standards&#39; from that of &#39;ideals&#39;, &#39;norms&#39; and &#39;laws&#39;. At the moment they are all lumped together. </rdfs:comment>
+        <rdfs:comment>Can also be defined FOR SELF and FOR OTHER, where a special case of OTHER is &#39;society&#39; (=&gt; a judgement that an event violated laws or socially accepted norms)</rdfs:comment>
+        <obo:EMO_000016>An appraisal which represents a judgement about whether an event is consistent with the person&#39;s standards or ideals. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000095 -->
+
+    <owl:Class rdf:about="&obo;EMO_000095">
+        <rdfs:label>appraisal as congruent with ideals</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000094"/>
+        <obo:EMO_000016>An appraisal which represents a judgement that an event is consistent with the person&#39;s standards or ideals.</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000096 -->
+
+    <owl:Class rdf:about="&obo;EMO_000096">
+        <rdfs:label>appraisal as not congruent with ideals</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000094"/>
+        <obo:EMO_000016>An appraisal that represents a judgement that an event is inconsistent with a person&#39;s standards or ideals. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000097 -->
+
+    <owl:Class rdf:about="&obo;EMO_000097">
+        <rdfs:label>appraisal of social attention</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000005"/>
+        <obo:EMO_000016>An appraisal which represents a judgement about the direction and nature of the social attention surrounding an event. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000098 -->
+
+    <owl:Class rdf:about="&obo;EMO_000098">
+        <rdfs:label>appraisal as being at the centre of attention</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000097"/>
+        <obo:EMO_000016>An appraisal which represents a judgement that the person is at the centre of the surrounding social attention. (That is, that all other nearby persons are paying attention to him/her.)</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000099 -->
+
+    <owl:Class rdf:about="&obo;EMO_000099">
+        <rdfs:label>appraisal as not being at the centre of attention</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000097"/>
+        <obo:EMO_000016>An appraisal that represents a judgement that a person is not at the centre of the surrounding social attention. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000100 -->
+
+    <owl:Class rdf:about="&obo;EMO_000100">
+        <rdfs:label>appraisal of justice of treatment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000005"/>
+        <obo:EMO_000016>Appraisal which represents an evaluation of whether the person was treated justly or unjustly by another person. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000101 -->
+
+    <owl:Class rdf:about="&obo;EMO_000101">
+        <rdfs:label>appraisal as just treatment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000100"/>
+        <obo:EMO_000016>An appraisal which represents an evaluation that the person was treated justly by another person. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000102 -->
+
+    <owl:Class rdf:about="&obo;EMO_000102">
+        <rdfs:label>appraisal as unjust treatment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000100"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that the person was treated unjustly by another person. (Injustice.) </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000103 -->
+
+    <owl:Class rdf:about="&obo;EMO_000103">
+        <rdfs:label>appraisal of dangerousness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000005"/>
+        <obo:EMO_000016>An appraisal which represents an evaluation of the dangerousness of an object or situation. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000104 -->
+
+    <owl:Class rdf:about="&obo;EMO_000104">
+        <rdfs:label>appraisal as dangerous</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000103"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an object or situation is dangerous to the person. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000105 -->
+
+    <owl:Class rdf:about="&obo;EMO_000105">
+        <rdfs:label>appraisal as not dangerous</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000103"/>
+        <obo:EMO_000016>An appraisal that represents an evaluation that an object or situation is not dangerous to the person. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000106 -->
+
+    <owl:Class rdf:about="&obo;EMO_000106">
+        <rdfs:label>appraisal of loss</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000005"/>
+        <obo:EMO_000016>An appraisal that represents a belief that something or someone that is important to the person has been lost to the person. </obo:EMO_000016>
+        <rdfs:comment>This appraisal category stands alone:  appraisal of loss is not a continuum like the others (pleasant---unpleasant; expected---unexpected).  Rather it is quite discrete, loss or no loss, and is better defined by WHAT has been lost, or at least, in which relation the thing that has been lost stands to the person experiencing the emotion.  Loss of a loved person, loss of the expectation of achieving a hoped for life goal, and loss of a limb are all kinds of loss.  
+
+While it is tempting not to categorise this as an appraisal at all, it should be noted that the loss does not actually have to occur -- it only has to be believed, judged, or (in other words) appraised to have occurred -- for the emotion to take place. </rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMD_0000015 -->
 
     <owl:Class rdf:about="&obo;OMD_0000015"/>
@@ -747,7 +1235,9 @@ The latest version of the ontology can always be found at http://code.google.com
 
     <!-- http://purl.obolibrary.org/obo/OMD_0000022 -->
 
-    <owl:Class rdf:about="&obo;OMD_0000022"/>
+    <owl:Class rdf:about="&obo;OMD_0000022">
+        <rdfs:comment>Note:  The &#39;Behavior&#39; branch here will most likely be superceded by the Neuro Behavior Ontology (NBO) being developed by George Gkoutos and Chris Mungall. </rdfs:comment>
+    </owl:Class>
     
 
 
