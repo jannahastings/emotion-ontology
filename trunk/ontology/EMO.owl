@@ -30,6 +30,8 @@
         <rdfs:comment rdf:datatype="&rdf;PlainLiteral">Sources for definitions:
 OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sander and Klaus Scherer, Oxford University Press, 2009.
 </rdfs:comment>
+        <rdfs:comment rdf:datatype="&rdf;PlainLiteral">Sources for terms and synonyms / translations :
+-- GRID project vocabulary resources (Cristina Soriano)</rdfs:comment>
         <dc:title rdf:datatype="&rdf;PlainLiteral">The Emotion Ontology is an ontology for affective phenomena such as emotions and moods.  It is being developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. It builds on the Ontology of Mental Disease (OMD) and the Basic Formal Ontology (BFO). 
 
 The latest version of the ontology can always be found at http://code.google.com/p/emotion-ontology/source/browse/#svn%2Ftrunk%2Fontology. </dc:title>
@@ -116,12 +118,6 @@ The latest version of the ontology can always be found at http://code.google.com
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;EMO_000002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
                 <owl:someValuesFrom rdf:resource="&obo;EMO_000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -129,6 +125,12 @@ The latest version of the ontology can always be found at http://code.google.com
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
                 <owl:someValuesFrom rdf:resource="&obo;EMO_000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;EMO_000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -193,7 +195,15 @@ The latest version of the ontology can always be found at http://code.google.com
     <owl:Class rdf:about="&obo;EMO_000006">
         <rdfs:label>subjective emotional feeling</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMD_0000039"/>
-        <rdfs:comment>Definition: The subjective emotional feeling is an affective representation, that is, a representation that the organism has about its own affect.</rdfs:comment>
+        <rdfs:comment>Excluded the following subjective feelings which appear on the GRID questionnaire since they seem debatable to what extent they are really *feelings* and to what extent they are actually *evaluations* or other things:
+
+-- felt submissive/dominant
+-- felt powerless/powerful
+
+
+
+</rdfs:comment>
+        <obo:EMO_000016>The subjective emotional feeling is an affective representation, that is, a representation that the organism has about its own affect.</obo:EMO_000016>
     </owl:Class>
     
 
@@ -955,6 +965,27 @@ The latest version of the ontology can always be found at http://code.google.com
     
 
 
+    <!-- http://purl.obolibrary.org/obo/EMO_000079 -->
+
+    <owl:Class rdf:about="&obo;EMO_000079">
+        <rdfs:label>feeling good</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000122"/>
+        <obo:EMO_000010>feeling positive</obo:EMO_000010>
+        <obo:EMO_000016>The subjective emotional feeling of feeling good, positive.  </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000080 -->
+
+    <owl:Class rdf:about="&obo;EMO_000080">
+        <rdfs:label>feeling tired</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000120"/>
+        <obo:EMO_000016>The subjective emotional feeling of tiredness, needing sleep.</obo:EMO_000016>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/EMO_000081 -->
 
     <owl:Class rdf:about="&obo;EMO_000081">
@@ -1217,6 +1248,188 @@ The latest version of the ontology can always be found at http://code.google.com
         <rdfs:comment>This appraisal category stands alone:  appraisal of loss is not a continuum like the others (pleasant---unpleasant; expected---unexpected).  Rather it is quite discrete, loss or no loss, and is better defined by WHAT has been lost, or at least, in which relation the thing that has been lost stands to the person experiencing the emotion.  Loss of a loved person, loss of the expectation of achieving a hoped for life goal, and loss of a limb are all kinds of loss.  
 
 While it is tempting not to categorise this as an appraisal at all, it should be noted that the loss does not actually have to occur -- it only has to be believed, judged, or (in other words) appraised to have occurred -- for the emotion to take place. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000107 -->
+
+    <owl:Class rdf:about="&obo;EMO_000107">
+        <rdfs:label>feeling at ease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000123"/>
+        <obo:EMO_000016>The subjective emotional feeling of being at ease, comfortable, relaxed. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000108 -->
+
+    <owl:Class rdf:about="&obo;EMO_000108">
+        <rdfs:label>feeling bad</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000122"/>
+        <obo:EMO_000010>feeling negative</obo:EMO_000010>
+        <obo:EMO_000016>The subjective emotional feeling of feeling bad, negative.</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000109 -->
+
+    <owl:Class rdf:about="&obo;EMO_000109">
+        <rdfs:label>feeling energetic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000120"/>
+        <obo:EMO_000016>The subjective emotional feeling of having lots of energy, being energetic. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000110 -->
+
+    <owl:Class rdf:about="&obo;EMO_000110">
+        <rdfs:label>feeling in control</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000115"/>
+        <obo:EMO_000016>The subjective emotional feeling that one is in control of oneself, that one is fully the agent of one&#39;s behavior. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000111 -->
+
+    <owl:Class rdf:about="&obo;EMO_000111">
+        <rdfs:label>feeling restless</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000113"/>
+        <obo:EMO_000016>The subjective emotional feeling of restlessness, a state of not being calm, of an agitation to do something. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000112 -->
+
+    <owl:Class rdf:about="&obo;EMO_000112">
+        <rdfs:label>feeling exhausted</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000080"/>
+        <obo:EMO_000016>The subjective emotional feeling of exhaustion, an extremely strong form of feeling tired. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000113 -->
+
+    <owl:Class rdf:about="&obo;EMO_000113">
+        <rdfs:label>feeling calmness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000006"/>
+        <obo:EMO_000016>The subjective feeling which represents the level of calmness or agitation of the person. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000114 -->
+
+    <owl:Class rdf:about="&obo;EMO_000114">
+        <rdfs:label>feeling calm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000113"/>
+        <obo:EMO_000016>The subjective feeling of being calm, being relaxed, being at peace. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000115 -->
+
+    <owl:Class rdf:about="&obo;EMO_000115">
+        <rdfs:label>feeling of control</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000006"/>
+        <obo:EMO_000016>The subjective feeling which represents the felt sense of control of the person. </obo:EMO_000016>
+        <rdfs:comment>This clearly has some evaluative component, yet perhaps there is also a subjective feeling component.  Worth discussing. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000116 -->
+
+    <owl:Class rdf:about="&obo;EMO_000116">
+        <rdfs:label>feeling out of control</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000115"/>
+        <obo:EMO_000016>The subjective feeling of not being in control, not being able to gain agency of one&#39;s own behavior. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000117 -->
+
+    <owl:Class rdf:about="&obo;EMO_000117">
+        <rdfs:label>feeling of strength</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000006"/>
+        <obo:EMO_000016>The subjective feeling which represents the experienced strength of the person. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000118 -->
+
+    <owl:Class rdf:about="&obo;EMO_000118">
+        <rdfs:label>feeling strong</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000117"/>
+        <obo:EMO_000016>The subjective feeling of strength, capability, energy and capacity to do things. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000119 -->
+
+    <owl:Class rdf:about="&obo;EMO_000119">
+        <rdfs:label>feeling weak</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000117"/>
+        <obo:EMO_000016>The subjective feeling of weakness, lack of energy and/or capability, faintness, absence of strength. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000120 -->
+
+    <owl:Class rdf:about="&obo;EMO_000120">
+        <rdfs:label>feeling wakefulness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000006"/>
+        <obo:EMO_000016>The subjective feeling which represents the state of wakefulness of the person. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000121 -->
+
+    <owl:Class rdf:about="&obo;EMO_000121">
+        <rdfs:label>feeling alert</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000120"/>
+        <obo:EMO_000016>The subjective feeling of being wide awake, alert, having active attention and perception. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000122 -->
+
+    <owl:Class rdf:about="&obo;EMO_000122">
+        <rdfs:label>feeling positivity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000006"/>
+        <obo:EMO_000016>The subjective feeling which represents the felt valence -- good / bad -- of the person.</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000123 -->
+
+    <owl:Class rdf:about="&obo;EMO_000123">
+        <rdfs:label>feeling relaxedness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000006"/>
+        <obo:EMO_000016>The subjective feeling which represents how relaxed or not relaxed the person is. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000124 -->
+
+    <owl:Class rdf:about="&obo;EMO_000124">
+        <rdfs:label>feeling nervous</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000123"/>
+        <obo:EMO_000016>The subjective feeling of being not at ease, of being anxious or nervous or agitated. </obo:EMO_000016>
     </owl:Class>
     
 
