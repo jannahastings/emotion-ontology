@@ -118,18 +118,6 @@ The latest version of the ontology can always be found at http://code.google.com
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;EMO_000003"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;EMO_000004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
                 <owl:someValuesFrom rdf:resource="&obo;EMO_000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -137,6 +125,18 @@ The latest version of the ontology can always be found at http://code.google.com
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OMD#hasAgent"/>
                 <owl:someValuesFrom rdf:resource="&obo;OMD_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;EMO_000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OMD#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;EMO_000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Definition: An emotion occurrent is a mental process that is a synchronized aggregate of constituent mental processes including an appraisal process as part, and which gives rise to an action tendency.</rdfs:comment>
@@ -457,6 +457,7 @@ The latest version of the ontology can always be found at http://code.google.com
     <owl:Class rdf:about="&obo;EMO_000031">
         <rdfs:label>crying</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;EMO_000004"/>
+        <rdfs:comment>Not sure whether this should be seen as a synonym for &#39;having tears in the eyes&#39; -- there probably need to be different degrees of crying. </rdfs:comment>
         <obo:EMO_000016>A multimodal behaviour consisting of tears, non-verbal vocalisations (wails, sobs), and facial expressions of distress. [Source: OCEAS]</obo:EMO_000016>
     </owl:Class>
     
@@ -1430,6 +1431,145 @@ While it is tempting not to categorise this as an appraisal at all, it should be
         <rdfs:label>feeling nervous</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;EMO_000123"/>
         <obo:EMO_000016>The subjective feeling of being not at ease, of being anxious or nervous or agitated. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000125 -->
+
+    <owl:Class rdf:about="&obo;EMO_000125">
+        <rdfs:label>facial expression behaviour</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000004"/>
+        <obo:EMO_000016>An emotional behavioural process that involves a change in the expression of the face. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000126 -->
+
+    <owl:Class rdf:about="&obo;EMO_000126">
+        <rdfs:label>smiling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000125"/>
+        <obo:EMO_000016>A facial expression behaviour in which the person smiles. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000127 -->
+
+    <owl:Class rdf:about="&obo;EMO_000127">
+        <rdfs:label>jaw dropping</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000125"/>
+        <obo:EMO_000016>A facial expression behaviour in which the jaw drops.</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000128 -->
+
+    <owl:Class rdf:about="&obo;EMO_000128">
+        <rdfs:label>pressing lips together</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000125"/>
+        <obo:EMO_000016>A facial expression behaviour in which the lips are tightly pressed together. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000129 -->
+
+    <owl:Class rdf:about="&obo;EMO_000129">
+        <rdfs:label>raising eyebrows</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000125"/>
+        <obo:EMO_000016>A facial expression behaviour in which the eyebrows are raised. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000130 -->
+
+    <owl:Class rdf:about="&obo;EMO_000130">
+        <rdfs:label>frowning</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000125"/>
+        <obo:EMO_000016>A facial expression behaviour in which the person frowns. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000131 -->
+
+    <owl:Class rdf:about="&obo;EMO_000131">
+        <rdfs:label>closing eyes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000125"/>
+        <obo:EMO_000016>A facial expression behaviour in which the eyes are closed. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000132 -->
+
+    <owl:Class rdf:about="&obo;EMO_000132">
+        <rdfs:label>opening eyes widely</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000125"/>
+        <obo:EMO_000016>A facial expression behaviour in which the eyes are opened widely. </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000133 -->
+
+    <owl:Class rdf:about="&obo;EMO_000133">
+        <rdfs:label>neutral expression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000125"/>
+        <obo:EMO_000016>A facial expression behaviour which appears very neutral (showing no expression). </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000134 -->
+
+    <owl:Class rdf:about="&obo;EMO_000134">
+        <rdfs:label>bodily movement behaviour</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000004"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000135 -->
+
+    <owl:Class rdf:about="&obo;EMO_000135">
+        <rdfs:label>moving abruptly</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000134"/>
+        <obo:EMO_000016>A bodily movement behaviour which involves abrupt movements.</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000136 -->
+
+    <owl:Class rdf:about="&obo;EMO_000136">
+        <rdfs:label>moving towards people</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000134"/>
+        <obo:EMO_000016>A bodily movement behaviour which involves moving, or leaning, towards people (approach).</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000137 -->
+
+    <owl:Class rdf:about="&obo;EMO_000137">
+        <rdfs:label>moving away from people</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000134"/>
+        <obo:EMO_000016>A bodily movement behaviour which involves moving, or leaning, away from people (avoidance). </obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMO_000138 -->
+
+    <owl:Class rdf:about="&obo;EMO_000138">
+        <rdfs:label>staying still</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EMO_000134"/>
+        <obo:EMO_000016>A bodily movement behaviour which involves remaining still. </obo:EMO_000016>
     </owl:Class>
     
 
