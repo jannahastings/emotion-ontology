@@ -1,0 +1,872 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY MFO "http://purl.obolibrary.org/obo/MFO#" >
+    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;MFO#"
+     xml:base="&obo;MFO"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:MFO="&obo;MFO#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
+    <owl:Ontology rdf:about="&obo;MFO">
+        <dc:contributor rdf:datatype="&rdf;PlainLiteral">Barry Smith</dc:contributor>
+        <dc:title rdf:datatype="&rdf;PlainLiteral">The Ontology of Mental Functioning (MFO) was first described in the publication available at http://www.jbiomedsem.com/content/1/1/10 entitled &#39;Foundations for a realist ontology of mental disease&#39; (Barry Smith and Werner Ceusters). </dc:title>
+        <rdfs:comment rdf:datatype="&rdf;PlainLiteral">This OWL version of the MFO was created by Janna Hastings</rdfs:comment>
+        <dc:contributor rdf:datatype="&rdf;PlainLiteral">Werner Ceusters</dc:contributor>
+        <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&obo;EMO_000016"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO#hasAgent -->
+
+    <owl:ObjectProperty rdf:about="&obo;MFO#hasAgent"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO#hasPart -->
+
+    <owl:ObjectProperty rdf:about="&obo;MFO#hasPart"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="&obo;MFO#hasParticipant"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO#inhererOf -->
+
+    <owl:ObjectProperty rdf:about="&obo;MFO#inhererOf"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO#inheresIn -->
+
+    <owl:ObjectProperty rdf:about="&obo;MFO#inheresIn"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO#isAbout -->
+
+    <owl:ObjectProperty rdf:about="&obo;MFO#isAbout"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO#manifestationOf -->
+
+    <owl:ObjectProperty rdf:about="&obo;MFO#manifestationOf"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO#partOf -->
+
+    <owl:ObjectProperty rdf:about="&obo;MFO#partOf"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO#participantOf -->
+
+    <owl:ObjectProperty rdf:about="&obo;MFO#participantOf"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO#realizationOf -->
+
+    <owl:ObjectProperty rdf:about="&obo;MFO#realizationOf"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO#specificallyDependsOn -->
+
+    <owl:ObjectProperty rdf:about="&obo;MFO#specificallyDependsOn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000000 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000000">
+        <rdfs:label rdf:datatype="&xsd;string">Mental Functioning Related Anatomical Structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#inhererOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+ANATOMICAL STRUCTURE in which there inheres the DISPOSITION to be the agent
+of a MENTAL PROCESS.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000001 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000001">
+        <rdfs:label rdf:datatype="&xsd;string">Disposition to be agentOf Mental Process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Disposition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#inheresIn"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000002 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000002">
+        <rdfs:label rdf:datatype="&xsd;string">Disposition to lead to Pathological Mental Processes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000003 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000003">
+        <rdfs:label rdf:datatype="&xsd;string">Behavior Inducing State</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#participantOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#inheresIn"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+BODILY QUALITY inhering in a MENTAL
+FUNCTIONING RELATED ANATOMICAL STRUCTURE which leads to BEHAVIOR of some
+specific sort.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000004 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000004">
+        <rdfs:label rdf:datatype="&xsd;string">Mental Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#partOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+DISORDER in a MENTAL FUNCTIONING
+RELATED ANATOMICAL STRUCTURE.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000005 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000005">
+        <rdfs:label rdf:datatype="&xsd;string">Mental Disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000002"/>
+        <rdfs:comment>Definition:
+a DISEASE which is a DISPOSITION to undergo
+PATHOLOGICAL MENTAL PROCESSES.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000006 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000006">
+        <rdfs:label rdf:datatype="&xsd;string">Disposition to lead to Pathological Processes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Disposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000007 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000007">
+        <rdfs:label rdf:datatype="&xsd;string">Anatomical Structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;IndependentContinuant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#partOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000009 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000009">
+        <rdfs:label rdf:datatype="&xsd;string">Bodily Quality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#inheresIn"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition: 
+QUALITY inhering in a BODILY COMPONENT.
+Source:
+http://www.jbiomedsem.com/content/1/1/10.</rdfs:comment>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000010 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000010">
+        <rdfs:label rdf:datatype="&xsd;string">Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000012"/>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
+        <rdfs:comment>Definition:
+A combination of BODILY COMPONENTS of or in
+an ORGANISM that is clinically abnormal.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000011 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000011">
+        <rdfs:label rdf:datatype="&xsd;string">Disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000006"/>
+        <rdfs:comment>Definition:
+a DISPOSITION (i) to undergo PATHOLOGICAL
+PROCESSES that (ii) exists in an ORGANISM
+because of one or more DISORDERS in that
+ORGANISM.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+        <rdfs:comment>(from OGMS)
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000012 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000012">
+        <rdfs:label rdf:datatype="&xsd;string">Bodily Component</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000014"/>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
+        <rdfs:comment>Definition: MATERIAL OBJECT within or on the surface of an
+ORGANISM, including ANATOMICAL
+STRUCTURES, body flora, pathogens, toxins, and
+their combinations, potentially including also the
+organism as a whole.
+Source: http://www.jbiomedsem.com/content/1/1/10.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000014 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000014">
+        <rdfs:label rdf:datatype="&xsd;string">Material Object</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;IndependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000015 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000015">
+        <rdfs:label rdf:datatype="&xsd;string">Organism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000014"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000016 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000016">
+        <rdfs:label rdf:datatype="&xsd;string">Human Being</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000020 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000020">
+        <rdfs:label rdf:datatype="&xsd;string">Mental Process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000026"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#realizationOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+BODILY PROCESS which brings into being,
+sustains or modifies a COGNITIVE REPRESENTATION or a BEHAVIOR INDUCING
+STATE.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000021 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000021">
+        <rdfs:label rdf:datatype="&xsd;string">Interpersonal Process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;Process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#hasParticipant"/>
+                <owl:onClass rdf:resource="&obo;MFO_0000016"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+PROCESS in which at least two HUMAN
+BEINGS are agents.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000022 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000022">
+        <rdfs:label rdf:datatype="&xsd;string">Behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;Process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#hasAgent"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+a PROCESS having PROCESSES as parts in which an
+ORGANISM participates as agent in response to external or internal stimuli and
+following some pattern which is dependent upon some combination of that
+ORGANISM’s internal state and external conditions. (Derived from the Gene
+Ontology).
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000023 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000023">
+        <rdfs:label rdf:datatype="&xsd;string">Interpersonal Behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000022"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+BEHAVIOR having INTERPERSONAL
+PROCESSES as parts, each involving the same instances of HUMAN BEING.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000024 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000024">
+        <rdfs:label rdf:datatype="&xsd;string">Pathological Mental Process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#manifestationOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+PATHOLOGICAL PROCESS
+which is the manifestation of a MENTAL DISORDER.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000025 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000025">
+        <rdfs:label rdf:datatype="&xsd;string">Mental Disease Course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000029"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+DISEASE COURSE of a MENTAL DISEASE.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000026 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000026">
+        <rdfs:label rdf:datatype="&xsd;string">Bodily Process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;Process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
+        <rdfs:comment>Definition:
+PROCESS in which at least one BODILY
+COMPONENT of an ORGANISM participates.
+Source:
+http://www.jbiomedsem.com/content/1/1/10
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000028 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000028">
+        <rdfs:label rdf:datatype="&xsd;string">Pathological Process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000026"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#manifestationOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
+        <rdfs:comment>Definition:
+a BODILY PROCESS that is a manifestation of a
+DISORDER.
+Source:
+http://www.jbiomedsem.com/content/1/1/10
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000029 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000029">
+        <rdfs:label rdf:datatype="&xsd;string">Disease Course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&span;Process"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000028"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+the totality of all PROCESSES through which a
+given DISEASE instance is realized.
+Source:
+http://www.jbiomedsem.com/content/1/1/10
+
+</rdfs:comment>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000030 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000030">
+        <rdfs:label rdf:datatype="&xsd;string">Representation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;GenericallyDependentContinuant"/>
+        <rdfs:comment>Definition:
+DEPENDENT CONTINUANT which is about a
+portion of reality.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000031 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000031">
+        <rdfs:label rdf:datatype="&xsd;string">Cognitive Representation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#specificallyDependsOn"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:EMO_000016>REPRESENTATION which
+specifically depends on an ANATOMICAL STRUCTURE in the cognitive system of an
+ORGANISM.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</obo:EMO_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000032 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000032">
+        <rdfs:label rdf:datatype="&xsd;string">Observation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#isAbout"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>(from OGMS)
+</rdfs:comment>
+        <rdfs:comment>Definition:
+COGNITIVE REPRESENTATION about a BODILY
+FEATURE resulting from an act of perception.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000033 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000033">
+        <rdfs:label rdf:datatype="&xsd;string">Diagnosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#isAbout"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+REPRESENTATION asserting the presence of an
+instance of DISEASE in a given ORGANISM
+resulting from an interpretive process that has as
+input a CLINICAL PICTURE of that ORGANISM.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000034 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000034">
+        <rdfs:label rdf:datatype="&xsd;string">Disease Picture</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#isAbout"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000042"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+REPRESENTATION of a DISEASE PHENOTYPE
+concretized in some information artifact.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000035 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000035">
+        <rdfs:label rdf:datatype="&xsd;string">Representational Unit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000036 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000036">
+        <rdfs:label rdf:datatype="&xsd;string">Disease Picture Component</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000035"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#partOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#isAbout"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+REPRESENTATIONAL UNIT which
+is a part of some DISEASE PICTURE and which either (1) represents (or is believed to
+represent) a BODILY FEATURE that is believed to be manifested in the DISEASE
+PHENOTYPE represented by the DISEASE PICTURE of which it is a component or (2)
+expresses a negative finding. 
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000037 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000037">
+        <rdfs:label rdf:datatype="&xsd;string">Clinical Picture</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#isAbout"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000043"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A CLINICAL PICTURE is a REPRESENTATION of a CLINICAL PHENOTYPE
+that is inferred from the combination of laboratory,
+image and clinical findings about a given
+ORGANISM.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000038 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000038">
+        <rdfs:label rdf:datatype="&xsd;string">Marker features</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+REPRESENTATION which is a collection of DISEASE PICTURE COMPONENTS which
+are characteristic for DISEASE X (where ‘X’ serves as placeholder for some disease
+name).
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000039 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000039">
+        <rdfs:label rdf:datatype="&xsd;string">Affective Representation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000031"/>
+        <rdfs:comment>Definition: 
+COGNITIVE REPRESENTATION
+sustained by an ORGANISM about its own emotions.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000040 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000040">
+        <rdfs:label rdf:datatype="&xsd;string">Diagnosis of Mental Disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000033"/>
+        <rdfs:comment>Definition:
+DIAGNOSIS asserting the
+presence of an instance of MENTAL DISEASE in a given ORGANISM.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000041 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000041">
+        <rdfs:label rdf:datatype="&xsd;string">Manifestation of a Mental Disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#realizationOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Definition:
+a BODILY FEATURE of
+an ORGANISM that is (a) a deviation from clinical normality that is the realization of
+a MENTAL DISEASE and is (b) observable.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000042 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000042">
+        <rdfs:label rdf:datatype="&xsd;string">Disease Phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000043"/>
+        <rdfs:comment>Definition:
+a CLINICAL PHENOTYPE that is characteristic of a
+single DISEASE.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+        <rdfs:comment>(from OGMS)
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000043 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000043">
+        <rdfs:label rdf:datatype="&xsd;string">Clinical Phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000047"/>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
+        <rdfs:comment>Definition:
+a clinically abnormal PHENOTYPE.
+Source:
+http://www.jbiomedsem.com/content/1/1/10
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFO_0000047 -->
+
+    <owl:Class rdf:about="&obo;MFO_0000047">
+        <rdfs:label rdf:datatype="&xsd;string">Phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFO_0000009"/>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
+        <rdfs:comment>Definition:
+a combination of one or more BODILY FEATURES
+of an ORGANISM determined by the interaction of
+its genetic make-up and environment.
+Source:
+http://www.jbiomedsem.com/content/1/1/10</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Disposition -->
+
+    <owl:Class rdf:about="&snap;Disposition"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant -->
+
+    <owl:Class rdf:about="&snap;GenericallyDependentContinuant"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant -->
+
+    <owl:Class rdf:about="&snap;IndependentContinuant"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Quality -->
+
+    <owl:Class rdf:about="&snap;Quality"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#Process -->
+
+    <owl:Class rdf:about="&span;Process"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
+
