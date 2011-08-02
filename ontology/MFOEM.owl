@@ -6,8 +6,8 @@
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
     <!ENTITY MFO "http://purl.obolibrary.org/obo/MFO#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
@@ -18,24 +18,24 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:MFO="&obo;MFO#"
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:MFO="&obo;MFO#">
     <owl:Ontology rdf:about="&obo;MFOEM">
-        <dc:contributor rdf:datatype="&rdf;PlainLiteral">Barry Smith</dc:contributor>
-        <dc:contributor rdf:datatype="&rdf;PlainLiteral">Janna Hastings</dc:contributor>
-        <dc:contributor rdf:datatype="&rdf;PlainLiteral">Kevin Mulligan</dc:contributor>
-        <rdfs:comment rdf:datatype="&rdf;PlainLiteral">Sources for definitions:
-OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sander and Klaus Scherer, Oxford University Press, 2009.
-</rdfs:comment>
-        <rdfs:comment rdf:datatype="&rdf;PlainLiteral">Sources for terms and synonyms / translations :
+        <dc:contributor>Werner Ceusters</dc:contributor>
+        <rdfs:comment>Sources for terms and synonyms / translations :
 -- GRID project vocabulary resources (Cristina Soriano)</rdfs:comment>
-        <dc:title rdf:datatype="&rdf;PlainLiteral">The Emotion Ontology is an ontology for affective phenomena such as emotions and moods.  It is being developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. It builds on the Ontology of Mental Functioning (MFO) and the Basic Formal Ontology (BFO). 
+        <dc:contributor>Barry Smith</dc:contributor>
+        <dc:title>The Emotion Ontology is an ontology for affective phenomena such as emotions and moods.  It is being developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. It builds on the Ontology of Mental Functioning (MFO) and the Basic Formal Ontology (BFO). 
 
 The latest version of the ontology can always be found at http://code.google.com/p/emotion-ontology/source/browse/#svn%2Ftrunk%2Fontology. </dc:title>
-        <dc:contributor rdf:datatype="&rdf;PlainLiteral">Werner Ceusters</dc:contributor>
+        <dc:contributor>Kevin Mulligan</dc:contributor>
+        <dc:contributor>Janna Hastings</dc:contributor>
+        <rdfs:comment>Sources for definitions:
+OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sander and Klaus Scherer, Oxford University Press, 2009.
+</rdfs:comment>
         <owl:imports rdf:resource="&obo;MFO"/>
     </owl:Ontology>
     
@@ -53,12 +53,23 @@ The latest version of the ontology can always be found at http://code.google.com
     <owl:AnnotationProperty rdf:about="&obo;MFOEM_000010">
         <rdfs:label>synonym</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     <owl:AnnotationProperty rdf:about="&obo;MFOEM_000016">
         <rdfs:label>definition</rdfs:label>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     <owl:AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
     
 
 
@@ -118,18 +129,6 @@ The latest version of the ontology can always be found at http://code.google.com
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFO#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFO#hasAgent"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFO_0000015"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFO#hasPart"/>
                 <owl:someValuesFrom rdf:resource="&obo;MFOEM_000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -137,6 +136,18 @@ The latest version of the ontology can always be found at http://code.google.com
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFO#hasPart"/>
                 <owl:someValuesFrom rdf:resource="&obo;MFOEM_000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#hasAgent"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFO_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Definition: An emotion occurrent is a mental process that is a synchronized aggregate of constituent mental processes including an appraisal process as part, and which gives rise to an action tendency.</rdfs:comment>
@@ -170,6 +181,7 @@ The latest version of the ontology can always be found at http://code.google.com
         <rdfs:label>emotional behavioural process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFO_0000022"/>
         <rdfs:comment>Definition: An emotional behavioural process is the behaviour of the organism in response to the appraisal, which includes the characteristic facial expressions for particular emotion types.</rdfs:comment>
+        <rdfs:comment>The definitions still need work in this branch. </rdfs:comment>
     </owl:Class>
     
 
@@ -195,6 +207,7 @@ The latest version of the ontology can always be found at http://code.google.com
     <owl:Class rdf:about="&obo;MFOEM_000006">
         <rdfs:label>subjective emotional feeling</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFO_0000039"/>
+        <obo:MFOEM_000016>The subjective emotional feeling is an affective representation, that is, a representation that the organism has about its own affect.</obo:MFOEM_000016>
         <rdfs:comment>Excluded the following subjective feelings which appear on the GRID questionnaire since they seem debatable to what extent they are really *feelings* and to what extent they are actually *evaluations* or other things:
 
 -- felt submissive/dominant
@@ -203,7 +216,6 @@ The latest version of the ontology can always be found at http://code.google.com
 
 
 </rdfs:comment>
-        <obo:MFOEM_000016>The subjective emotional feeling is an affective representation, that is, a representation that the organism has about its own affect.</obo:MFOEM_000016>
     </owl:Class>
     
 
@@ -219,7 +231,7 @@ The latest version of the ontology can always be found at http://code.google.com
                 <owl:someValuesFrom rdf:resource="&obo;MFO_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Definition: Emotional action tendencies are dispositions to behaviour which inhere in an organism by virtue of an emotion process.</rdfs:comment>
+        <obo:MFOEM_000016>Emotional action tendencies are dispositions to behaviour which inhere in an organism by virtue of the physical changes brought about by an emotion process.</obo:MFOEM_000016>
     </owl:Class>
     
 
@@ -298,7 +310,7 @@ The latest version of the ontology can always be found at http://code.google.com
     
 
 
-    <!-- http://purl.obolibrary.org/obo/EMO_000018 -->
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000018 -->
 
     <owl:Class rdf:about="&obo;MFOEM_000018">
         <rdfs:label>contempt</rdfs:label>
@@ -970,7 +982,7 @@ The latest version of the ontology can always be found at http://code.google.com
 
     <owl:Class rdf:about="&obo;MFOEM_000079">
         <rdfs:label>feeling good</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000122"/>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
         <obo:MFOEM_000010>feeling positive</obo:MFOEM_000010>
         <obo:MFOEM_000016>The subjective emotional feeling of feeling good, positive.  </obo:MFOEM_000016>
     </owl:Class>
@@ -981,7 +993,7 @@ The latest version of the ontology can always be found at http://code.google.com
 
     <owl:Class rdf:about="&obo;MFOEM_000080">
         <rdfs:label>feeling tired</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000120"/>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
         <obo:MFOEM_000016>The subjective emotional feeling of tiredness, needing sleep.</obo:MFOEM_000016>
     </owl:Class>
     
@@ -1032,8 +1044,8 @@ The latest version of the ontology can always be found at http://code.google.com
     <owl:Class rdf:about="&obo;MFOEM_000085">
         <rdfs:label>appraisal of desirability of consequences</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000005"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation of the desirability of the expected consequences of an event. </obo:MFOEM_000016>
         <rdfs:comment>Distinguished in GRID questionnaire between FOR SELF and FOR OTHER. </rdfs:comment>
+        <obo:MFOEM_000016>An appraisal that represents an evaluation of the desirability of the expected consequences of an event. </obo:MFOEM_000016>
     </owl:Class>
     
 
@@ -1124,8 +1136,8 @@ The latest version of the ontology can always be found at http://code.google.com
         <rdfs:label>appraisal of congruence with ideals</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000005"/>
         <rdfs:comment>May want to distinguish violation of &#39;standards&#39; from that of &#39;ideals&#39;, &#39;norms&#39; and &#39;laws&#39;. At the moment they are all lumped together. </rdfs:comment>
-        <rdfs:comment>Can also be defined FOR SELF and FOR OTHER, where a special case of OTHER is &#39;society&#39; (=&gt; a judgement that an event violated laws or socially accepted norms)</rdfs:comment>
         <obo:MFOEM_000016>An appraisal which represents a judgement about whether an event is consistent with the person&#39;s standards or ideals. </obo:MFOEM_000016>
+        <rdfs:comment>Can also be defined FOR SELF and FOR OTHER, where a special case of OTHER is &#39;society&#39; (=&gt; a judgement that an event violated laws or socially accepted norms)</rdfs:comment>
     </owl:Class>
     
 
@@ -1257,7 +1269,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="&obo;MFOEM_000107">
         <rdfs:label>feeling at ease</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000123"/>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
         <obo:MFOEM_000016>The subjective emotional feeling of being at ease, comfortable, relaxed. </obo:MFOEM_000016>
     </owl:Class>
     
@@ -1267,9 +1279,9 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="&obo;MFOEM_000108">
         <rdfs:label>feeling bad</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000122"/>
-        <obo:MFOEM_000010>feeling negative</obo:MFOEM_000010>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
         <obo:MFOEM_000016>The subjective emotional feeling of feeling bad, negative.</obo:MFOEM_000016>
+        <obo:MFOEM_000010>feeling negative</obo:MFOEM_000010>
     </owl:Class>
     
 
@@ -1278,7 +1290,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="&obo;MFOEM_000109">
         <rdfs:label>feeling energetic</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000120"/>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
         <obo:MFOEM_000016>The subjective emotional feeling of having lots of energy, being energetic. </obo:MFOEM_000016>
     </owl:Class>
     
@@ -1288,7 +1300,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="&obo;MFOEM_000110">
         <rdfs:label>feeling in control</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000115"/>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
         <obo:MFOEM_000016>The subjective emotional feeling that one is in control of oneself, that one is fully the agent of one&#39;s behavior. </obo:MFOEM_000016>
     </owl:Class>
     
@@ -1298,7 +1310,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="&obo;MFOEM_000111">
         <rdfs:label>feeling restless</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000113"/>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
         <obo:MFOEM_000016>The subjective emotional feeling of restlessness, a state of not being calm, of an agitation to do something. </obo:MFOEM_000016>
     </owl:Class>
     
@@ -1317,9 +1329,9 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <!-- http://purl.obolibrary.org/obo/MFOEM_000113 -->
 
     <owl:Class rdf:about="&obo;MFOEM_000113">
-        <rdfs:label>feeling calmness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
-        <obo:MFOEM_000016>The subjective feeling which represents the level of calmness or agitation of the person. </obo:MFOEM_000016>
+        <rdfs:label>shivering</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000003"/>
+        <obo:MFOEM_000016></obo:MFOEM_000016>
     </owl:Class>
     
 
@@ -1328,7 +1340,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="&obo;MFOEM_000114">
         <rdfs:label>feeling calm</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000113"/>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
         <obo:MFOEM_000016>The subjective feeling of being calm, being relaxed, being at peace. </obo:MFOEM_000016>
     </owl:Class>
     
@@ -1337,10 +1349,8 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <!-- http://purl.obolibrary.org/obo/MFOEM_000115 -->
 
     <owl:Class rdf:about="&obo;MFOEM_000115">
-        <rdfs:label>feeling of control</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
-        <obo:MFOEM_000016>The subjective feeling which represents the felt sense of control of the person. </obo:MFOEM_000016>
-        <rdfs:comment>This clearly has some evaluative component, yet perhaps there is also a subjective feeling component.  Worth discussing. </rdfs:comment>
+        <rdfs:label>limb weakening</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000003"/>
     </owl:Class>
     
 
@@ -1349,8 +1359,9 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="&obo;MFOEM_000116">
         <rdfs:label>feeling out of control</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000115"/>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
         <obo:MFOEM_000016>The subjective feeling of not being in control, not being able to gain agency of one&#39;s own behavior. </obo:MFOEM_000016>
+        <rdfs:comment>May have an evaluative component as well as a feeling component. Needs discussing.</rdfs:comment>
     </owl:Class>
     
 
@@ -1358,9 +1369,8 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <!-- http://purl.obolibrary.org/obo/MFOEM_000117 -->
 
     <owl:Class rdf:about="&obo;MFOEM_000117">
-        <rdfs:label>feeling of strength</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
-        <obo:MFOEM_000016>The subjective feeling which represents the experienced strength of the person. </obo:MFOEM_000016>
+        <rdfs:label>becoming pale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000003"/>
     </owl:Class>
     
 
@@ -1369,7 +1379,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="&obo;MFOEM_000118">
         <rdfs:label>feeling strong</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000117"/>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
         <obo:MFOEM_000016>The subjective feeling of strength, capability, energy and capacity to do things. </obo:MFOEM_000016>
     </owl:Class>
     
@@ -1379,7 +1389,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="&obo;MFOEM_000119">
         <rdfs:label>feeling weak</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000117"/>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
         <obo:MFOEM_000016>The subjective feeling of weakness, lack of energy and/or capability, faintness, absence of strength. </obo:MFOEM_000016>
     </owl:Class>
     
@@ -1388,9 +1398,8 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <!-- http://purl.obolibrary.org/obo/MFOEM_000120 -->
 
     <owl:Class rdf:about="&obo;MFOEM_000120">
-        <rdfs:label>feeling wakefulness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
-        <obo:MFOEM_000016>The subjective feeling which represents the state of wakefulness of the person. </obo:MFOEM_000016>
+        <rdfs:label>experiencing a lump in the throat</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000003"/>
     </owl:Class>
     
 
@@ -1399,7 +1408,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="&obo;MFOEM_000121">
         <rdfs:label>feeling alert</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000120"/>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
         <obo:MFOEM_000016>The subjective feeling of being wide awake, alert, having active attention and perception. </obo:MFOEM_000016>
     </owl:Class>
     
@@ -1408,9 +1417,8 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <!-- http://purl.obolibrary.org/obo/MFOEM_000122 -->
 
     <owl:Class rdf:about="&obo;MFOEM_000122">
-        <rdfs:label>feeling positivity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
-        <obo:MFOEM_000016>The subjective feeling which represents the felt valence -- good / bad -- of the person.</obo:MFOEM_000016>
+        <rdfs:label xml:lang="en">experiencing discomfort in the stomach</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000003"/>
     </owl:Class>
     
 
@@ -1418,9 +1426,8 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <!-- http://purl.obolibrary.org/obo/MFOEM_000123 -->
 
     <owl:Class rdf:about="&obo;MFOEM_000123">
-        <rdfs:label>feeling relaxedness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
-        <obo:MFOEM_000016>The subjective feeling which represents how relaxed or not relaxed the person is. </obo:MFOEM_000016>
+        <rdfs:label>heart beating at slower rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000003"/>
     </owl:Class>
     
 
@@ -1429,7 +1436,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="&obo;MFOEM_000124">
         <rdfs:label>feeling nervous</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000123"/>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
         <obo:MFOEM_000016>The subjective feeling of being not at ease, of being anxious or nervous or agitated. </obo:MFOEM_000016>
     </owl:Class>
     
@@ -1574,6 +1581,242 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000139 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000139">
+        <rdfs:label>heart beating at faster rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000140 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000140">
+        <rdfs:label>muscles relaxing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000141 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000141">
+        <rdfs:label>muscles becoming tense</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000142 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000142">
+        <rdfs:label>breathing at a more rapid rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000143 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000143">
+        <rdfs:label>breathing at a slower rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000144 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000144">
+        <rdfs:label>temperature rising (experienced as feeling warm)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000145 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000145">
+        <rdfs:label>perspiring</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000146 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000146">
+        <rdfs:label>perspiring (hands)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000145"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000147 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000147">
+        <rdfs:label>perspiring (whole body)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000145"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000148 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000148">
+        <rdfs:label>experiencing heat in cheeks or chest</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000144"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000149 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000149">
+        <rdfs:label>experiencing warm sensation in whole body</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000144"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000150 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000150">
+        <rdfs:label>blushing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000151 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000151">
+        <rdfs:label>temperature falling (experienced as feeling cold)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000152 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000152">
+        <rdfs:label>speaking behaviour</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000004"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000153 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000153">
+        <rdfs:label>speaking loudly</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
+        <obo:MFOEM_000016>Speaking with a voice louder than usual. </obo:MFOEM_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000154 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000154">
+        <rdfs:label>speaking softly</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
+        <obo:MFOEM_000016>Speaking with a voice softer than usual.</obo:MFOEM_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000155 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000155">
+        <rdfs:label>speaking with trembling voice</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
+        <obo:MFOEM_000016>Speaking with a voice that is hesitant or trembling. </obo:MFOEM_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000156 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000156">
+        <rdfs:label>speaking assertively</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
+        <obo:MFOEM_000016>Speaking with a voice that is confident and assertive.</obo:MFOEM_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000157 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000157">
+        <rdfs:label>not speaking</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
+        <obo:MFOEM_000016>Remaining silent, not producing spoken utterances. </obo:MFOEM_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000158 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000158">
+        <rdfs:label>speaking a short utterance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
+        <obo:MFOEM_000016>Speaking behaviour in which a short utterance is produced.</obo:MFOEM_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000159 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000159">
+        <rdfs:label>speaking a long utterance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
+        <obo:MFOEM_000016>Speaking behaviour in which a long utterance is produced. </obo:MFOEM_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000160 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000160">
+        <rdfs:label>speaking with altered speech melody</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
+        <obo:MFOEM_000016>Speaking with an altered rhythm or melody of speech relative to the norm for that person. </obo:MFOEM_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000161 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000161">
+        <rdfs:label>Speaking in a manner which is disturbed relative to what is the norm for that person. </rdfs:label>
+        <rdfs:label>speaking in a disturbed fashion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000162 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000162">
+        <rdfs:label>speaking at a faster rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
+        <obo:MFOEM_000016>Speaking in a manner that is faster than the norm for that person.</obo:MFOEM_000016>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000163 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000163">
+        <rdfs:label>speaking at a slower rate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
+        <obo:MFOEM_000016>Speaking in a manner that is slower than the norm for that person. </obo:MFOEM_000016>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFO_0000015 -->
 
     <owl:Class rdf:about="&obo;MFO_0000015"/>
@@ -1619,5 +1862,5 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
 
 
-<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
 
