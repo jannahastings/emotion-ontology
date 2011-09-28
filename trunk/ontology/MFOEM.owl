@@ -135,12 +135,6 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFO#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFO#hasPart"/>
                 <owl:someValuesFrom rdf:resource="&obo;MFOEM_000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -148,6 +142,12 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFO#hasAgent"/>
                 <owl:someValuesFrom rdf:resource="&obo;MFO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MFO#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Definition: An emotion occurrent is a mental process that is a synchronized aggregate of constituent mental processes including an appraisal process as part, and which gives rise to an action tendency.</rdfs:comment>
