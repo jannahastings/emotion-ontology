@@ -53,9 +53,6 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:AnnotationProperty rdf:about="&obo;MFOEM_000010">
         <rdfs:label>synonym</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&obo;MFOEM_000016">
-        <rdfs:label>definition</rdfs:label>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     <owl:AnnotationProperty rdf:about="&dc;title"/>
@@ -135,7 +132,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFO#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000002"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -147,10 +144,10 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFO#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000004"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Definition: An emotion occurrent is a mental process that is a synchronized aggregate of constituent mental processes including an appraisal process as part, and which gives rise to an action tendency.</rdfs:comment>
+        <obo:IAO_0000115>An emotion occurrent is a mental process that is a synchronized aggregate of constituent mental processes including an appraisal process as part, and which gives rise to an action tendency.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -160,7 +157,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000002">
         <rdfs:label>appraisal process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFO_0000020"/>
-        <rdfs:comment>An appraisal process is a mental process that gives rise to an appraisal.</rdfs:comment>
+        <obo:IAO_0000115>An appraisal process is a mental process that gives rise to an appraisal.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -170,7 +167,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000003">
         <rdfs:label>physiological response to emotion process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFO_0000026"/>
-        <rdfs:comment>Definition: A physiological response to emotion process is a bodily process which encompasses all the neurophysiological changes caused by the appraisal, which take place in the central nervous system (CNS), neuro-endocrine system (NES) and autonomous nervous system (ANS).</rdfs:comment>
+        <obo:IAO_0000115>A physiological response to emotion process is a bodily process which encompasses all the neurophysiological changes caused by the appraisal, which take place in the central nervous system (CNS), neuro-endocrine system (NES) and autonomous nervous system (ANS).</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -180,8 +177,8 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000004">
         <rdfs:label>emotional behavioural process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFO_0000022"/>
-        <rdfs:comment>Definition: An emotional behavioural process is the behaviour of the organism in response to the appraisal, which includes the characteristic facial expressions for particular emotion types.</rdfs:comment>
-        <rdfs:comment>The definitions still need work in this branch. </rdfs:comment>
+        <rdfs:comment>This branch is still very much under construction and will be worked on in collaboration with the Behaviour Ontology (George Gkoutos). </rdfs:comment>
+        <obo:IAO_0000115>An emotional behavioural process is the behaviour of the organism in response to the appraisal, which includes the characteristic facial expressions for particular emotion types.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -197,7 +194,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 <owl:someValuesFrom rdf:resource="&obo;MFOEM_000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:MFOEM_000016>An appraisal is a cognitive representation which represents an evaluation of the relevance of some triggering object or event to the organism. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal is a cognitive representation which represents an evaluation of the relevance of some triggering object or event to the organism. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -207,7 +204,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000006">
         <rdfs:label>subjective emotional feeling</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFO_0000039"/>
-        <obo:MFOEM_000016>The subjective emotional feeling is an affective representation, that is, a representation that the organism has about its own affect.</obo:MFOEM_000016>
+        <obo:IAO_0000115>The subjective emotional feeling is an affective representation, that is, a representation that the organism has about its own affect.</obo:IAO_0000115>
         <rdfs:comment>Excluded the following subjective feelings which appear on the GRID questionnaire since they seem debatable to what extent they are really *feelings* and to what extent they are actually *evaluations* or other things:
 
 -- felt submissive/dominant
@@ -231,7 +228,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 <owl:someValuesFrom rdf:resource="&obo;MFO_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:MFOEM_000016>Emotional action tendencies are dispositions to behaviour which inhere in an organism by virtue of the physical changes brought about by an emotion process.</obo:MFOEM_000016>
+        <obo:IAO_0000115>Emotional action tendencies are dispositions to behaviour which inhere in an organism by virtue of the physical changes brought about by an emotion process.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -241,8 +238,8 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000009">
         <rdfs:label xml:lang="en">anger</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
-        <obo:MFOEM_000016>Anger is a negative emotion, characterised by feelings of unpleasantness and high arousal, in the form of antagonistic feelings and action tendencies. [Source: OCEAS]
-</obo:MFOEM_000016>
+        <obo:IAO_0000115>Anger is a negative emotion, characterised by feelings of unpleasantness and high arousal, in the form of antagonistic feelings and action tendencies. [Source: OCEAS]
+</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">wut</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">ira</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">colère</obo:MFOEM_000010>
@@ -255,7 +252,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000011">
         <rdfs:label>irritation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
-        <obo:MFOEM_000016>An unpleasant emotion closely related to anger but lower in intensity and without the moral dimension of blame and seriousness that is implicated in anger. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>An unpleasant emotion closely related to anger but lower in intensity and without the moral dimension of blame and seriousness that is implicated in anger. [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">Ärger</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">irritación</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">irritation</obo:MFOEM_000010>
@@ -295,7 +292,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000015">
         <rdfs:label>aggression</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000004"/>
-        <obo:MFOEM_000016>Any behaviour that is intended to harm another person who wants to avoid the harm. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>Any behaviour that is intended to harm another person who wants to avoid the harm. [Source: OCEAS]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -305,7 +302,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000017">
         <rdfs:label>violence</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000015"/>
-        <obo:MFOEM_000016>Violence is aggression that has extreme physical harm as its goal. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>Violence is aggression that has extreme physical harm as its goal. [Source: OCEAS]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -315,7 +312,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000018">
         <rdfs:label>contempt</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
-        <obo:MFOEM_000016>A negative emotion generally elicited by the negative evaluation of others and their actions. Usually elicited by violations of community codes. Closely related to anger and disgust. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>A negative emotion generally elicited by the negative evaluation of others and their actions. Usually elicited by violations of community codes. Closely related to anger and disgust. [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">verachtung</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">desprecio</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">mépris</obo:MFOEM_000010>
@@ -328,7 +325,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000019">
         <rdfs:label>disgust</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
-        <obo:MFOEM_000016>A negative emotion which guards the body against dangerous foods and microbial infections. The basic physiological disgust has also culturally evolved to incorporate moral disgust which protects the self from nonphysical threats such as moral violations.  [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>A negative emotion which guards the body against dangerous foods and microbial infections. The basic physiological disgust has also culturally evolved to incorporate moral disgust which protects the self from nonphysical threats such as moral violations.  [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">ekel</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">asco</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">dégoût</obo:MFOEM_000010>
@@ -341,7 +338,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000020">
         <rdfs:label>core disgust</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000019"/>
-        <obo:MFOEM_000016>Disgust elicited by &quot;contaminated&quot; food substances: rotten food, culturally variable &quot;bad&quot; food, certain animals associated with rotten food (maggots, rats), and every body product except tears. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>Disgust elicited by &quot;contaminated&quot; food substances: rotten food, culturally variable &quot;bad&quot; food, certain animals associated with rotten food (maggots, rats), and every body product except tears. [Source: OCEAS]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -351,7 +348,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000021">
         <rdfs:label>animal-nature disgust</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000019"/>
-        <obo:MFOEM_000016>Disgust elicited by poor hygeine, inappropriate sex, gore or violations of bodily boundaries, and death or the odor of decay. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>Disgust elicited by poor hygeine, inappropriate sex, gore or violations of bodily boundaries, and death or the odor of decay. [Source: OCEAS]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -361,7 +358,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000022">
         <rdfs:label>interpersonal disgust</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000019"/>
-        <obo:MFOEM_000016>Disgust elicited by contact with others, especially contact with strangers or other individuals or groups we are averse to. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>Disgust elicited by contact with others, especially contact with strangers or other individuals or groups we are averse to. [Source: OCEAS]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -371,7 +368,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000023">
         <rdfs:label>moral disgust</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000019"/>
-        <obo:MFOEM_000016>Disgust elicited by some kinds of especially egregious moral violations. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>Disgust elicited by some kinds of especially egregious moral violations. [Source: OCEAS]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -382,7 +379,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <rdfs:label>hate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
         <rdfs:comment>The linguistic use of the verb &#39;hate&#39; in English is ambiguous between registering any kind of aversion (e.g. in the sentence &#39;I hate spinach&#39;), and the much stronger meaning which is associated with descriptions of the emotion hatred. [Source: OCEAS]</rdfs:comment>
-        <obo:MFOEM_000016>A strong, negatively valenced emotion directed against a whole person for who or what they are. Often directed at whole groups based on religion, ethnicity, or race. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>A strong, negatively valenced emotion directed against a whole person for who or what they are. Often directed at whole groups based on religion, ethnicity, or race. [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">hass</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">odio</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">haine</obo:MFOEM_000010>
@@ -395,7 +392,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000025">
         <rdfs:label>jealousy</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
-        <obo:MFOEM_000016>A negative emotion aroused when a person feels threatened by a rival in his or her relationship with another individual, in particular an intimate partner. Involves feelings of threat, fear, suspicion, distrust, anxiety, anger, betrayal, and rejection. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>A negative emotion aroused when a person feels threatened by a rival in his or her relationship with another individual, in particular an intimate partner. Involves feelings of threat, fear, suspicion, distrust, anxiety, anger, betrayal, and rejection. [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">eifersucht</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">celos</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">jalousie</obo:MFOEM_000010>
@@ -408,7 +405,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000026">
         <rdfs:label>fear</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
-        <obo:MFOEM_000016>An activated, aversive emotion that motivates attempts to cope with events that provide threats to the survival or well-being of organisms. Characterised by feelings of threat and impending doom, and by an urge to get out of the situation. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>An activated, aversive emotion that motivates attempts to cope with events that provide threats to the survival or well-being of organisms. Characterised by feelings of threat and impending doom, and by an urge to get out of the situation. [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">angst</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">miedo</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">peur</obo:MFOEM_000010>
@@ -430,7 +427,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000028">
         <rdfs:label>anxiety</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
-        <obo:MFOEM_000016>A negative, aversive emotion provoked by the prospect of future threat. Distinguished from fear since it is triggered by a distal threat whereas fear is triggered by an immediate threat. Often gradual and long-lasting, whereas fear usually has sudden onset and offset.   [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>A negative, aversive emotion provoked by the prospect of future threat. Distinguished from fear since it is triggered by a distal threat whereas fear is triggered by an immediate threat. Often gradual and long-lasting, whereas fear usually has sudden onset and offset.   [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">besorgnis</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">ansiedad</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">anxiété</obo:MFOEM_000010>
@@ -443,7 +440,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000029">
         <rdfs:label>stress (emotion)</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
-        <obo:MFOEM_000016>A negative emotion in response to a stressful elicitor. May be acute or chronic.  Associated with health implications, such as impaired resistance to infectious diseases. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>A negative emotion in response to a stressful elicitor. May be acute or chronic.  Associated with health implications, such as impaired resistance to infectious diseases. [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">stress</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">estrés</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">stress</obo:MFOEM_000010>
@@ -456,7 +453,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000030">
         <rdfs:label>despair</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
-        <obo:MFOEM_000016>A negative, high intensity emotion characterised by loss of hope and loss of interest. Associated with action tendencies of harm to self or others. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>A negative, high intensity emotion characterised by loss of hope and loss of interest. Associated with action tendencies of harm to self or others. [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">verzweiflung</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">desesperación</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">désespoir</obo:MFOEM_000010>
@@ -470,7 +467,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <rdfs:label>crying</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000004"/>
         <rdfs:comment>Not sure whether this should be seen as a synonym for &#39;having tears in the eyes&#39; -- there probably need to be different degrees of crying. </rdfs:comment>
-        <obo:MFOEM_000016>A multimodal behaviour consisting of tears, non-verbal vocalisations (wails, sobs), and facial expressions of distress. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>A multimodal behaviour consisting of tears, non-verbal vocalisations (wails, sobs), and facial expressions of distress. [Source: OCEAS]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -480,7 +477,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000032">
         <rdfs:label>surprise</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
-        <obo:MFOEM_000016>Surprise is a neutral emotion caused by encountering unexpected events of all kinds. May be experienced as negative if the surprising event is evaluated as negative, or positive if the surprising event is evaluated as positive. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>Surprise is a neutral emotion caused by encountering unexpected events of all kinds. May be experienced as negative if the surprising event is evaluated as negative, or positive if the surprising event is evaluated as positive. [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">Überraschung</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">sorpresa</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">surprise</obo:MFOEM_000010>
@@ -493,7 +490,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000033">
         <rdfs:label>interest</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
-        <obo:MFOEM_000016>Interest is a positive emotion which motivates learning, exploration and curiosity. Feelings of interest are associated with the novelty and complexity of stimuli. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>Interest is a positive emotion which motivates learning, exploration and curiosity. Feelings of interest are associated with the novelty and complexity of stimuli. [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">interesse</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">interés</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">intérêt</obo:MFOEM_000010>
@@ -506,7 +503,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000034">
         <rdfs:label>joy</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000042"/>
-        <obo:MFOEM_000016>A pleasant, positive emotion which arises in safe and familiar circumstances, when people have made progress towards important personal goals, especially when the progress is better than expected. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>A pleasant, positive emotion which arises in safe and familiar circumstances, when people have made progress towards important personal goals, especially when the progress is better than expected. [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">freude</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">gozo</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">joie</obo:MFOEM_000010>
@@ -519,7 +516,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000035">
         <rdfs:label>pleasure</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
-        <obo:MFOEM_000016>A positively experienced emotion which is sought out (approached) and is associated with happiness, enjoyment, and satisfaction.  [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>A positively experienced emotion which is sought out (approached) and is associated with happiness, enjoyment, and satisfaction.  [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">vergnügen</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">placer</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">plaisir</obo:MFOEM_000010>
@@ -532,7 +529,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000036">
         <rdfs:label>sensory pleasure</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000035"/>
-        <obo:MFOEM_000016>Pleasure in smell, touch, sight, sound and taste. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>Pleasure in smell, touch, sight, sound and taste. [Source: OCEAS]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -542,7 +539,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000037">
         <rdfs:label>mastery pleasure</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000035"/>
-        <obo:MFOEM_000016>Pleasure derived from mastery, including the experience of flow. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>Pleasure derived from mastery, including the experience of flow. [Source: OCEAS]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -552,7 +549,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000038">
         <rdfs:label>social pleasure</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000035"/>
-        <obo:MFOEM_000016>Pleasure derived from social contact. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>Pleasure derived from social contact. [Source: OCEAS]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -580,7 +577,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000041">
         <rdfs:label>pride</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
-        <obo:MFOEM_000016>A positive emotion associated with the appraisal of one&#39;s positive social worth, a signal that one is likely to be socially accepted. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>A positive emotion associated with the appraisal of one&#39;s positive social worth, a signal that one is likely to be socially accepted. [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">stolz</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">orgullo</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">fierté</obo:MFOEM_000010>
@@ -593,7 +590,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000042">
         <rdfs:label>happiness</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
-        <obo:MFOEM_000016>A positive emotion which is experienced in reaction to a positive experience or event. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>A positive emotion which is experienced in reaction to a positive experience or event. [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">glück</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">felicidad</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">bonheur</obo:MFOEM_000010>
@@ -642,7 +639,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000047">
         <rdfs:label>contentment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000042"/>
-        <obo:MFOEM_000016>A pleasant emotion, which can be defined as a milder form of joy. Associated with physical inactivity (&#39;do nothing&#39; action tendencies). [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>A pleasant emotion, which can be defined as a milder form of joy. Associated with physical inactivity (&#39;do nothing&#39; action tendencies). [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">zufriedenheit</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">satisfacción</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">contentement</obo:MFOEM_000010>
@@ -655,7 +652,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000048">
         <rdfs:label>love</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
-        <obo:MFOEM_000016>A strong emotion associated with feelings of desire, warmth and intimacy for another person. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>A strong emotion associated with feelings of desire, warmth and intimacy for another person. [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">liebe</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">amor</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">amour</obo:MFOEM_000010>
@@ -668,7 +665,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000049">
         <rdfs:label>companionate love</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000048"/>
-        <obo:MFOEM_000016>Less intense, longer-lasting love which is characterised by affection, commitment, intimacy and a concern for the welfare of the loved one. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>Less intense, longer-lasting love which is characterised by affection, commitment, intimacy and a concern for the welfare of the loved one. [Source: OCEAS]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -678,7 +675,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000050">
         <rdfs:label>passionate love</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000048"/>
-        <obo:MFOEM_000016>A powerful longing for union with the beloved, characterised by a confusion of feelings -- elation and pain, tenderness and sexuality, altruism and jealousy.</obo:MFOEM_000016>
+        <obo:IAO_0000115>A powerful longing for union with the beloved, characterised by a confusion of feelings -- elation and pain, tenderness and sexuality, altruism and jealousy.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -688,7 +685,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000051">
         <rdfs:label>disappointment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
-        <obo:MFOEM_000016>Disappointment is a negative emotion which is triggered by the disconfirmation of the prospect of a desirable event. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>Disappointment is a negative emotion which is triggered by the disconfirmation of the prospect of a desirable event. [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">enttäuschung</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">desilusión</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">Déception</obo:MFOEM_000010>
@@ -702,7 +699,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <rdfs:label>compassion</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
         <obo:MFOEM_000010 xml:lang="de">mitgefühl</obo:MFOEM_000010>
-        <obo:MFOEM_000016 xml:lang="es">An emotion evoked for a person who is in distress. The conditions for compassion involve perceiving the other as in need, and valuing the other&#39;s welfare. Associated with altruistic motivation. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115 xml:lang="es">An emotion evoked for a person who is in distress. The conditions for compassion involve perceiving the other as in need, and valuing the other&#39;s welfare. Associated with altruistic motivation. [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="es">compasión</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">compassion</obo:MFOEM_000010>
     </owl:Class>
@@ -714,7 +711,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000053">
         <rdfs:label>guilt</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
-        <obo:MFOEM_000016>A self-conscious emotion that occurs when a person brings about a negative outcome by acts of commission or omission. Associated wtih violations of internal or external moral standards. Closely related to embarrassment and shame. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>A self-conscious emotion that occurs when a person brings about a negative outcome by acts of commission or omission. Associated wtih violations of internal or external moral standards. Closely related to embarrassment and shame. [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">schuld</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">culpa</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">culpabilité</obo:MFOEM_000010>
@@ -748,7 +745,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000056">
         <rdfs:label>sadness</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
-        <obo:MFOEM_000016>A negative emotion felt when an event is appraised as unpleasant, obstructive to one&#39;s goals and concerns, and one feels unable to cope with it or modify it. [Source: OCEAS]</obo:MFOEM_000016>
+        <obo:IAO_0000115>A negative emotion felt when an event is appraised as unpleasant, obstructive to one&#39;s goals and concerns, and one feels unable to cope with it or modify it. [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">trauer</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">tristeza</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">tristesse</obo:MFOEM_000010>
@@ -761,7 +758,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000057">
         <rdfs:label>appraisal of suddenness</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000005"/>
-        <obo:MFOEM_000016>An appraisal which represents an evaluation of how suddenly an event occurred. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal which represents an evaluation of how suddenly an event occurred. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -771,7 +768,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000058">
         <rdfs:label>appraisal of familiarity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000005"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation of how familiar an object or event is. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation of how familiar an object or event is. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -781,7 +778,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000059">
         <rdfs:label>appraisal of predictability</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000005"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation of how predictable an event was. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation of how predictable an event was. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -791,7 +788,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000060">
         <rdfs:label>appraisal of expectedness</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000005"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation of whether an event was expected to occur. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation of whether an event was expected to occur. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -802,7 +799,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <rdfs:label>appraisal of pleasantness</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000005"/>
         <rdfs:comment>GRID questionnaire distinguishes between appraisal of pleasantness FOR SELF and appraisal of pleasantness FOR SOME OTHER.  So far we have defined appraisal as evaluation of relevance FOR SELF, thus, we only include one appraisal of pleasantness (for the time being), although we may expand this later -- although I suspect that all or most of the appraisal types would have to be so qualified. </rdfs:comment>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation of the pleasantness of an object or event. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation of the pleasantness of an object or event. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -812,7 +809,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000062">
         <rdfs:label>appraisal as sudden</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000057"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an event occurred suddenly. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an event occurred suddenly. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -822,7 +819,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000063">
         <rdfs:label>appraisal as not sudden</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000057"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an event did not occur suddenly. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an event did not occur suddenly. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -832,7 +829,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000064">
         <rdfs:label>appraisal as familiar</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000058"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an object or event is familiar. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an object or event is familiar. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -842,7 +839,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000065">
         <rdfs:label>appraisal as not familiar</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000058"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an object or event is not familiar. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an object or event is not familiar. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -852,7 +849,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000066">
         <rdfs:label>appraisal as predictable</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000059"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an event was easy to predict. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an event was easy to predict. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -862,7 +859,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000067">
         <rdfs:label>appraisal as not predictable</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000059"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an event was not easy to predict. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an event was not easy to predict. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -872,7 +869,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000068">
         <rdfs:label>appraisal as expected</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000060"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an event was expected. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an event was expected. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -882,7 +879,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000069">
         <rdfs:label>appraisal as not expected</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000060"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an event was not expected.</obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an event was not expected.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -892,7 +889,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000070">
         <rdfs:label>appraisal as pleasant</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000061"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an object or event is pleasant.</obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an object or event is pleasant.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -902,7 +899,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000071">
         <rdfs:label>appraisal as unpleasant</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000061"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an object or event is unpleasant.</obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an object or event is unpleasant.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -912,8 +909,8 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000072">
         <rdfs:label>appraisal of goal importance</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000005"/>
-        <rdfs:comment>An appraisal that represents an evaluation of whether an event or object is important to the person&#39;s goals or needs. </rdfs:comment>
         <rdfs:comment>Like pleasantness, the GRID questionnaire distinguishes between evaluations of goal importance/relevance for SELF and for an OTHER. </rdfs:comment>
+        <obo:IAO_0000115>An appraisal that represents an evaluation of whether an event or object is important to the person&#39;s goals or needs. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -923,7 +920,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000073">
         <rdfs:label>evaluation as important to goals</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000072"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that the event or object is important to the person&#39;s goals or needs. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that the event or object is important to the person&#39;s goals or needs. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -933,7 +930,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000074">
         <rdfs:label>evaluation as not important to goals</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000072"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that the event or object is not important to the person&#39;s goals or needs. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that the event or object is not important to the person&#39;s goals or needs. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -943,7 +940,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000075">
         <rdfs:label>appraisal of causal agency</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000005"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation of who or what caused an event. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation of who or what caused an event. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -953,7 +950,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000076">
         <rdfs:label>appraisal as caused by self</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000075"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an event was caused by the self. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an event was caused by the self. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -963,7 +960,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000077">
         <rdfs:label>appraisal as caused by chance</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000075"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an event was caused by chance. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an event was caused by chance. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -973,7 +970,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000078">
         <rdfs:label>appraisal as caused by an other</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000075"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an event was caused by another person.</obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an event was caused by another person.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -984,7 +981,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <rdfs:label>feeling good</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
         <obo:MFOEM_000010>feeling positive</obo:MFOEM_000010>
-        <obo:MFOEM_000016>The subjective emotional feeling of feeling good, positive.  </obo:MFOEM_000016>
+        <obo:IAO_0000115>The subjective emotional feeling of feeling good, positive.  </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -994,7 +991,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000080">
         <rdfs:label>feeling tired</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
-        <obo:MFOEM_000016>The subjective emotional feeling of tiredness, needing sleep.</obo:MFOEM_000016>
+        <obo:IAO_0000115>The subjective emotional feeling of tiredness, needing sleep.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1004,7 +1001,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000081">
         <rdfs:label>appraisal as caused supernaturally</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000075"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an event was caused by a supernatural agent (God, the ancestors, ghosts...).</obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an event was caused by a supernatural agent (God, the ancestors, ghosts...).</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1014,7 +1011,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000082">
         <rdfs:label>appraisal of causal intent</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000005"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation of the causal intent of the person who (is evaluated to have) caused an event.</obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation of the causal intent of the person who (is evaluated to have) caused an event.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1024,7 +1021,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000083">
         <rdfs:label>appraisal as deliberate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000082"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an event was deliberately (intentionally) caused. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an event was deliberately (intentionally) caused. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1034,7 +1031,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000084">
         <rdfs:label>appraisal as unintended</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000082"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an event was caused unintentionally.</obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an event was caused unintentionally.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1044,8 +1041,8 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000085">
         <rdfs:label>appraisal of desirability of consequences</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000005"/>
+        <obo:IAO_0000115>An appraisal that represents an evaluation of the desirability of the expected consequences of an event. </obo:IAO_0000115>
         <rdfs:comment>Distinguished in GRID questionnaire between FOR SELF and FOR OTHER. </rdfs:comment>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation of the desirability of the expected consequences of an event. </obo:MFOEM_000016>
     </owl:Class>
     
 
@@ -1055,7 +1052,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000086">
         <rdfs:label>appraisal as desirable consequences</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000085"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that the expected consequences of an event are desirable. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that the expected consequences of an event are desirable. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1065,7 +1062,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000087">
         <rdfs:label>appraisal as undesirable consequences</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000085"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that the expected consequences of an event are undesirable. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that the expected consequences of an event are undesirable. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1075,7 +1072,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000088">
         <rdfs:label>appraisal of urgency of response</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000005"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation of the urgency of responding to an event. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation of the urgency of responding to an event. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1085,7 +1082,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000089">
         <rdfs:label>appraisal as urgent response</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000088"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an event requires an urgent (immediate) response. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an event requires an urgent (immediate) response. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1095,7 +1092,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000090">
         <rdfs:label>appraisal as not urgent response</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000088"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an event does not require an urgent response. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an event does not require an urgent response. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1105,7 +1102,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000091">
         <rdfs:label>appraisal of avoidability of consequences</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000005"/>
-        <obo:MFOEM_000016>An appraisal which represents a judgement about how avoidable the expected consequences of an event will be. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal which represents a judgement about how avoidable the expected consequences of an event will be. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1115,7 +1112,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000092">
         <rdfs:label>appraisal as avoidable consequences</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000091"/>
-        <obo:MFOEM_000016>An appraisal that represents a judgement that the expected consequences of an event are in principle avoidable or modfiable. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents a judgement that the expected consequences of an event are in principle avoidable or modfiable. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1125,7 +1122,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000093">
         <rdfs:label>appraisal as unavoidable consequences</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000091"/>
-        <obo:MFOEM_000016>An appraisal that represents a judgement that the expected consequences of an event will be difficult to avoid or modify. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents a judgement that the expected consequences of an event will be difficult to avoid or modify. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1136,7 +1133,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <rdfs:label>appraisal of congruence with ideals</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000005"/>
         <rdfs:comment>May want to distinguish violation of &#39;standards&#39; from that of &#39;ideals&#39;, &#39;norms&#39; and &#39;laws&#39;. At the moment they are all lumped together. </rdfs:comment>
-        <obo:MFOEM_000016>An appraisal which represents a judgement about whether an event is consistent with the person&#39;s standards or ideals. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal which represents a judgement about whether an event is consistent with the person&#39;s standards or ideals. </obo:IAO_0000115>
         <rdfs:comment>Can also be defined FOR SELF and FOR OTHER, where a special case of OTHER is &#39;society&#39; (=&gt; a judgement that an event violated laws or socially accepted norms)</rdfs:comment>
     </owl:Class>
     
@@ -1147,7 +1144,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000095">
         <rdfs:label>appraisal as congruent with ideals</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000094"/>
-        <obo:MFOEM_000016>An appraisal which represents a judgement that an event is consistent with the person&#39;s standards or ideals.</obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal which represents a judgement that an event is consistent with the person&#39;s standards or ideals.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1157,7 +1154,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000096">
         <rdfs:label>appraisal as not congruent with ideals</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000094"/>
-        <obo:MFOEM_000016>An appraisal that represents a judgement that an event is inconsistent with a person&#39;s standards or ideals. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents a judgement that an event is inconsistent with a person&#39;s standards or ideals. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1167,7 +1164,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000097">
         <rdfs:label>appraisal of social attention</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000005"/>
-        <obo:MFOEM_000016>An appraisal which represents a judgement about the direction and nature of the social attention surrounding an event. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal which represents a judgement about the direction and nature of the social attention surrounding an event. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1177,7 +1174,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000098">
         <rdfs:label>appraisal as being at the centre of attention</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000097"/>
-        <obo:MFOEM_000016>An appraisal which represents a judgement that the person is at the centre of the surrounding social attention. (That is, that all other nearby persons are paying attention to him/her.)</obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal which represents a judgement that the person is at the centre of the surrounding social attention. (That is, that all other nearby persons are paying attention to him/her.)</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1187,7 +1184,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000099">
         <rdfs:label>appraisal as not being at the centre of attention</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000097"/>
-        <obo:MFOEM_000016>An appraisal that represents a judgement that a person is not at the centre of the surrounding social attention. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents a judgement that a person is not at the centre of the surrounding social attention. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1197,7 +1194,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000100">
         <rdfs:label>appraisal of justice of treatment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000005"/>
-        <obo:MFOEM_000016>Appraisal which represents an evaluation of whether the person was treated justly or unjustly by another person. </obo:MFOEM_000016>
+        <obo:IAO_0000115>Appraisal which represents an evaluation of whether the person was treated justly or unjustly by another person. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1207,7 +1204,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000101">
         <rdfs:label>appraisal as just treatment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000100"/>
-        <obo:MFOEM_000016>An appraisal which represents an evaluation that the person was treated justly by another person. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal which represents an evaluation that the person was treated justly by another person. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1217,7 +1214,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000102">
         <rdfs:label>appraisal as unjust treatment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000100"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that the person was treated unjustly by another person. (Injustice.) </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that the person was treated unjustly by another person. (Injustice.) </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1227,7 +1224,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000103">
         <rdfs:label>appraisal of dangerousness</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000005"/>
-        <obo:MFOEM_000016>An appraisal which represents an evaluation of the dangerousness of an object or situation. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal which represents an evaluation of the dangerousness of an object or situation. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1237,7 +1234,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000104">
         <rdfs:label>appraisal as dangerous</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000103"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an object or situation is dangerous to the person. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an object or situation is dangerous to the person. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1247,7 +1244,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000105">
         <rdfs:label>appraisal as not dangerous</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000103"/>
-        <obo:MFOEM_000016>An appraisal that represents an evaluation that an object or situation is not dangerous to the person. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an object or situation is not dangerous to the person. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1257,10 +1254,10 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000106">
         <rdfs:label>appraisal of loss</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000005"/>
-        <obo:MFOEM_000016>An appraisal that represents a belief that something or someone that is important to the person has been lost to the person. </obo:MFOEM_000016>
         <rdfs:comment>This appraisal category stands alone:  appraisal of loss is not a continuum like the others (pleasant---unpleasant; expected---unexpected).  Rather it is quite discrete, loss or no loss, and is better defined by WHAT has been lost, or at least, in which relation the thing that has been lost stands to the person experiencing the emotion.  Loss of a loved person, loss of the expectation of achieving a hoped for life goal, and loss of a limb are all kinds of loss.  
 
 While it is tempting not to categorise this as an appraisal at all, it should be noted that the loss does not actually have to occur -- it only has to be believed, judged, or (in other words) appraised to have occurred -- for the emotion to take place. </rdfs:comment>
+        <obo:IAO_0000115>An appraisal that represents a belief that something or someone that is important to the person has been lost to the person. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1270,7 +1267,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000107">
         <rdfs:label>feeling at ease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
-        <obo:MFOEM_000016>The subjective emotional feeling of being at ease, comfortable, relaxed. </obo:MFOEM_000016>
+        <obo:IAO_0000115>The subjective emotional feeling of being at ease, comfortable, relaxed. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1280,7 +1277,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000108">
         <rdfs:label>feeling bad</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
-        <obo:MFOEM_000016>The subjective emotional feeling of feeling bad, negative.</obo:MFOEM_000016>
+        <obo:IAO_0000115>The subjective emotional feeling of feeling bad, negative.</obo:IAO_0000115>
         <obo:MFOEM_000010>feeling negative</obo:MFOEM_000010>
     </owl:Class>
     
@@ -1291,7 +1288,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000109">
         <rdfs:label>feeling energetic</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
-        <obo:MFOEM_000016>The subjective emotional feeling of having lots of energy, being energetic. </obo:MFOEM_000016>
+        <obo:IAO_0000115>The subjective emotional feeling of having lots of energy, being energetic. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1301,7 +1298,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000110">
         <rdfs:label>feeling in control</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
-        <obo:MFOEM_000016>The subjective emotional feeling that one is in control of oneself, that one is fully the agent of one&#39;s behavior. </obo:MFOEM_000016>
+        <obo:IAO_0000115>The subjective emotional feeling that one is in control of oneself, that one is fully the agent of one&#39;s behavior. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1311,7 +1308,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000111">
         <rdfs:label>feeling restless</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
-        <obo:MFOEM_000016>The subjective emotional feeling of restlessness, a state of not being calm, of an agitation to do something. </obo:MFOEM_000016>
+        <obo:IAO_0000115>The subjective emotional feeling of restlessness, a state of not being calm, of an agitation to do something. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1321,7 +1318,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000112">
         <rdfs:label>feeling exhausted</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000080"/>
-        <obo:MFOEM_000016>The subjective emotional feeling of exhaustion, an extremely strong form of feeling tired. </obo:MFOEM_000016>
+        <obo:IAO_0000115>The subjective emotional feeling of exhaustion, an extremely strong form of feeling tired. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1331,7 +1328,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000113">
         <rdfs:label>shivering</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000003"/>
-        <obo:MFOEM_000016></obo:MFOEM_000016>
+        <obo:IAO_0000115></obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1341,7 +1338,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000114">
         <rdfs:label>feeling calm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
-        <obo:MFOEM_000016>The subjective feeling of being calm, being relaxed, being at peace. </obo:MFOEM_000016>
+        <obo:IAO_0000115>The subjective feeling of being calm, being relaxed, being at peace. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1360,7 +1357,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000116">
         <rdfs:label>feeling out of control</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
-        <obo:MFOEM_000016>The subjective feeling of not being in control, not being able to gain agency of one&#39;s own behavior. </obo:MFOEM_000016>
+        <obo:IAO_0000115>The subjective feeling of not being in control, not being able to gain agency of one&#39;s own behavior. </obo:IAO_0000115>
         <rdfs:comment>May have an evaluative component as well as a feeling component. Needs discussing.</rdfs:comment>
     </owl:Class>
     
@@ -1380,7 +1377,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000118">
         <rdfs:label>feeling strong</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
-        <obo:MFOEM_000016>The subjective feeling of strength, capability, energy and capacity to do things. </obo:MFOEM_000016>
+        <obo:IAO_0000115>The subjective feeling of strength, capability, energy and capacity to do things. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1390,7 +1387,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000119">
         <rdfs:label>feeling weak</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
-        <obo:MFOEM_000016>The subjective feeling of weakness, lack of energy and/or capability, faintness, absence of strength. </obo:MFOEM_000016>
+        <obo:IAO_0000115>The subjective feeling of weakness, lack of energy and/or capability, faintness, absence of strength. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1409,7 +1406,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000121">
         <rdfs:label>feeling alert</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
-        <obo:MFOEM_000016>The subjective feeling of being wide awake, alert, having active attention and perception. </obo:MFOEM_000016>
+        <obo:IAO_0000115>The subjective feeling of being wide awake, alert, having active attention and perception. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1437,7 +1434,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000124">
         <rdfs:label>feeling nervous</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000006"/>
-        <obo:MFOEM_000016>The subjective feeling of being not at ease, of being anxious or nervous or agitated. </obo:MFOEM_000016>
+        <obo:IAO_0000115>The subjective feeling of being not at ease, of being anxious or nervous or agitated. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1445,9 +1442,9 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <!-- http://purl.obolibrary.org/obo/MFOEM_000125 -->
 
     <owl:Class rdf:about="&obo;MFOEM_000125">
-        <rdfs:label>facial expression behaviour</rdfs:label>
+        <rdfs:label>emotional facial expression behaviour</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000004"/>
-        <obo:MFOEM_000016>An emotional behavioural process that involves a change in the expression of the face. </obo:MFOEM_000016>
+        <obo:IAO_0000115>An emotional behavioural process that involves a change in the expression of the face. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1457,7 +1454,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000126">
         <rdfs:label>smiling</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000125"/>
-        <obo:MFOEM_000016>A facial expression behaviour in which the person smiles. </obo:MFOEM_000016>
+        <obo:IAO_0000115>A facial expression behaviour in which the person smiles. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1467,7 +1464,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000127">
         <rdfs:label>jaw dropping</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000125"/>
-        <obo:MFOEM_000016>A facial expression behaviour in which the jaw drops.</obo:MFOEM_000016>
+        <obo:IAO_0000115>A facial expression behaviour in which the jaw drops.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1477,7 +1474,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000128">
         <rdfs:label>pressing lips together</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000125"/>
-        <obo:MFOEM_000016>A facial expression behaviour in which the lips are tightly pressed together. </obo:MFOEM_000016>
+        <obo:IAO_0000115>A facial expression behaviour in which the lips are tightly pressed together. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1487,7 +1484,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000129">
         <rdfs:label>raising eyebrows</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000125"/>
-        <obo:MFOEM_000016>A facial expression behaviour in which the eyebrows are raised. </obo:MFOEM_000016>
+        <obo:IAO_0000115>A facial expression behaviour in which the eyebrows are raised. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1497,7 +1494,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000130">
         <rdfs:label>frowning</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000125"/>
-        <obo:MFOEM_000016>A facial expression behaviour in which the person frowns. </obo:MFOEM_000016>
+        <obo:IAO_0000115>A facial expression behaviour in which the person frowns. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1507,7 +1504,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000131">
         <rdfs:label>closing eyes</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000125"/>
-        <obo:MFOEM_000016>A facial expression behaviour in which the eyes are closed. </obo:MFOEM_000016>
+        <obo:IAO_0000115>A facial expression behaviour in which the eyes are closed. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1517,7 +1514,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000132">
         <rdfs:label>opening eyes widely</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000125"/>
-        <obo:MFOEM_000016>A facial expression behaviour in which the eyes are opened widely. </obo:MFOEM_000016>
+        <obo:IAO_0000115>A facial expression behaviour in which the eyes are opened widely. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1527,7 +1524,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000133">
         <rdfs:label>neutral expression</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000125"/>
-        <obo:MFOEM_000016>A facial expression behaviour which appears very neutral (showing no expression). </obo:MFOEM_000016>
+        <obo:IAO_0000115>A facial expression behaviour which appears very neutral (showing no expression). </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1535,7 +1532,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <!-- http://purl.obolibrary.org/obo/MFOEM_000134 -->
 
     <owl:Class rdf:about="&obo;MFOEM_000134">
-        <rdfs:label>bodily movement behaviour</rdfs:label>
+        <rdfs:label>emotional bodily movement behaviour</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000004"/>
     </owl:Class>
     
@@ -1546,7 +1543,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000135">
         <rdfs:label>moving abruptly</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000134"/>
-        <obo:MFOEM_000016>A bodily movement behaviour which involves abrupt movements.</obo:MFOEM_000016>
+        <obo:IAO_0000115>A bodily movement behaviour which involves abrupt movements.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1556,7 +1553,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000136">
         <rdfs:label>moving towards people</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000134"/>
-        <obo:MFOEM_000016>A bodily movement behaviour which involves moving, or leaning, towards people (approach).</obo:MFOEM_000016>
+        <obo:IAO_0000115>A bodily movement behaviour which involves moving, or leaning, towards people (approach).</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1566,7 +1563,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000137">
         <rdfs:label>moving away from people</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000134"/>
-        <obo:MFOEM_000016>A bodily movement behaviour which involves moving, or leaning, away from people (avoidance). </obo:MFOEM_000016>
+        <obo:IAO_0000115>A bodily movement behaviour which involves moving, or leaning, away from people (avoidance). </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1576,7 +1573,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000138">
         <rdfs:label>staying still</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000134"/>
-        <obo:MFOEM_000016>A bodily movement behaviour which involves remaining still. </obo:MFOEM_000016>
+        <obo:IAO_0000115>A bodily movement behaviour which involves remaining still. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1701,7 +1698,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <!-- http://purl.obolibrary.org/obo/MFOEM_000152 -->
 
     <owl:Class rdf:about="&obo;MFOEM_000152">
-        <rdfs:label>speaking behaviour</rdfs:label>
+        <rdfs:label>emotional speaking behaviour</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000004"/>
     </owl:Class>
     
@@ -1712,7 +1709,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000153">
         <rdfs:label>speaking loudly</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
-        <obo:MFOEM_000016>Speaking with a voice louder than usual. </obo:MFOEM_000016>
+        <obo:IAO_0000115>Speaking with a voice louder than usual. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1722,7 +1719,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000154">
         <rdfs:label>speaking softly</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
-        <obo:MFOEM_000016>Speaking with a voice softer than usual.</obo:MFOEM_000016>
+        <obo:IAO_0000115>Speaking with a voice softer than usual.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1732,7 +1729,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000155">
         <rdfs:label>speaking with trembling voice</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
-        <obo:MFOEM_000016>Speaking with a voice that is hesitant or trembling. </obo:MFOEM_000016>
+        <obo:IAO_0000115>Speaking with a voice that is hesitant or trembling. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1742,7 +1739,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000156">
         <rdfs:label>speaking assertively</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
-        <obo:MFOEM_000016>Speaking with a voice that is confident and assertive.</obo:MFOEM_000016>
+        <obo:IAO_0000115>Speaking with a voice that is confident and assertive.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1752,7 +1749,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000157">
         <rdfs:label>not speaking</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
-        <obo:MFOEM_000016>Remaining silent, not producing spoken utterances. </obo:MFOEM_000016>
+        <obo:IAO_0000115>Remaining silent, not producing spoken utterances. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1762,7 +1759,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000158">
         <rdfs:label>speaking a short utterance</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
-        <obo:MFOEM_000016>Speaking behaviour in which a short utterance is produced.</obo:MFOEM_000016>
+        <obo:IAO_0000115>Speaking behaviour in which a short utterance is produced.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1772,7 +1769,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000159">
         <rdfs:label>speaking a long utterance</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
-        <obo:MFOEM_000016>Speaking behaviour in which a long utterance is produced. </obo:MFOEM_000016>
+        <obo:IAO_0000115>Speaking behaviour in which a long utterance is produced. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1782,7 +1779,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000160">
         <rdfs:label>speaking with altered speech melody</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
-        <obo:MFOEM_000016>Speaking with an altered rhythm or melody of speech relative to the norm for that person. </obo:MFOEM_000016>
+        <obo:IAO_0000115>Speaking with an altered rhythm or melody of speech relative to the norm for that person. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1802,7 +1799,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000162">
         <rdfs:label>speaking at a faster rate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
-        <obo:MFOEM_000016>Speaking in a manner that is faster than the norm for that person.</obo:MFOEM_000016>
+        <obo:IAO_0000115>Speaking in a manner that is faster than the norm for that person.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1812,7 +1809,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000163">
         <rdfs:label>speaking at a slower rate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
-        <obo:MFOEM_000016>Speaking in a manner that is slower than the norm for that person. </obo:MFOEM_000016>
+        <obo:IAO_0000115>Speaking in a manner that is slower than the norm for that person. </obo:IAO_0000115>
     </owl:Class>
     
 
