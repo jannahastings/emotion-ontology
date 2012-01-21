@@ -49,6 +49,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="&dc;contributor"/>
     <owl:AnnotationProperty rdf:about="&obo;MFOEM_000010">
         <rdfs:label>synonym</rdfs:label>
@@ -89,21 +90,21 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFO#hasAgent -->
+    <!-- http://purl.obolibrary.org/obo/MF#hasAgent -->
 
-    <owl:ObjectProperty rdf:about="&obo;MFO#hasAgent"/>
+    <owl:ObjectProperty rdf:about="&obo;MF#hasAgent"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFO#hasPart -->
+    <!-- http://purl.obolibrary.org/obo/MF#hasPart -->
 
-    <owl:ObjectProperty rdf:about="&obo;MFO#hasPart"/>
+    <owl:ObjectProperty rdf:about="&obo;MF#hasPart"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFO#inheresIn -->
+    <!-- http://purl.obolibrary.org/obo/MF#inheresIn -->
 
-    <owl:ObjectProperty rdf:about="&obo;MFO#inheresIn"/>
+    <owl:ObjectProperty rdf:about="&obo;MF#inheresIn"/>
     
 
 
@@ -122,29 +123,29 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="&obo;MFOEM_000001">
         <rdfs:label>emotion occurrent</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFO_0000020"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFO#hasPart"/>
+                <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MF#hasAgent"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
                 <owl:someValuesFrom rdf:resource="&obo;MFOEM_000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFO#hasPart"/>
+                <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
                 <owl:someValuesFrom rdf:resource="&obo;MFOEM_000004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFO#hasAgent"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFO_0000015"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFO#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An emotion occurrent is a mental process that is a synchronized aggregate of constituent mental processes including an appraisal process as part, and which gives rise to an action tendency.</obo:IAO_0000115>
@@ -156,7 +157,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="&obo;MFOEM_000002">
         <rdfs:label>appraisal process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFO_0000020"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
         <obo:IAO_0000115>An appraisal process is a mental process that gives rise to an appraisal.</obo:IAO_0000115>
     </owl:Class>
     
@@ -166,7 +167,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="&obo;MFOEM_000003">
         <rdfs:label>physiological response to emotion process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFO_0000026"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000026"/>
         <obo:IAO_0000115>A physiological response to emotion process is a bodily process which encompasses all the neurophysiological changes caused by the appraisal, which take place in the central nervous system (CNS), neuro-endocrine system (NES) and autonomous nervous system (ANS).</obo:IAO_0000115>
     </owl:Class>
     
@@ -176,7 +177,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="&obo;MFOEM_000004">
         <rdfs:label>emotional behavioural process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFO_0000022"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000022"/>
         <rdfs:comment>This branch is still very much under construction and will be worked on in collaboration with the Behaviour Ontology (George Gkoutos). </rdfs:comment>
         <obo:IAO_0000115>An emotional behavioural process is the behaviour of the organism in response to the appraisal, which includes the characteristic facial expressions for particular emotion types.</obo:IAO_0000115>
     </owl:Class>
@@ -187,7 +188,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="&obo;MFOEM_000005">
         <rdfs:label>appraisal</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFO_0000031"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000031"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MFOEM_000008"/>
@@ -203,7 +204,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="&obo;MFOEM_000006">
         <rdfs:label>subjective emotional feeling</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFO_0000039"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000039"/>
         <obo:IAO_0000115>The subjective emotional feeling is an affective representation, that is, a representation that the organism has about its own affect.</obo:IAO_0000115>
         <rdfs:comment>Excluded the following subjective feelings which appear on the GRID questionnaire since they seem debatable to what extent they are really *feelings* and to what extent they are actually *evaluations* or other things:
 
@@ -224,8 +225,8 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <rdfs:subClassOf rdf:resource="&snap;Disposition"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MFO#inheresIn"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFO_0000015"/>
+                <owl:onProperty rdf:resource="&obo;MF#inheresIn"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Emotional action tendencies are dispositions to behaviour which inhere in an organism by virtue of the physical changes brought about by an emotion process.</obo:IAO_0000115>
@@ -1814,41 +1815,41 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFO_0000015 -->
+    <!-- http://purl.obolibrary.org/obo/MF_0000015 -->
 
-    <owl:Class rdf:about="&obo;MFO_0000015"/>
+    <owl:Class rdf:about="&obo;MF_0000015"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFO_0000020 -->
+    <!-- http://purl.obolibrary.org/obo/MF_0000020 -->
 
-    <owl:Class rdf:about="&obo;MFO_0000020"/>
+    <owl:Class rdf:about="&obo;MF_0000020"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFO_0000022 -->
+    <!-- http://purl.obolibrary.org/obo/MF_0000022 -->
 
-    <owl:Class rdf:about="&obo;MFO_0000022">
+    <owl:Class rdf:about="&obo;MF_0000022">
         <rdfs:comment>Note:  The &#39;Behavior&#39; branch here will most likely be superceded by the Neuro Behavior Ontology (NBO) being developed by George Gkoutos and Chris Mungall. </rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFO_0000026 -->
+    <!-- http://purl.obolibrary.org/obo/MF_0000026 -->
 
-    <owl:Class rdf:about="&obo;MFO_0000026"/>
+    <owl:Class rdf:about="&obo;MF_0000026"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFO_0000031 -->
+    <!-- http://purl.obolibrary.org/obo/MF_0000031 -->
 
-    <owl:Class rdf:about="&obo;MFO_0000031"/>
+    <owl:Class rdf:about="&obo;MF_0000031"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFO_0000039 -->
+    <!-- http://purl.obolibrary.org/obo/MF_0000039 -->
 
-    <owl:Class rdf:about="&obo;MFO_0000039"/>
+    <owl:Class rdf:about="&obo;MF_0000039"/>
     
 
 
