@@ -300,6 +300,16 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000016 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000016">
+        <rdfs:label>grief</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
+        <obo:IAO_0000115>Grief is an intense negative emotion following a bereavement, i.e. the loss of a significant person through that person&#39;s death. [Source: OCEAS]</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFOEM_000017 -->
 
     <owl:Class rdf:about="&obo;MFOEM_000017">
