@@ -123,7 +123,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <!-- http://purl.obolibrary.org/obo/MFOEM_000001 -->
 
     <owl:Class rdf:about="&obo;MFOEM_000001">
-        <rdfs:label>emotion (process)</rdfs:label>
+        <rdfs:label>emotion process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
         <rdfs:subClassOf>
             <owl:Restriction>
