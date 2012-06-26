@@ -123,12 +123,12 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <!-- http://purl.obolibrary.org/obo/MFOEM_000001 -->
 
     <owl:Class rdf:about="&obo;MFOEM_000001">
-        <rdfs:label>emotion occurrent</rdfs:label>
+        <rdfs:label>emotion (process)</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000002"/>
+                <owl:onProperty rdf:resource="&obo;MF#hasAgent"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -145,11 +145,11 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#hasAgent"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000015"/>
+                <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An emotion occurrent is a mental process that is a synchronized aggregate of constituent mental processes including an appraisal process as part, and which gives rise to an action tendency.</obo:IAO_0000115>
+        <obo:IAO_0000115>An emotion process is a complex mental process that is a synchronized aggregate of constituent mental processes including an appraisal process as part, and which gives rise to an action tendency.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -168,7 +168,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="&obo;MFOEM_000003">
         <rdfs:label>physiological response to emotion process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000026"/>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000060"/>
         <obo:IAO_0000115>A physiological response to emotion process is a bodily process which encompasses all the neurophysiological changes caused by the appraisal, which take place in the central nervous system (CNS), neuro-endocrine system (NES) and autonomous nervous system (ANS).</obo:IAO_0000115>
     </owl:Class>
     
@@ -223,11 +223,11 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="&obo;MFOEM_000007">
         <rdfs:label>emotional action tendency</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;Disposition"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MF#inheresIn"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000015"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An emotional action tendency is a disposition to behaviour that inheres in an organism by virtue of the physical changes brought about by an emotion process.</obo:IAO_0000115>
@@ -1836,12 +1836,6 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MF_0000015 -->
-
-    <owl:Class rdf:about="&obo;MF_0000015"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MF_0000020 -->
 
     <owl:Class rdf:about="&obo;MF_0000020"/>
@@ -1856,12 +1850,6 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MF_0000026 -->
-
-    <owl:Class rdf:about="&obo;MF_0000026"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MF_0000031 -->
 
     <owl:Class rdf:about="&obo;MF_0000031"/>
@@ -1871,12 +1859,6 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <!-- http://purl.obolibrary.org/obo/MF_0000039 -->
 
     <owl:Class rdf:about="&obo;MF_0000039"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#Disposition -->
-
-    <owl:Class rdf:about="&snap;Disposition"/>
 </rdf:RDF>
 
 
