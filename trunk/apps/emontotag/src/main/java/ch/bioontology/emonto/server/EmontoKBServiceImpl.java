@@ -1,12 +1,8 @@
 package ch.bioontology.emonto.server;
 
-import ch.bioontology.emonto.client.EmontoKBService;
 import ch.bioontology.emonto.shared.EmontoTerm;
 
-import com.google.gwt.user.server.rpc.RemoteServiceServlet;
-
-public class EmontoKBServiceImpl extends RemoteServiceServlet implements
-		EmontoKBService {
+public class EmontoKBServiceImpl  {
 	
 	public void initializeKB() {
 		//TODO pass error handling back to client!
