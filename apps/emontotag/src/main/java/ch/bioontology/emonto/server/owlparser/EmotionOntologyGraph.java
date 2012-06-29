@@ -1,6 +1,6 @@
 package ch.bioontology.emonto.server.owlparser;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.semanticweb.owlapi.model.OWLOntology;
@@ -11,21 +11,19 @@ import owltools.graph.OWLGraphWrapper;
 
 public class EmotionOntologyGraph extends OWLGraphWrapper {
 
-	private List<String> roots = new ArrayList<String>();
+	public static final String ROOT_EMOTION = "MFOEM:000001";
+	public static final String ROOT_FEELING = "MFOEM:000006";
+	public static final String ROOT_THOUGHT = "MFOEM:000005";
 	
 	public EmotionOntologyGraph(OWLOntology ontology)
 			throws UnknownOWLOntologyException, OWLOntologyCreationException {
 		super(ontology);
 				
-		roots.add("MFOEM:000001"); // emotion occurrent
-		
-
-		
 	}
 
 	
 	public List<String> getRoots() {
-		return roots;
+		return Arrays.asList(new String[] {ROOT_EMOTION, ROOT_FEELING, ROOT_THOUGHT});
 	}
 	
 }
