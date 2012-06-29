@@ -12,15 +12,17 @@ public class EmontoTerm implements Serializable {
 	private String id;
 	private String label;
 	private String definition;
+	private String tagLabel;
 	
 	public EmontoTerm() {
 		
 	}
 	
-	public EmontoTerm(String id, String label, String definition) {
+	public EmontoTerm(String id, String label, String definition, String tagLabel) {
 		this.id = id;
 		this.label = label;
 		this.definition = definition;
+		this.tagLabel = tagLabel;
 	}
 	
 	public EmontoTerm(String id, String label) {
@@ -46,6 +48,12 @@ public class EmontoTerm implements Serializable {
 	public void setDefinition(String definition) {
 		this.definition = definition;
 	}
+	public void setTagLabel(String tagLabel) {
+		this.tagLabel = tagLabel;
+	}
+	public String getTagLabel() {
+		return tagLabel;
+	}
 
 	
 	@Override
@@ -54,6 +62,8 @@ public class EmontoTerm implements Serializable {
 		int result = 1;
 		result = prime * result
 				+ ((definition == null) ? 0 : definition.hashCode());
+		result = prime * result
+				+ ((tagLabel == null) ? 0 : tagLabel.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((label == null) ? 0 : label.hashCode());
 		return result;
@@ -83,6 +93,12 @@ public class EmontoTerm implements Serializable {
 				return false;
 		} else if (!label.equals(other.label))
 			return false;
+		if (tagLabel == null) {
+			if (other.tagLabel != null)
+				return false;
+		} else if (!tagLabel.equals(other.tagLabel))
+			return false;
+
 		return true;
 	}
 	
