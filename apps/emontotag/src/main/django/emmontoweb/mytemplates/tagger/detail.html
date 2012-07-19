@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+  {% include "tagger/_talk_box.html" %}
+  {% if talk.is_publishable %}
+    <h3>Add some tags</h3>
+    <p>Please complete one or both of the sentences below and press "tag". Add
+    more tags throughout the presentation as you feel different emotions. We 
+    are particularly interested in how well you feel these terms capture your
+    emotions.</p>
+    <div class=box>
+      <form action="{% url tagger.views.detail talk.id %}" method="post">
+	{% csrf_token %}
+	<p>{{feelingform.term.errors}} I feel {{ feelingform.term }} as a result of this 
+	presentation.<br />
+	{{feelingform.degree.errors}} Severity of response: {{feelingform.degree}}<br />
+	{{feelingform.articulation.errors}} How well does this sentence capture your emotion? {{feelingform.articulation}}</p>
+	<p>{{thoughtform.term.errors}} I think {{ thoughtform.term }} as a result of this 
+	presentation.<br />
+	{{thoughtform.degree.errors}} Severity of response: {{thoughtform.degree}}<br />
+	{{thoughtform.articulation.errors}} How well does this sentence capture your emotion? {{thoughtform.articulation}}</p>
+	<input style="margin:0px auto; display:block" type="submit" value="tag" />
+      </form>
+    </div>
+    {% include "tagger/_your_tags.html" %}
+    <h3>Free comment</h3>
+    <p>If you would like to make any comments regarding your emotions and this 
+    specific talk, please make them 
+    <a href="{% url tagger.views.talk_comment talk.id %}">here</a>, with our 
+    compliments.</p>
+    <p>Alternatively, if you would like to comment on the project as whole, 
+    please use your <a href="{% url tagger.views.project_evaluation %}">project
+    evaluation form</a>.</p>
+  {% else %}
+  <p>Sorry, tagging is disabled for this presentation.</p>
+  {% endif %}
+  {% if previous %}
+  <a href="{% url tagger.views.detail previous %}">Previous talk</a>
+  {% endif %}
+  {% if previous and next %}
+    ||
+  {% endif %}
+  {% if next %}
+  <a href="{% url tagger.views.detail next %}">Next talk</a>
+  {% endif %}
+{% endblock %}

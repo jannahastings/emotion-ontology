@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block head %}
+<style type="text/css">
+  #talks
+  {
+    border-color: transparent;
+    border-collapse: collapse;
+  }
+
+  #talks tr
+  {
+    border-bottom: 1px dashed black;
+  }
+
+  #talks tr.day
+  {
+    border: none;
+  }
+
+  #talks td.time
+  {
+    color:grey;
+    font-size:90%;
+  }
+</style>
+{% endblock %}
+{% block content %}
+  {% if current_talk %}
+  <div class="box">
+    <h2 style="clear:right">Current presentation:</h2>
+    <h3 style="text-align:right; float:right">{{current_talk.start_time|date:"l fa"}} - {{current_talk.end_time|date:"fa"}}</h3>
+    {% if current_talk.is_publishable %}
+    <h3><a href="{% url tagger.views.detail current_talk.id %}">{{current_talk.title}}</a></h3>
+    {% else %}
+    <h3>{{current_talk.title}}</h3>
+    {% endif %}
+  </div>
+  <p>EmOntoTag allows you to tag conference presentations that you are listening
+  to (or have listened to) using terms from the 
+  <a href="http://code.google.com/p/emotion-ontology">Emotion Ontology</a>
+  created by Janna Hastings and colleagues at the Universities of Geneva and 
+  Buffalo.</p>
+  <p>To tag a conference presentation, click on its title and complete the 
+  sample sentences that will appear. Unfortunately, titles that appear in black
+  on this page cannot be tagged.</p>
+  <p>Data collected from this experiment will be used to assess the utility of
+  the ontology. For more information, see our <a href="{% url about %}">about page</a>
+  and <a href="{% url privacy %}">privacy policy</a>.</p>
+  {% endif %}
+  <table id=talks>
+    {% for talk in talks_list %}
+    {% ifchanged %}<tr class="day"><td><h3>{{talk.start_time|date:"l"}}</h3></td></tr>{% endifchanged %}
+    <tr>
+      <td class=time>{{talk.start_time|date:"H:i"}} - {{talk.end_time|date:"H:i"}}</td>
+      {% if talk.is_publishable %}
+      <td><a href="{% url tagger.views.detail talk.id %}">{{ talk.title }}</a></td>
+      {% else %}
+      <td>{{ talk.title }}</td>
+      {% endif %}
+    </tr>
+    {% endfor %}
+  </table>
+  <p>If you would like to provide feedback on this experiment, please use the
+  <a href="{% url tagger.views.project_evaluation %}">project evaluation page</a>
+  .</p>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Project Evaluation</h2>
+  <p>Please use the field below to comment about the project as a whole. Text 
+  you enter here will be saved when you click save and will be restored when 
+  you return to this page so that you can continue editing later.</p>
+  <p>Data entered here will be associated with your access code in the 
+  database.</p>
+  <form action="{% url tagger.views.project_evaluation %}" method="post">
+    {% csrf_token %}
+    {{form.project_evaluation}}
+    <input class=button type="submit" value="save and return to programme" />
+  </form>
+{% endblock %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/smedia/style.css" />
+    <title>{% block title %}{% endblock %}EmOntoTag</title>
+    {% block head %}{% endblock %}
+  </head>
+
+  <body>
+    <div id=centrewrap>
+      {% block userinfo %}
+      {% if request.session.user %}
+      <div id=userinfo>
+	<p>Logged in as {{ request.session.user }}, 
+	<a href="{% url tagger.views.logout %}">logout</a></p>
+      </div>
+      {% endif %}
+      {% endblock %}
+
+      <div id=banner>
+	<h1>{% block banner %}<a href="{% url tagger.views.talks %}">EmOntoTag</a>{% endblock %}</h1>
+      </div>
+
+      <div id=content>
+	{% block content %}<p>Say something.</p>{% endblock %}
+      </div>
+
+      <div id=footer>
+	<p><a href="{% url tagger.views.index %}">home</a> //
+	<a href="{% url about %}">about</a> //
+	<a href="{% url contact %}">contact</a> //
+	  <a href="{% url tagger.views.logout %}">logout</a> // 
+	  <a href="{% url privacy %}">privacy policy</a></p>
+      </div>
+    </div>
+  </body>
+</html>

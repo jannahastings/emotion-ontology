@@ -1,0 +1,24 @@
+Build instructiond for emmontoweb / emontotag v1
+
+To generate a WAR file:
+
+Install Java, Jython and Django on Jython.
+
+Make sure the mysql connector jar in the libs directory is on the java 
+classpath:
+export CLASSPATH=/path/to/mysqlconnector-5.whatever.jar
+
+cd into the emmontoweb directory and run:
+jython manage.py war --include-java-libs=$CLASSPATH --context-root=emontotag
+
+emontotag.war will be generated in the parent directory.
+
+Follow the installation instructions now.
+
+
+Instructions for how to use my insert and grabber scripts will follow 
+eventually.
+
+They're fairly self explanatory, except the one to get data from the ontology.
+That one requires you to build the ontology and put the bioontology folder and 
+all the libs on the classpath for jython.

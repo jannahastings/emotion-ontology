@@ -1,0 +1,6 @@
+{% extends "display_talks/base.html" %}
+{% block content %}
+  <h2>{{talk.title}}</h2>
+  <h3>{{talk.authors}}</h3>
+  <p>Start Time: {{ talk.start_time|date:"H:i, D d M " }}</p>
+{% endblock %}

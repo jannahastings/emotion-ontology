@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="box">
+<h2>Login</h2>
+<form action="{% url tagger.views.index %}" method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="Login" />
+</form>
+</div>
+<p>This website does not collect data that can be used to personally identify
+you. All data will be anonymized prior to publication (including talk titles 
+and authors unless those authors request otherwise). For full details, please
+see our <a href="{% url privacy %}">privacy policy</a>.</p>
+{% endblock %}
