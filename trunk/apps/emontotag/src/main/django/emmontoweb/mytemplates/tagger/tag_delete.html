@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "tagger/_talk_box.html" %}
+<h3>Delete tags</h3>
+<p>Only delete tags that were incorrect at the time you made them. If you're 
+feeling different emotions now compared to earlier, just add new tags.</p>
+<form action="{% url tagger.views.tag_delete talk.id %}" method="post">
+  {% csrf_token %}
+  {{formset.management_form}}
+  <table class=centre>
+    <tr>
+      <th>Tag</th>
+      <th>Active</th>
+    </tr>
+    {% for tag, form in combine %}
+    <tr>
+      {% if tag.term.category == "thought" %}
+      <td>"I think {{tag.term.tag_label}}"<br />
+	Severity: {{tag.degree}}, {{tag.timestamp}}</td>
+      {% else %}
+      <td>"I feel {{tag.term.tag_label}}"<br />
+	Severity: {{tag.degree}}, {{tag.timestamp}}</td>
+      {% endif %}
+      <td>{{form.active}}{{form.id}}{{form.errors}}</td>
+    </tr>
+  {% endfor %}
+</table>
+  <input class=button type="submit" value="Save and return"/>
+</form>
+{% endblock content %}

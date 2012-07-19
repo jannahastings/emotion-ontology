@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+  {% include "tagger/_talk_box.html" %}
+  <h3>Free comment</h3>
+  <form action="{% url tagger.views.talk_comment talk.id %}" method="post">
+    {% csrf_token %}
+    <p>{{form.articulation.errors}} How well do you feel you have been able to articulate yourself?
+    {{form.articulation}}</p>
+    {{form.comment.errors}}
+    {{form.comment}}
+    <input class=button type="submit" value="save and return" />
+  </form>
+  {% include "tagger/_your_tags.html" %}
+{% endblock %}

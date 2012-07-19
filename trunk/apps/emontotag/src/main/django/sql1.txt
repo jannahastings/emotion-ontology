@@ -1,0 +1,471 @@
+-- MySQL dump 10.13  Distrib 5.1.63, for debian-linux-gnu (i686)
+--
+-- Host: localhost    Database: emontotag
+-- ------------------------------------------------------
+-- Server version	5.1.63-0ubuntu0.11.04.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `auth_group`
+--
+
+DROP TABLE IF EXISTS `auth_group`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `auth_group` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(80) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `auth_group`
+--
+
+LOCK TABLES `auth_group` WRITE;
+/*!40000 ALTER TABLE `auth_group` DISABLE KEYS */;
+/*!40000 ALTER TABLE `auth_group` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `auth_group_permissions`
+--
+
+DROP TABLE IF EXISTS `auth_group_permissions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `auth_group_permissions` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `group_id` int(11) NOT NULL,
+  `permission_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `group_id` (`group_id`,`permission_id`),
+  KEY `auth_group_permissions_7930f25c` (`group_id`),
+  KEY `auth_group_permissions_14dbfb94` (`permission_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `auth_group_permissions`
+--
+
+LOCK TABLES `auth_group_permissions` WRITE;
+/*!40000 ALTER TABLE `auth_group_permissions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `auth_group_permissions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `auth_message`
+--
+
+DROP TABLE IF EXISTS `auth_message`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `auth_message` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `message` longtext NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `auth_message_43637220` (`user_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `auth_message`
+--
+
+LOCK TABLES `auth_message` WRITE;
+/*!40000 ALTER TABLE `auth_message` DISABLE KEYS */;
+/*!40000 ALTER TABLE `auth_message` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `auth_permission`
+--
+
+DROP TABLE IF EXISTS `auth_permission`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `auth_permission` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `content_type_id` int(11) NOT NULL,
+  `codename` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `content_type_id` (`content_type_id`,`codename`),
+  KEY `auth_permission_714bd27f` (`content_type_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=40 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `auth_permission`
+--
+
+LOCK TABLES `auth_permission` WRITE;
+/*!40000 ALTER TABLE `auth_permission` DISABLE KEYS */;
+INSERT INTO `auth_permission` VALUES (1,'Can add permission',1,'add_permission'),(2,'Can change permission',1,'change_permission'),(3,'Can delete permission',1,'delete_permission'),(4,'Can add group',2,'add_group'),(5,'Can change group',2,'change_group'),(6,'Can delete group',2,'delete_group'),(7,'Can add user',3,'add_user'),(8,'Can change user',3,'change_user'),(9,'Can delete user',3,'delete_user'),(10,'Can add message',4,'add_message'),(11,'Can change message',4,'change_message'),(12,'Can delete message',4,'delete_message'),(13,'Can add content type',5,'add_contenttype'),(14,'Can change content type',5,'change_contenttype'),(15,'Can delete content type',5,'delete_contenttype'),(16,'Can add session',6,'add_session'),(17,'Can change session',6,'change_session'),(18,'Can delete session',6,'delete_session'),(19,'Can add site',7,'add_site'),(20,'Can change site',7,'change_site'),(21,'Can delete site',7,'delete_site'),(22,'Can add log entry',8,'add_logentry'),(23,'Can change log entry',8,'change_logentry'),(24,'Can delete log entry',8,'delete_logentry'),(25,'Can add talk',9,'add_talk'),(26,'Can change talk',9,'change_talk'),(27,'Can delete talk',9,'delete_talk'),(28,'Can add user',10,'add_user'),(29,'Can change user',10,'change_user'),(30,'Can delete user',10,'delete_user'),(31,'Can add ontology term',11,'add_ontologyterm'),(32,'Can change ontology term',11,'change_ontologyterm'),(33,'Can delete ontology term',11,'delete_ontologyterm'),(34,'Can add tag',12,'add_tag'),(35,'Can change tag',12,'change_tag'),(36,'Can delete tag',12,'delete_tag'),(37,'Can add user talk',13,'add_usertalk'),(38,'Can change user talk',13,'change_usertalk'),(39,'Can delete user talk',13,'delete_usertalk');
+/*!40000 ALTER TABLE `auth_permission` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `auth_user`
+--
+
+DROP TABLE IF EXISTS `auth_user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `auth_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(30) NOT NULL,
+  `first_name` varchar(30) NOT NULL,
+  `last_name` varchar(30) NOT NULL,
+  `email` varchar(75) NOT NULL,
+  `password` varchar(128) NOT NULL,
+  `is_staff` tinyint(1) NOT NULL,
+  `is_active` tinyint(1) NOT NULL,
+  `is_superuser` tinyint(1) NOT NULL,
+  `last_login` datetime NOT NULL,
+  `date_joined` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `auth_user`
+--
+
+LOCK TABLES `auth_user` WRITE;
+/*!40000 ALTER TABLE `auth_user` DISABLE KEYS */;
+INSERT INTO `auth_user` VALUES (1,'admin','','','fake@fake.com','sha1$2b555$55e5fb24ad4331a4c65e9330a9c1f3b5825469c5',1,1,1,'2012-07-18 17:52:03','2012-07-18 17:40:57');
+/*!40000 ALTER TABLE `auth_user` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `auth_user_groups`
+--
+
+DROP TABLE IF EXISTS `auth_user_groups`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `auth_user_groups` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `group_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_id` (`user_id`,`group_id`),
+  KEY `auth_user_groups_43637220` (`user_id`),
+  KEY `auth_user_groups_7930f25c` (`group_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `auth_user_groups`
+--
+
+LOCK TABLES `auth_user_groups` WRITE;
+/*!40000 ALTER TABLE `auth_user_groups` DISABLE KEYS */;
+/*!40000 ALTER TABLE `auth_user_groups` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `auth_user_user_permissions`
+--
+
+DROP TABLE IF EXISTS `auth_user_user_permissions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `auth_user_user_permissions` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `permission_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_id` (`user_id`,`permission_id`),
+  KEY `auth_user_user_permissions_43637220` (`user_id`),
+  KEY `auth_user_user_permissions_14dbfb94` (`permission_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `auth_user_user_permissions`
+--
+
+LOCK TABLES `auth_user_user_permissions` WRITE;
+/*!40000 ALTER TABLE `auth_user_user_permissions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `auth_user_user_permissions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `django_admin_log`
+--
+
+DROP TABLE IF EXISTS `django_admin_log`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `django_admin_log` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `action_time` datetime NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `content_type_id` int(11) DEFAULT NULL,
+  `object_id` longtext,
+  `object_repr` varchar(200) NOT NULL,
+  `action_flag` smallint(5) unsigned NOT NULL,
+  `change_message` longtext NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `django_admin_log_43637220` (`user_id`),
+  KEY `django_admin_log_714bd27f` (`content_type_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `django_admin_log`
+--
+
+LOCK TABLES `django_admin_log` WRITE;
+/*!40000 ALTER TABLE `django_admin_log` DISABLE KEYS */;
+INSERT INTO `django_admin_log` VALUES (1,'2012-07-18 17:52:15',1,10,'201','test',1,''),(2,'2012-07-18 18:01:20',1,9,'11','Checking Class Labels against Naming Conventions: First experiences with the OntoCheck Protégé plugin',2,'Changed title.');
+/*!40000 ALTER TABLE `django_admin_log` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `django_content_type`
+--
+
+DROP TABLE IF EXISTS `django_content_type`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `django_content_type` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `app_label` varchar(100) NOT NULL,
+  `model` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `app_label` (`app_label`,`model`)
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `django_content_type`
+--
+
+LOCK TABLES `django_content_type` WRITE;
+/*!40000 ALTER TABLE `django_content_type` DISABLE KEYS */;
+INSERT INTO `django_content_type` VALUES (1,'permission','auth','permission'),(2,'group','auth','group'),(3,'user','auth','user'),(4,'message','auth','message'),(5,'content type','contenttypes','contenttype'),(6,'session','sessions','session'),(7,'site','sites','site'),(8,'log entry','admin','logentry'),(9,'talk','tagger','talk'),(10,'user','tagger','user'),(11,'ontology term','tagger','ontologyterm'),(12,'tag','tagger','tag'),(13,'user talk','tagger','usertalk');
+/*!40000 ALTER TABLE `django_content_type` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `django_session`
+--
+
+DROP TABLE IF EXISTS `django_session`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `django_session` (
+  `session_key` varchar(40) NOT NULL,
+  `session_data` longtext NOT NULL,
+  `expire_date` datetime NOT NULL,
+  PRIMARY KEY (`session_key`),
+  KEY `django_session_6e157763` (`expire_date`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `django_session`
+--
+
+LOCK TABLES `django_session` WRITE;
+/*!40000 ALTER TABLE `django_session` DISABLE KEYS */;
+INSERT INTO `django_session` VALUES ('2d1a4d243fbc2e4a1eadd04cdb5e79eb','MmEyN2M5NzY1NGU3NTU4YmE3N2I3OTFiMTE5Y2QyZDA0NDQzZWMyYzqAAn1xAShVBHVzZXJxAmNk\namFuZ28uZGIubW9kZWxzLmJhc2UKbW9kZWxfdW5waWNrbGUKcQNjdGFnZ2VyLm1vZGVscwpVc2Vy\nCnEEXXEFY2RqYW5nby5kYi5tb2RlbHMuYmFzZQpzaW1wbGVfY2xhc3NfZmFjdG9yeQpxBodxB1Jx\nCH1xCShVEXJlZ2lzdHJhdGlvbl90aW1lcQpjZGF0ZXRpbWUKZGF0ZXRpbWUKcQtVCgfcBxIRNBsK\nIcBxDIVxDVJxDlUGX3N0YXRlcQ9jZGphbmdvLmRiLm1vZGVscy5iYXNlCk1vZGVsU3RhdGUKcRAp\ngXERfXESKFUGYWRkaW5ncROJVQJkYnEUVQdkZWZhdWx0cRV1YlULYWNjZXNzX2NvZGVxFlgEAAAA\ndGVzdHEXVQJpZHEYS8lVEnByb2plY3RfZXZhbHVhdGlvbnEZWAAAAABxGnViVRJfYXV0aF91c2Vy\nX2JhY2tlbmRxG1UpZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmRxHFUN\nX2F1dGhfdXNlcl9pZHEdSwF1Lg==\n','2012-08-01 17:52:27');
+/*!40000 ALTER TABLE `django_session` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `django_site`
+--
+
+DROP TABLE IF EXISTS `django_site`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `django_site` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `domain` varchar(100) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `django_site`
+--
+
+LOCK TABLES `django_site` WRITE;
+/*!40000 ALTER TABLE `django_site` DISABLE KEYS */;
+INSERT INTO `django_site` VALUES (1,'example.com','example.com');
+/*!40000 ALTER TABLE `django_site` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tagger_ontologyterm`
+--
+
+DROP TABLE IF EXISTS `tagger_ontologyterm`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tagger_ontologyterm` (
+  `id` int(11) NOT NULL,
+  `label` varchar(50) NOT NULL,
+  `tag_label` varchar(50) NOT NULL,
+  `definition` varchar(300) NOT NULL,
+  `category` varchar(7) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tagger_ontologyterm`
+--
+
+LOCK TABLES `tagger_ontologyterm` WRITE;
+/*!40000 ALTER TABLE `tagger_ontologyterm` DISABLE KEYS */;
+INSERT INTO `tagger_ontologyterm` VALUES (32,'surprise','surprised','Surprise is a neutral emotion caused by encountering unexpected events of all kinds. May be experienced as negative if the surprising event is evaluated as negative, or positive if the surprising event is evaluated as positive. [Source: OCEAS]','emotion'),(42,'happiness','happy','A positive emotion which is experienced in reaction to a positive experience or event. [Source: OCEAS]','emotion'),(37,'mastery pleasure','mastery pleasure','Pleasure derived from mastery, including the experience of flow. [Source: OCEAS]','emotion'),(12,'annoyance','annoyed','','emotion'),(50,'passionate love','passionately loving','A powerful longing for union with the beloved, characterised by a confusion of feelings -- elation and pain, tenderness and sexuality, altruism and jealousy.','emotion'),(36,'sensory pleasure','sensory pleasure','Pleasure in smell, touch, sight, sound and taste. [Source: OCEAS]','emotion'),(19,'disgust','disgusted','A negative emotion which guards the body against dangerous foods and microbial infections. The basic physiological disgust has also culturally evolved to incorporate moral disgust which protects the self from nonphysical threats such as moral violations.  [Source: OCEAS]','emotion'),(16,'grief','grieving','Grief is an intense negative emotion following a bereavement, i.e. the loss of a significant person through that person\'s death. [Source: OCEAS]','emotion'),(13,'fury','furious','','emotion'),(44,'amusement','amused','','emotion'),(30,'despair','despairing','A negative, high intensity emotion characterised by loss of hope and loss of interest. Associated with action tendencies of harm to self or others. [Source: OCEAS]','emotion'),(25,'jealousy','jealous','A negative emotion aroused when a person feels threatened by a rival in his or her relationship with another individual, in particular an intimate partner. Involves feelings of threat, fear, suspicion, distrust, anxiety, anger, betrayal, and rejection. [Source: OCEAS]','emotion'),(54,'embarrassment','embarrassed','','emotion'),(43,'serenity','serene','','emotion'),(27,'terror','terrified','','emotion'),(11,'irritation','irritated','An unpleasant emotion closely related to anger but lower in intensity and without the moral dimension of blame and seriousness that is implicated in anger. [Source: OCEAS]','emotion'),(41,'pride','proud','A positive emotion associated with the appraisal of one\'s positive social worth, a signal that one is likely to be socially accepted. [Source: OCEAS]','emotion'),(33,'interest','interested','Interest is a positive emotion which motivates learning, exploration and curiosity. Feelings of interest are associated with the novelty and complexity of stimuli. [Source: OCEAS]','emotion'),(56,'sadness','sad','A negative emotion felt when an event is appraised as unpleasant, obstructive to one\'s goals and concerns, and one feels unable to cope with it or modify it. [Source: OCEAS]','emotion'),(45,'elation','elated','','emotion'),(48,'love','loving','A strong emotion associated with feelings of desire, warmth and intimacy for another person. [Source: OCEAS]','emotion'),(29,'stress (emotion)','stressed','A negative emotion in response to a stressful elicitor. May be acute or chronic.  Associated with health implications, such as impaired resistance to infectious diseases. [Source: OCEAS]','emotion'),(40,'sexual pleasure','sexual pleasure','','emotion'),(39,'aesthetic pleasure','aesthetic pleasure','','emotion'),(52,'compassion','compassionate','An emotion evoked for a person who is in distress. The conditions for compassion involve perceiving the other as in need, and valuing the other\'s welfare. Associated with altruistic motivation. [Source: OCEAS]','emotion'),(46,'euphoria','euphoric','','emotion'),(38,'social pleasure','social pleasure','Pleasure derived from social contact. [Source: OCEAS]','emotion'),(28,'anxiety','anxious','A negative, aversive emotion provoked by the prospect of future threat. Distinguished from fear since it is triggered by a distal threat whereas fear is triggered by an immediate threat. Often gradual and long-lasting, whereas fear usually has sudden onset and offset.   [Source: OCEAS]','emotion'),(14,'rage','enraged','','emotion'),(166,'boredom','bored','','emotion'),(18,'contempt','contemptuous','A negative emotion generally elicited by the negative evaluation of others and their actions. Usually elicited by violations of community codes. Closely related to anger and disgust. [Source: OCEAS]','emotion'),(35,'pleasure','pleasure','A positively experienced emotion which is sought out (approached) and is associated with happiness, enjoyment, and satisfaction.  [Source: OCEAS]','emotion'),(55,'shame','ashamed','','emotion'),(164,'panic','panicked','A severe episode of fear with strong associated discomfort and thoughts of impending harm. ','emotion'),(24,'hate','hateful','A strong, negatively valenced emotion directed against a whole person for who or what they are. Often directed at whole groups based on religion, ethnicity, or race. [Source: OCEAS]','emotion'),(9,'anger','angry','Anger is a negative emotion, characterised by feelings of unpleasantness and high arousal, in the form of antagonistic feelings and action tendencies. [Source: OCEAS]\n','emotion'),(47,'contentment','contented','A pleasant emotion, which can be defined as a milder form of joy. Associated with physical inactivity (\'do nothing\' action tendencies). [Source: OCEAS]','emotion'),(51,'disappointment','disappointed','Disappointment is a negative emotion which is triggered by the disconfirmation of the prospect of a desirable event. [Source: OCEAS]','emotion'),(53,'guilt','guilty','A self-conscious emotion that occurs when a person brings about a negative outcome by acts of commission or omission. Associated wtih violations of internal or external moral standards. Closely related to embarrassment and shame. [Source: OCEAS]','emotion'),(34,'joy','joyful','A pleasant, positive emotion which arises in safe and familiar circumstances, when people have made progress towards important personal goals, especially when the progress is better than expected. [Source: OCEAS]','emotion'),(26,'fear','afraid','An activated, aversive emotion that motivates attempts to cope with events that provide threats to the survival or well-being of organisms. Characterised by feelings of threat and impending doom, and by an urge to get out of the situation. [Source: OCEAS]','emotion'),(49,'companionate love','compassionately loving','Less intense, longer-lasting love which is characterised by affection, commitment, intimacy and a concern for the welfare of the loved one. [Source: OCEAS]','emotion'),(116,'feeling out of control','out of control','The subjective feeling of not being in control, not being able to gain agency of one\'s own behavior. ','feeling'),(79,'feeling good','good','The subjective emotional feeling of feeling good, positive.  ','feeling'),(107,'feeling at ease','at ease','The subjective emotional feeling of being at ease, comfortable, relaxed. ','feeling'),(110,'feeling in control','in control','The subjective emotional feeling that one is in control of oneself, that one is fully the agent of one\'s behavior. ','feeling'),(112,'feeling exhausted','exhausted','The subjective emotional feeling of exhaustion, an extremely strong form of feeling tired. ','feeling'),(109,'feeling energetic','energetic','The subjective emotional feeling of having lots of energy, being energetic. ','feeling'),(80,'feeling tired','tired','The subjective emotional feeling of tiredness, needing sleep.','feeling'),(111,'feeling restless','restless','The subjective emotional feeling of restlessness, a state of not being calm, of an agitation to do something. ','feeling'),(119,'feeling weak','weak','The subjective feeling of weakness, lack of energy and/or capability, faintness, absence of strength. ','feeling'),(108,'feeling bad','bad','The subjective emotional feeling of feeling bad, negative.','feeling'),(118,'feeling strong','strong','The subjective feeling of strength, capability, energy and capacity to do things. ','feeling'),(124,'feeling nervous','nervous','The subjective feeling of being not at ease, of being anxious or nervous or agitated. ','feeling'),(114,'feeling calm','calm','The subjective feeling of being calm, being relaxed, being at peace. ','feeling'),(121,'feeling alert','alert','The subjective feeling of being wide awake, alert, having active attention and perception. ','feeling'),(69,'appraisal as not expected','this is not expected','An appraisal that represents an evaluation that an event was not expected.','thought'),(101,'appraisal as just treatment','I am being treated justly','An appraisal which represents an evaluation that the person was treated justly by another person. ','thought'),(67,'appraisal as not predictable','this is not predictable','An appraisal that represents an evaluation that an event was not easy to predict. ','thought'),(84,'appraisal as unintended','this is not being deliberately caused','An appraisal that represents an evaluation that an event was caused unintentionally.','thought'),(104,'appraisal as dangerous','this is dangerous','An appraisal that represents an evaluation that an object or situation is dangerous to the person. ','thought'),(89,'appraisal as urgent response','a response is needed urgently','An appraisal that represents an evaluation that an event requires an urgent (immediate) response. ','thought'),(83,'appraisal as deliberate','this is being deliberately caused','An appraisal that represents an evaluation that an event was deliberately (intentionally) caused. ','thought'),(105,'appraisal as not dangerous','this is not dangerous','An appraisal that represents an evaluation that an object or situation is not dangerous to the person. ','thought'),(68,'appraisal as expected','this is expected','An appraisal that represents an evaluation that an event was expected. ','thought'),(99,'appraisal as not being at the centre of attention','I am not at the centre of attention','An appraisal that represents a judgement that a person is not at the centre of the surrounding social attention. ','thought'),(93,'appraisal as unavoidable consequences','there are consequences and they are unavoidable','An appraisal that represents a judgement that the expected consequences of an event will be difficult to avoid or modify. ','thought'),(102,'appraisal as unjust treatment','I am being treated unjustly','An appraisal that represents an evaluation that the person was treated unjustly by another person. (Injustice.) ','thought'),(65,'appraisal as not familiar','this is not familiar','An appraisal that represents an evaluation that an object or event is not familiar. ','thought'),(74,'evaluation as not important to goals','this is not important for my goals','An appraisal that represents an evaluation that the event or object is not important to the person\'s goals or needs. ','thought'),(64,'appraisal as familiar','this is familiar','An appraisal that represents an evaluation that an object or event is familiar. ','thought'),(77,'appraisal as caused by chance','this is being caused by chance','An appraisal that represents an evaluation that an event was caused by chance. ','thought'),(70,'appraisal as pleasant','this is pleasant','An appraisal that represents an evaluation that an object or event is pleasant.','thought'),(106,'appraisal of loss','I have irrevocably lost something important','An appraisal that represents a belief that something or someone that is important to the person has been lost to the person. ','thought'),(96,'appraisal as not congruent with ideals','this is against my ideals','An appraisal that represents a judgement that an event is inconsistent with a person\'s standards or ideals. ','thought'),(66,'appraisal as predictable','this is predictable','An appraisal that represents an evaluation that an event was easy to predict. ','thought'),(76,'appraisal as caused by self','this is being caused by me','An appraisal that represents an evaluation that an event was caused by the self. ','thought'),(87,'appraisal as undesirable consequences','this has undesirable consequences','An appraisal that represents an evaluation that the expected consequences of an event are undesirable. ','thought'),(95,'appraisal as congruent with ideals','this is in line with my ideals','An appraisal which represents a judgement that an event is consistent with the person\'s standards or ideals.','thought'),(71,'appraisal as unpleasant','this is unpleasant','An appraisal that represents an evaluation that an object or event is unpleasant.','thought'),(92,'appraisal as avoidable consequences','there are consequences but they are avoidable','An appraisal that represents a judgement that the expected consequences of an event are in principle avoidable or modfiable. ','thought'),(81,'appraisal as caused supernaturally','this is being caused supernaturally','An appraisal that represents an evaluation that an event was caused by a supernatural agent (God, the ancestors, ghosts...).','thought'),(73,'evaluation as important to goals','this is important for my goals','An appraisal that represents an evaluation that the event or object is important to the person\'s goals or needs. ','thought'),(86,'appraisal as desirable consequences','this has desirable consequences','An appraisal that represents an evaluation that the expected consequences of an event are desirable. ','thought'),(63,'appraisal as not sudden','this is not sudden','An appraisal that represents an evaluation that an event did not occur suddenly. ','thought'),(78,'appraisal as caused by an other','this is being caused by someone else','An appraisal that represents an evaluation that an event was caused by another person.','thought'),(90,'appraisal as not urgent response','a response is needed but not urgently','An appraisal that represents an evaluation that an event does not require an urgent response. ','thought'),(62,'appraisal as sudden','this is sudden','An appraisal that represents an evaluation that an event occurred suddenly. ','thought'),(98,'appraisal as being at the centre of attention','I am at the centre of attention','An appraisal which represents a judgement that the person is at the centre of the surrounding social attention. (That is, that all other nearby persons are paying attention to him/her.)','thought');
+/*!40000 ALTER TABLE `tagger_ontologyterm` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tagger_tag`
+--
+
+DROP TABLE IF EXISTS `tagger_tag`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tagger_tag` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `talk_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `term_id` int(11) NOT NULL,
+  `timestamp` datetime NOT NULL,
+  `articulation` int(11) NOT NULL,
+  `degree` int(11) NOT NULL,
+  `active` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `tagger_tag_5e95e5a3` (`talk_id`),
+  KEY `tagger_tag_43637220` (`user_id`),
+  KEY `tagger_tag_aa5ee63` (`term_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tagger_tag`
+--
+
+LOCK TABLES `tagger_tag` WRITE;
+/*!40000 ALTER TABLE `tagger_tag` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tagger_tag` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tagger_talk`
+--
+
+DROP TABLE IF EXISTS `tagger_talk`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tagger_talk` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `authors` varchar(255) NOT NULL,
+  `start_time` datetime NOT NULL,
+  `end_time` datetime NOT NULL,
+  `is_publishable` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tagger_talk`
+--
+
+LOCK TABLES `tagger_talk` WRITE;
+/*!40000 ALTER TABLE `tagger_talk` DISABLE KEYS */;
+INSERT INTO `tagger_talk` VALUES (23,'BioMixer: A Web-based Collaborative Ontology Visualization Tool','Bo Fu, Lars Grammel and Margaret-Anne Storey','2012-07-24 16:20:00','2012-07-24 16:40:00',1),(24,'Taking a view on bio-ontologies','Simon Jupp, Andrew Gibson, James Malone and Robert Stevens','2012-07-24 17:00:00','2012-07-24 17:20:00',1),(22,'The SWO Project: A Case Study for Applying Agile Ontology Engineering Methods for Community Driven Ontologies','Maria Copeland, Andy Brown, Helen Parkinson, Robert Stevens and James Malone','2012-07-24 16:00:00','2012-07-24 16:20:00',1),(21,'Using a Reference Ontology with Semantic Similarity in Ontology Alignment','Valerie Cross, Pramit Silwal and David Morell','2012-07-24 15:40:00','2012-07-24 16:00:00',1),(20,'Recommending Concepts to Experts: An Exploration of Recommender Techniques for Collaborative Ontology Engineering Platforms in the Biomedical Domain','Simon Walk, Markus Strohmaier, Tania Tudorache, Natalya F. Noy, Csongor Nyulas and Mark A. Musen','2012-07-24 14:50:00','2012-07-24 15:10:00',1),(19,'Towards an integrated knowledge system for capturing gene expression events','Aravind Venkatesan, Vladimir Mironov and Martin Kuiper','2012-07-24 14:30:00','2012-07-24 14:50:00',0),(18,'Larry Hunter: Formal Knowledge Representation and Automated Reasoning for Explanation of Genome-Scale Data','Larry Hunter','2012-07-24 11:30:00','2012-07-24 12:30:00',1),(17,'Exploitation of ontologies for the management of clinical archetypes in ArchMS','MarÃ?Â­a Del Carmen Legaz-GarcÃ?Â­a, Catalina MartÃ?Â­nez-Costa, Marcos MenÃ?Â¡rguez-Tortosa and Jesualdo TomÃ?Â¡s FernÃ?Â¡ndez-Breis','2012-07-24 11:00:00','2012-07-24 11:20:00',1),(16,'The CEN ISO Standard Categorial Structure as a Top-Level Set of Constraints for Ontology Disambiguation','Jean Marie Rodrigues, Stefan Schulz, CÃ?Â©dric Bousquet and Julien Souvignet','2012-07-24 10:40:00','2012-07-24 11:00:00',1),(15,'Role-based representation and inference of biochemical processes','Christian Boelling, Michel Dumontier, Michael Weidlich and Hermann-Georg HolzhÃ?Â¼tter','2012-07-24 10:30:00','2012-07-24 10:40:00',0),(14,'Efforts toward a More Consistent and Interoperable Sequence Ontology','Michael Bada and Karen Eilbeck','2012-07-24 09:20:00','2012-07-24 09:40:00',1),(13,'Wanting what we don\'t want to want: Representing addiction in interoperable bio-ontologies','Janna Hastings, Nicolas Le NovÃ?Â¨re, Werner Ceusters, Kevin Mulligan and Barry Smith','2012-07-24 09:00:00','2012-07-24 09:20:00',1),(12,'Representation of Part-Whole Relationships in SNOMED CT','Patrice Seyed, Alan Rector, Uli Sattler, Bijan Parsia and Robert Stevens','2012-07-24 08:40:00','2012-07-24 09:00:00',1),(11,'Checking Class Labels against Naming Conventions: First experiences with the OntoCheck Protégé plugin','Daniel Schober, Vojtech Svatek and Martin Boeker','2012-07-23 16:20:00','2012-07-23 16:40:00',1),(10,'Requirements and Strategy for the Development of a Pediatric Drug Ontology','Rachel Richesson, Jyotishman Pathak, Wendy McLeod, Ginger Blackmon and Kendra Vehik','2012-07-23 16:00:00','2012-07-23 16:20:00',1),(8,'Discovering Cross-Ontology Subsumption Relationships by Using Ontological Annotations on Biomedical Literature','Watson Wei Khong Chua and Jung-Jae Kim','2012-07-23 14:50:00','2012-07-23 15:10:00',1),(9,'Knowledge Acquisition in the construction of ontologies: a case study in the domain of hematology','FabrÃ?Â­cio MendonÃ?Â§a, KÃ?Â¡tia Coelho, AndrÃ?Â© Andrade and Mauricio Almeida','2012-07-23 15:40:00','2012-07-23 16:00:00',0),(7,'Interpreting Patient Data using Medical Background Knowledge','Heiner Oberkampf, Sonja Zillner and Bernhard Bauer','2012-07-23 14:30:00','2012-07-23 14:50:00',1),(6,'Alan Rector: Truth or consequences? The case for evidence-based ontology development','Alan Rector','2012-07-23 11:30:00','2012-07-23 12:30:00',1),(5,'An Ontology of Gene','Hiroshi Masuya and Riichiro Mizoguchi','2012-07-23 11:10:00','2012-07-23 11:30:00',1),(4,'Developing the Animals in Context Ontology','Suzanne Santamaria, Maureen Fallon, Julie Green, Stefan Schulz and Jeffrey Wilcke','2012-07-23 10:50:00','2012-07-23 11:10:00',1),(3,'Constructing a Lattice of Infectious Disease Ontologies from a Staphylococcus aureus Isolate Repository','Albert Goldfain, Lindsay Cowell and Barry Smith','2012-07-23 09:50:00','2012-07-23 10:10:00',1),(2,'Bringing epidemiology into the Semantic Web','JoÃ?Â£o D Ferreira, Catia Pesquita, Francisco Couto and Mario Silva','2012-07-23 09:30:00','2012-07-23 09:50:00',1),(1,'A plant disease extension of the Infectious Disease Ontology','Ramona Walls, Barry Smith, Justin Elser, Albert Goldfain, Dennis W. Stevenson and Pankaj Jaiswal','2012-07-23 09:10:00','2012-07-23 09:30:00',1),(25,'Revisiting ontological foundations of the OpenEHR Entry Model','Andre Andrade, Mauricio Almeida and Stefan Schulz','2012-07-24 17:20:00','2012-07-24 17:40:00',1),(26,'Waves and fields in bio-ontologies','Colin Batchelor and Janna Hastings','2012-07-25 08:30:00','2012-07-25 08:50:00',1),(27,'Teaching Good Biomedical Ontology Design','Martin Boeker, Daniel Schober, Djamila Raufie, Niels Grewe, Johannes RÃ?Â¶hl, Ludger Jansen and Stefan Schulz','2012-07-25 08:50:00','2012-07-25 09:10:00',1),(28,'Identity Tracking of a Disease as a Causal Chain','Kouji Kozaki, Riichiro Mizoguchi, Takeshi Imai and Kazuhiko Ohe','2012-07-25 09:10:00','2012-07-25 09:30:00',0);
+/*!40000 ALTER TABLE `tagger_talk` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tagger_user`
+--
+
+DROP TABLE IF EXISTS `tagger_user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tagger_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `access_code` varchar(10) NOT NULL,
+  `registration_time` datetime DEFAULT NULL,
+  `project_evaluation` longtext NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `access_code` (`access_code`)
+) ENGINE=MyISAM AUTO_INCREMENT=202 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tagger_user`
+--
+
+LOCK TABLES `tagger_user` WRITE;
+/*!40000 ALTER TABLE `tagger_user` DISABLE KEYS */;
+INSERT INTO `tagger_user` VALUES (1,'aAzZhYJMUM',NULL,''),(2,'N64g5BxSU3',NULL,''),(3,'QPgcY53HfQ',NULL,''),(4,'9SaffeSK8x',NULL,''),(5,'HG2dqawtFS',NULL,''),(6,'h8Ht4sT9tv',NULL,''),(7,'PSLJqdrzq6',NULL,''),(8,'MzHPNzL8xG',NULL,''),(9,'hbSUJMBC53',NULL,''),(10,'AqcVdL84Td',NULL,''),(11,'kGSCkmYLDZ',NULL,''),(12,'H2gNAkVkFE',NULL,''),(13,'H9MkMFXpqA',NULL,''),(14,'NCMTMkumxr',NULL,''),(15,'ZNvpP6HKGT',NULL,''),(16,'ZJ2YfDvmWH',NULL,''),(17,'hXA3sCNxpK',NULL,''),(18,'W6NkTxd7Wh',NULL,''),(19,'ULJyjqJMWH',NULL,''),(20,'P3N3yXFQkQ',NULL,''),(21,'rHDKzRkGAV',NULL,''),(22,'yW3dya2mZr',NULL,''),(23,'Pk9dnKYzaF',NULL,''),(24,'h8HTMrd2ZH',NULL,''),(25,'97makEvvJj',NULL,''),(26,'z26mjD6awR',NULL,''),(27,'APbHSxHw4N',NULL,''),(28,'96CqKYNJmH',NULL,''),(29,'GpGzAQgsNu',NULL,''),(30,'qK8r3fk3gu',NULL,''),(31,'AqAgZFbPd4',NULL,''),(32,'dkdbggXaeW',NULL,''),(33,'xEy73PasRW',NULL,''),(34,'9dPdMjefzX',NULL,''),(35,'knxKkuNbrR',NULL,''),(36,'Xw37GBRJJK',NULL,''),(37,'pYhZ9TEzSb',NULL,''),(38,'xtQ3RDattr',NULL,''),(39,'dA3Up4jsef',NULL,''),(40,'bthmZKcNaJ',NULL,''),(41,'LjQF9D8AZX',NULL,''),(42,'89hrcgtPum',NULL,''),(43,'G2fPss2hQY',NULL,''),(44,'PWVMQYFTZG',NULL,''),(45,'SYvftxSDa5',NULL,''),(46,'3qssWxE7w8',NULL,''),(47,'wZtCdpPkvp',NULL,''),(48,'5B4USGRQVK',NULL,''),(49,'LpGuNKtrWL',NULL,''),(50,'9kHEXqvKYg',NULL,''),(51,'t28rVTJ73F',NULL,''),(52,'VpAWGU75ND',NULL,''),(53,'4KS3f9sg22',NULL,''),(54,'3mpYMLhvZq',NULL,''),(55,'uQWrF6bUyb',NULL,''),(56,'XCDRy6XXB3',NULL,''),(57,'H8qsdxQtJR',NULL,''),(58,'NJEZguR5wz',NULL,''),(59,'N79ubr5jgG',NULL,''),(60,'6mbaWkwcrY',NULL,''),(61,'UEq5QhQMFw',NULL,''),(62,'gCJxRPJhdb',NULL,''),(63,'LQmP5Z3KVf',NULL,''),(64,'vN4WpB6jze',NULL,''),(65,'4hQyNucHBM',NULL,''),(66,'EVemfxZLPm',NULL,''),(67,'zHeQyUGbVU',NULL,''),(68,'eyUws4RP35',NULL,''),(69,'JUMGGEBmSx',NULL,''),(70,'zedVpmPVHn',NULL,''),(71,'sbVkgpLTUF',NULL,''),(72,'hznxW3K5pP',NULL,''),(73,'MdfUTJr8zw',NULL,''),(74,'3ZwWYJz8kY',NULL,''),(75,'kCghkkSEZu',NULL,''),(76,'BskKvhKGTK',NULL,''),(77,'fn2qPecFBy',NULL,''),(78,'CQsPsq4ztK',NULL,''),(79,'bq44ZVVX4B',NULL,''),(80,'XYdThcsLSf',NULL,''),(81,'auFDcQBZpp',NULL,''),(82,'zK6Nd6kNZf',NULL,''),(83,'3B4Z2eeuDx',NULL,''),(84,'pNRhu2cLBd',NULL,''),(85,'Ejux4tjBYk',NULL,''),(86,'UDsRCeYf7u',NULL,''),(87,'38pp9gvrSD',NULL,''),(88,'xgv6vB3PUn',NULL,''),(89,'rpSXT4rLPr',NULL,''),(90,'hmz2fLwfCG',NULL,''),(91,'v9CDctEQxW',NULL,''),(92,'Pk2c9H4ZBs',NULL,''),(93,'EMp9RfCqCf',NULL,''),(94,'DS82eKAPpr',NULL,''),(95,'cAEbuQ4wVS',NULL,''),(96,'eCkZEpaPZV',NULL,''),(97,'AgHYTB6wuk',NULL,''),(98,'94HWgr8G8g',NULL,''),(99,'xwX5TKHZU9',NULL,''),(100,'kuThEx7dmB',NULL,''),(101,'WmUKQJ5s5v',NULL,''),(102,'EpuAMMTs74',NULL,''),(103,'zcY8LMKhBL',NULL,''),(104,'evMV6XC9yZ',NULL,''),(105,'byHyMshSwp',NULL,''),(106,'tp3dcKQ3BT',NULL,''),(107,'kwukLp5VBw',NULL,''),(108,'7ZPuvEAyuP',NULL,''),(109,'qtaaxysXps',NULL,''),(110,'FWnKqPJjG5',NULL,''),(111,'wZEcvN5LRU',NULL,''),(112,'pMRh2WpQEN',NULL,''),(113,'Rkc67LZDDV',NULL,''),(114,'6LBVef2M8u',NULL,''),(115,'X5aNf34YAt',NULL,''),(116,'NeqJAGgpuE',NULL,''),(117,'FQng9Hb52Y',NULL,''),(118,'qayFUnq4Th',NULL,''),(119,'YhKDbKUbZz',NULL,''),(120,'PTCUYbb9WM',NULL,''),(121,'WZhDr9KsYj',NULL,''),(122,'YvjAh6Bqcj',NULL,''),(123,'Rw8H5dgTPN',NULL,''),(124,'ABU7V78FAa',NULL,''),(125,'bRQtTLSMB8',NULL,''),(126,'Jtj5cffFAg',NULL,''),(127,'FRADSbLQMR',NULL,''),(128,'6WBVUrvnZn',NULL,''),(129,'BFvPDATtQg',NULL,''),(130,'BvyjkstB5p',NULL,''),(131,'TVngFbpbZf',NULL,''),(132,'XgNYD6JqHL',NULL,''),(133,'DMwsKzNyQv',NULL,''),(134,'b729TKZy7H',NULL,''),(135,'MRAZaYmnCW',NULL,''),(136,'KXtpKf4CbZ',NULL,''),(137,'Y66gwNWR3e',NULL,''),(138,'qT6dMaTLuf',NULL,''),(139,'kgmjPDJBBT',NULL,''),(140,'gFHR2LmJmf',NULL,''),(141,'VNc78DRfJn',NULL,''),(142,'WyfWSUQEN2',NULL,''),(143,'tbbZkUvzgd',NULL,''),(144,'hsBdNyEc92',NULL,''),(145,'wXwJfvt45Q',NULL,''),(146,'NuMbgHRYk2',NULL,''),(147,'qxYn9agWuw',NULL,''),(148,'6b9wfu9rm6',NULL,''),(149,'gRLBAQfCyM',NULL,''),(150,'wwEFCZrhaQ',NULL,''),(151,'dSnWEnskfm',NULL,''),(152,'RutsS7jG7e',NULL,''),(153,'pQTwpTxqWa',NULL,''),(154,'ag3mz5xnum',NULL,''),(155,'hxRtnZw4bf',NULL,''),(156,'Fj8BP3VvhV',NULL,''),(157,'SzYmS3W6XW',NULL,''),(158,'dfBfkeZmnQ',NULL,''),(159,'eVbTWxhkFa',NULL,''),(160,'T5va9fSLmJ',NULL,''),(161,'fWKf44xdUk',NULL,''),(162,'B3w2e9uZJP',NULL,''),(163,'qFcTsdVLmq',NULL,''),(164,'q2Y67PCe9W',NULL,''),(165,'TU7tqGPtKM',NULL,''),(166,'HR547LmEcr',NULL,''),(167,'dUekd8rZdm',NULL,''),(168,'kQdEc4DPQX',NULL,''),(169,'YDNq6aaw5G',NULL,''),(170,'uzLhzLdyeg',NULL,''),(171,'Jcn4JR548n',NULL,''),(172,'43SGuAU9cG',NULL,''),(173,'FGbaE7kzhF',NULL,''),(174,'FCMStUyDwQ',NULL,''),(175,'jenmq6Y6VA',NULL,''),(176,'cMKwep7j7M',NULL,''),(177,'LhR3naSPcB',NULL,''),(178,'6cUvX73ABP',NULL,''),(179,'cyU6j7FzJR',NULL,''),(180,'2RmX8Am4ZW',NULL,''),(181,'862Tv9rYks',NULL,''),(182,'6rcVpWDXwW',NULL,''),(183,'7Wzgq9GN9m',NULL,''),(184,'t8aFpAMyZ9',NULL,''),(185,'g8t5bKCjgR',NULL,''),(186,'6avJqr3tmC',NULL,''),(187,'584svxYgzY',NULL,''),(188,'KTep6Qxj2w',NULL,''),(189,'dP9Ezzxrxf',NULL,''),(190,'7M2YhbEZcd',NULL,''),(191,'h4pnfg2q7N',NULL,''),(192,'P8ap8VfbmT',NULL,''),(193,'XfR3EqZgHb',NULL,''),(194,'whWZbcMfvH',NULL,''),(195,'UkdAKNFMMS',NULL,''),(196,'duhTPyzagM',NULL,''),(197,'r5baDJ8V27',NULL,''),(198,'NsQDCN6yP6',NULL,''),(199,'uAHaJB6Lp2',NULL,''),(200,'EaMmwTPtYP',NULL,''),(201,'test','2012-07-18 17:52:27','');
+/*!40000 ALTER TABLE `tagger_user` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tagger_usertalk`
+--
+
+DROP TABLE IF EXISTS `tagger_usertalk`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tagger_usertalk` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `talk_id` int(11) NOT NULL,
+  `articulation` int(11) NOT NULL,
+  `comment` longtext NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `tagger_usertalk_43637220` (`user_id`),
+  KEY `tagger_usertalk_5e95e5a3` (`talk_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tagger_usertalk`
+--
+
+LOCK TABLES `tagger_usertalk` WRITE;
+/*!40000 ALTER TABLE `tagger_usertalk` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tagger_usertalk` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2012-07-18 18:25:38

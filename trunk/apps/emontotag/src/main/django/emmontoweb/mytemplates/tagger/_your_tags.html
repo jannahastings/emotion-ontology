@@ -1,0 +1,26 @@
+    <h3>Your tags</h3>
+    {% if tag_set %}
+      <p>These are all the tags that you've added for this presentation. If, 
+      later, you feel a different emotion or feel that your emotion has changed
+      in some way, please add a new tag.</p>
+      <p>If you entered a tag incorrectly (i.e. it did not reflect your emotion
+      at the time you made it), please <a href="{% url tagger.views.tag_delete talk.id %}">
+      delete</a> it.
+      <table class=centre>
+	<tr><th>Tags</th></tr>
+	{% for tag in tag_set %}
+	<tr>
+	  {% if tag.term.category == "thought" %}
+	  <td>"I think {{tag.term.tag_label}}"<br />
+	    Severity: {{tag.degree}}, {{tag.timestamp}}</td>
+	  {% else %}
+	  <td>"I feel {{tag.term.tag_label}}"<br />
+	    Severity: {{tag.degree}}, {{tag.timestamp}}</td>
+	  {% endif %}
+	</tr>
+	{% endfor %}
+      </table>
+    {% else %}
+      <p>You haven't added any tags for this talk yet. When you do, they'll 
+      appear here.</p>
+    {% endif %}

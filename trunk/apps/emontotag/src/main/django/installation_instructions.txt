@@ -1,0 +1,30 @@
+*** Installation instructions for EmOntoTag v1 ***
+
+Set up a mysql database on localhost and port 3306 (default).
+Create a database "emontotag" and a user "emontotaguser" with all privileges
+for that database.
+
+db name: emontotag
+username: emontotaguser
+password: stoicBananaElephant
+
+If the database "emontotag" already exists, drop it and make a new one.
+
+Access the mysql prompt in the emontotag database:
+
+  $ mysql -u emontotaguser -p emontotag
+  Enter password: 
+  mysql > source sql1.txt
+
+This will populate the database with all the data needed by the application.
+
+Host the static file style.css at "/smedia/style.css" on your server.
+
+Deploy emontotag.war. If the server runs out of memory during deployment, 
+restart it and start again.
+
+Everything should work :-)
+
+---
+
+Good luck!

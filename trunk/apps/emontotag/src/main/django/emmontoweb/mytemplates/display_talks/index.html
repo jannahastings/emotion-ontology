@@ -1,0 +1,19 @@
+{% extends "display_talks/base.html" %}
+{% block content %}
+  <p>The current talk will be displayed prominently here.</p>
+  {% if talks_list %}
+    <ul>
+      {% for talk in talks_list %}
+      <li><a href="/talks/{{ talk.id }}/">{{ talk.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No talks available. Probably a database error.</p>
+  {% endif %}
+  <p>EmOntoTag allows you to tag talks that you experience using an emotion
+  ontology designed by Janna Hastings. To tag a talk, click on it above and 
+  complete the sample sentences provided.</p>
+  <p>Data collected from this experiment will be used to assess the utility of
+  the ontology. For more information, see our <a href="/about/">about page</a>
+  and <a href="/privacy/">privacy policy</a>.</p>
+{% endblock %}

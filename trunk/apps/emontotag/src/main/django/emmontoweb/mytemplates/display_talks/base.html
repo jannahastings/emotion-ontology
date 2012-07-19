@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <link rel="stylesheet" href="http://localhost:8000/smedia/style.css" />
+    <title>{% block title %}{% endblock %}EmOntoTag</title>
+  </head>
+
+  <body>
+    <div id=centrewrap>
+      {% block userinfo %}
+      <div id=userinfo>
+	<p>Logged in as {% block username %}{% endblock %}, 
+	<a href="/logout/">logout</a></p>
+      </div>
+      {% endblock %}
+
+      <div id=banner>
+	<h1>{% block banner %}<a href="/talks/">EmOntoTag</a>{% endblock %}</h1>
+      </div>
+
+      <div id=content>
+	{% block content %}<p>Say something.</p>{% endblock %}
+      </div>
+
+      <div id=footer>
+	<p><a href="/talks/">home</a> //
+	  <a href="/about/">about</a> //
+	  <a href="/contact/">contact</a> //
+	  <a href="/logout/">logout</a> // 
+	  <a href="/privacy/">privacy policy</a></p>
+      </div>
+    </div>
+  </body>
+</html>
