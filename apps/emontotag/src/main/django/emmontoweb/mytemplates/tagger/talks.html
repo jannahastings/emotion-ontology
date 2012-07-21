@@ -35,6 +35,7 @@
     <h3>{{current_talk.title}}</h3>
     {% endif %}
   </div>
+  {% endif %}
   <p>EmOntoTag allows you to tag conference presentations that you are listening
   to (or have listened to) using terms from the 
   <a href="http://code.google.com/p/emotion-ontology">Emotion Ontology</a>
@@ -46,7 +47,6 @@
   <p>Data collected from this experiment will be used to assess the utility of
   the ontology. For more information, see our <a href="{% url about %}">about page</a>
   and <a href="{% url privacy %}">privacy policy</a>.</p>
-  {% endif %}
   <table id=talks>
     {% for talk in talks_list %}
     {% ifchanged %}<tr class="day"><td><h3>{{talk.start_time|date:"l"}}</h3></td></tr>{% endifchanged %}
