@@ -37,7 +37,7 @@ The latest version of the ontology can always be found at http://code.google.com
         <rdfs:comment>Sources for definitions:
 OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sander and Klaus Scherer, Oxford University Press, 2009.
 </rdfs:comment>
-        <owl:imports rdf:resource="&obo;MF.owl"/>
+        <owl:imports rdf:resource="&obo;MF"/>
     </owl:Ontology>
     
 
@@ -142,14 +142,14 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#hasAgent"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
+                <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000002"/>
+                <owl:onProperty rdf:resource="&obo;MF#hasAgent"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An emotion process is a complex mental process that is a synchronized aggregate of constituent mental processes including an appraisal process as part, and which gives rise to an action tendency.</obo:IAO_0000115>
@@ -181,7 +181,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="&obo;MFOEM_000004">
         <rdfs:label>emotional behavioural process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000022"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007610"/>
         <rdfs:comment>This branch is still very much under construction and will be worked on in collaboration with the Behaviour Ontology (George Gkoutos). </rdfs:comment>
         <obo:IAO_0000115>An emotional behavioural process is the behaviour of the organism in response to the appraisal, which includes the characteristic facial expressions for particular emotion types.</obo:IAO_0000115>
     </owl:Class>
@@ -1940,14 +1940,6 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <!-- http://purl.obolibrary.org/obo/MF_0000020 -->
 
     <owl:Class rdf:about="&obo;MF_0000020"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF_0000022 -->
-
-    <owl:Class rdf:about="&obo;MF_0000022">
-        <rdfs:comment>Note:  The &apos;Behavior&apos; branch here will most likely be superceded by the Neuro Behavior Ontology (NBO) being developed by George Gkoutos and Chris Mungall. </rdfs:comment>
-    </owl:Class>
     
 
 
