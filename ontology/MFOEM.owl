@@ -25,20 +25,20 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:MFO="&obo;MFO#">
-    <owl:Ontology rdf:about="&obo;MFOEM">
-        <owl:versionInfo>beta 2012-08-17</owl:versionInfo>
+    <owl:Ontology rdf:about="&obo;MFOEM.owl">
         <rdfs:comment>Sources for terms and synonyms / translations :
 -- GRID project vocabulary resources (Cristina Soriano)</rdfs:comment>
+        <dc:contributor>Kevin Mulligan</dc:contributor>
         <dc:contributor>Barry Smith</dc:contributor>
+        <dc:contributor>Janna Hastings</dc:contributor>
         <dc:title>The Emotion Ontology is an ontology for affective phenomena such as emotions and moods.  It is being developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. It builds on the Ontology of Mental Functioning (MFO) and the Basic Formal Ontology (BFO). 
 
 The latest version of the ontology can always be found at http://code.google.com/p/emotion-ontology/source/browse/#svn%2Ftrunk%2Fontology. </dc:title>
-        <dc:contributor>Kevin Mulligan</dc:contributor>
-        <dc:contributor>Janna Hastings</dc:contributor>
         <rdfs:comment>Sources for definitions:
 OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sander and Klaus Scherer, Oxford University Press, 2009.
 </rdfs:comment>
-        <owl:imports rdf:resource="&obo;MF"/>
+        <owl:versionInfo>beta 2012-08-17</owl:versionInfo>
+        <owl:imports rdf:resource="&obo;MF.owl"/>
         <owl:imports rdf:resource="&obo;bfo.owl"/>
         <owl:imports rdf:resource="&obo;MF/external/GO_import.owl"/>
     </owl:Ontology>
@@ -139,14 +139,14 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#hasAgent"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
+                <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000002"/>
+                <owl:onProperty rdf:resource="&obo;MF#hasAgent"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
