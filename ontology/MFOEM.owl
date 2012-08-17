@@ -26,6 +26,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:MFO="&obo;MFO#">
     <owl:Ontology rdf:about="&obo;MFOEM">
+        <owl:versionInfo>beta 2012-08-17</owl:versionInfo>
         <rdfs:comment>Sources for terms and synonyms / translations :
 -- GRID project vocabulary resources (Cristina Soriano)</rdfs:comment>
         <dc:contributor>Barry Smith</dc:contributor>
@@ -138,7 +139,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -150,7 +151,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000004"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An emotion process is a complex mental process that is a synchronized aggregate of constituent mental processes including an appraisal process as part, and which gives rise to an action tendency.</obo:IAO_0000115>
