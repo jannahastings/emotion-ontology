@@ -134,12 +134,6 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
                 <owl:someValuesFrom rdf:resource="&obo;MFOEM_000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -147,6 +141,12 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MF#hasAgent"/>
                 <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -555,7 +555,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <obo:IAO_0000115>A positively experienced emotion which is sought out (approached) and is associated with happiness, enjoyment, and satisfaction.  [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="es">placer</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">plaisir</obo:MFOEM_000010>
-        <obo:MFOEM_000165>pleasure</obo:MFOEM_000165>
+        <obo:MFOEM_000165>pleased</obo:MFOEM_000165>
         <obo:MFOEM_000010 xml:lang="de">vergnügen</obo:MFOEM_000010>
     </owl:Class>
     
@@ -577,8 +577,8 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <owl:Class rdf:about="&obo;MFOEM_000037">
         <rdfs:label>mastery pleasure</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000035"/>
-        <obo:MFOEM_000165>mastery pleasure</obo:MFOEM_000165>
         <obo:IAO_0000115>Pleasure derived from mastery, including the experience of flow. [Source: OCEAS]</obo:IAO_0000115>
+        <obo:MFOEM_000165>a feeling of mastery</obo:MFOEM_000165>
     </owl:Class>
     
 
@@ -1936,6 +1936,106 @@ While it is tempting not to categorise this as an appraisal at all, it should be
         <rdfs:label>boredom</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
         <obo:MFOEM_000165>bored</obo:MFOEM_000165>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000167 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000167">
+        <rdfs:label xml:lang="en">curiosity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
+        <obo:MFOEM_000010>intrigued</obo:MFOEM_000010>
+        <obo:MFOEM_000165>curious</obo:MFOEM_000165>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000168 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000168">
+        <rdfs:label xml:lang="en">concern</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
+        <obo:MFOEM_000165>concerned</obo:MFOEM_000165>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000169 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000169">
+        <rdfs:label xml:lang="en">amusement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
+        <obo:MFOEM_000165>amused</obo:MFOEM_000165>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000170 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000170">
+        <rdfs:label xml:lang="en">dubious</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000171 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000171">
+        <rdfs:label>worry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
+        <obo:MFOEM_000165 xml:lang="en">worried</obo:MFOEM_000165>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000173 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000173">
+        <rdfs:label xml:lang="en">confusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
+        <obo:MFOEM_000165>confused</obo:MFOEM_000165>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000175 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000175">
+        <rdfs:label xml:lang="en">expectant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
+        <obo:MFOEM_000010>anticipative</obo:MFOEM_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000177 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000177">
+        <rdfs:label xml:lang="en">hope</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
+        <obo:MFOEM_000165>hopeful</obo:MFOEM_000165>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000178 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000178">
+        <rdfs:label xml:lang="en">inspiration (emotion)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
+        <obo:MFOEM_000165>inspired</obo:MFOEM_000165>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000179 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000179">
+        <rdfs:label xml:lang="en">schadenfreude</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000035"/>
+        <obo:IAO_0000115>A complex emotion that consists of the experience of pleasure as caused by the misfortune of others. </obo:IAO_0000115>
     </owl:Class>
     
 
