@@ -139,14 +139,14 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#hasAgent"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
+                <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000004"/>
+                <owl:onProperty rdf:resource="&obo;MF#hasAgent"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1990,6 +1990,28 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000172 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000172">
+        <rdfs:label xml:lang="en">canonical angry facial expression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000130"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The canonical facial expression associated with the experience of anger. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFOEM_000173 -->
 
     <owl:Class rdf:about="&obo;MFOEM_000173">
@@ -2000,12 +2022,50 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000174 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000174">
+        <rdfs:label xml:lang="en">canonical emotional facial expression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000125"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Characteristic facial expressions that are made when a person is undergoing a so-called &quot;basic&quot; emotions. These are canonical, that is, individual facial expressions when undergoing emotions can vary or not change at all. However, research indicates evidence for the existence of characteristic canonical facial expressions that are displayed when experiencing certain emotions even across cultures. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFOEM_000175 -->
 
     <owl:Class rdf:about="&obo;MFOEM_000175">
         <rdfs:label xml:lang="en">expectant</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000001"/>
         <obo:MFOEM_000010>anticipative</obo:MFOEM_000010>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000176 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000176">
+        <rdfs:label xml:lang="en">canonical fearful facial expression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000132"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The canonical facial expression associated with the experience of fear. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2036,6 +2096,162 @@ While it is tempting not to categorise this as an appraisal at all, it should be
         <rdfs:label xml:lang="en">schadenfreude</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000035"/>
         <obo:IAO_0000115>A complex emotion that consists of the experience of pleasure as caused by the misfortune of others. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000180 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000180">
+        <rdfs:label xml:lang="en">canonical happy facial expression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000042"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000126"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The canonical facial expression associated with the experience of happiness. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000181 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000181">
+        <rdfs:label xml:lang="en">canonical disgusted facial expression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The canonical facial expression associated with the experience of disgust. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000182 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000182">
+        <rdfs:label xml:lang="en">canonical sad facial expression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000056"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The canonical facial expression associated with the experience of sadness. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000183 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000183">
+        <rdfs:label xml:lang="en">canonical emotional voice utterances</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
+        <obo:IAO_0000115>The vocal utterances associated with the characteristic sound of an emotion. Obviously, any particular emotional instance may be associated with a great variety of different types of voice utterances or no voice utterances at all. However, &quot;canonical&quot; or characteristic voice utterances can be associated with core emotions. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000184 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000184">
+        <rdfs:label xml:lang="en">canonical angry voice utterance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000183"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000153"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Vocal utterances canonically associated with the experience of anger</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000185 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000185">
+        <rdfs:label xml:lang="en">canonical fearful voice utterance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000183"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Vocal utterances canonically associated with the experience of fear</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000186 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000186">
+        <rdfs:label xml:lang="en">canonical disgusted voice utterance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000183"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Voice utterances characteristically associated with the experience of disgust. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000187 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000187">
+        <rdfs:label xml:lang="en">canonical happy voice utterance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000183"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000042"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Voice utterance characteristically associated with the experience of happiness.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000188 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000188">
+        <rdfs:label xml:lang="en">canonical sad voice utterance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000183"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000056"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Voice utterance characteristically associated with the experience of sadness.</obo:IAO_0000115>
     </owl:Class>
     
 
