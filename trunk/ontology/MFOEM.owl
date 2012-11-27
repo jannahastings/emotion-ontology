@@ -1804,6 +1804,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="&obo;MFOEM_000152">
         <rdfs:label>emotional speaking behaviour</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0071625"/>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000004"/>
     </owl:Class>
     
