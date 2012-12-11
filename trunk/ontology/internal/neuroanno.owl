@@ -22,7 +22,7 @@
         <oboInOwl:creation_date>November 2012</oboInOwl:creation_date>
         <rdfs:comment>This ontology extension of the emotion ontology and mental functioning ontology supports neuroscience-related annotation (e.g. of fMRI data) based on the processes that the subjects were asked to perform while they were undergoing experimentation. Uses IAO for classes related to media such as pictures and videos, but extends IAO with specific classes for neuroscience-research-related stimuli. &quot;Full&quot; definitions are annoted wherever possible to support multi-hierarchical classification. </rdfs:comment>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MFOEM/external/PATO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MFOEM/external/PATO_imported.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MFOEM/internal/neuroanno-gen.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/iao.owl"/>
     </owl:Ontology>
@@ -43,11 +43,40 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000159 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000159"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000185 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000185"/>
     
 
 
