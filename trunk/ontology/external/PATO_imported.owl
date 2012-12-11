@@ -1,14 +1,27 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/MFOEM/external/PATO_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/MFOEM/external/PATO_import.owl"
-     xmlns:pato="http://purl.obolibrary.org/obo/pato#"
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY pato "http://purl.obolibrary.org/obo/pato#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;MFOEM/external/PATO_import.owl#"
+     xml:base="&obo;MFOEM/external/PATO_import.owl"
+     xmlns:pato="&obo;pato#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MFOEM/external/PATO_import.owl"/>
+    <owl:Ontology rdf:about="&obo;MFOEM/external/PATO_imported.owl"/>
     
 
 
@@ -20,30 +33,30 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in_subset</rdfs:label>
+    <owl:AnnotationProperty rdf:about="&obo;pato#attribute_slim"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;creation_date"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;inSubset">
+        <rdfs:label rdf:datatype="&xsd;string">in_subset</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_exact_synonym</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;created_by"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#value_slim"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
+    <owl:AnnotationProperty rdf:about="&obo;pato#value_slim"/>
+    <owl:AnnotationProperty rdf:about="&obo;pato#mpath_slim"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace">
+        <rdfs:label rdf:datatype="&xsd;string">has_obo_namespace</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_broad_synonym</rdfs:label>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasBroadSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_broad_synonym</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;id"/>
     
 
 
@@ -71,341 +84,341 @@
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000047 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000047">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological sex</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virtue of the bearer&#39;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000047</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0000047">
+        <rdfs:label rdf:datatype="&xsd;string">biological sex</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0000047</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#attribute_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000383 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000383">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001894"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an individual or a population that only produces gametes that can be fertilised by male gametes.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000383</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0000383">
+        <rdfs:label rdf:datatype="&xsd;string">female</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001894"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A biological sex quality inhering in an individual or a population that only produces gametes that can be fertilised by male gametes.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0000383</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000384 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000384">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001894"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000384</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#mpath_slim"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0000384">
+        <rdfs:label rdf:datatype="&xsd;string">male</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001894"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0000384</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001335 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001335">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bacterial mating type</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001895"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mating type that indicates whether the F plasmid has integrated into the chromosome.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001335</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0001335">
+        <rdfs:label rdf:datatype="&xsd;string">bacterial mating type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001895"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A mating type that indicates whether the F plasmid has integrated into the chromosome.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001335</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#attribute_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001337 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001337">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yeast mating type</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001895"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A yeast mating type.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001337</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0001337">
+        <rdfs:label rdf:datatype="&xsd;string">yeast mating type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001895"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A yeast mating type.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001337</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#attribute_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001340 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001340">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hermaphrodite</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001894"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an organism or a population with both male and female sexual organs in one individual.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001340</oboInOwl:id>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intersex</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0001340">
+        <rdfs:label rdf:datatype="&xsd;string">hermaphrodite</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001894"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A biological sex quality inhering in an organism or a population with both male and female sexual organs in one individual.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001340</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">intersex</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001341 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001341">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a mating type (yeast)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001342"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A S. cerevisiae mating type cells that secrete a pheromone that in alpha haploids stimulates processes that lead to mating.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001341</oboInOwl:id>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0001341">
+        <rdfs:label rdf:datatype="&xsd;string">a mating type (yeast)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001342"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A S. cerevisiae mating type cells that secrete a pheromone that in alpha haploids stimulates processes that lead to mating.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001341</oboInOwl:id>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">a</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001342 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001342">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saccharomyces cerevisiae mating type</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001337"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A S. cerevisiae mating type.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001342</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0001342">
+        <rdfs:label rdf:datatype="&xsd;string">Saccharomyces cerevisiae mating type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001337"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A S. cerevisiae mating type.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001342</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#attribute_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001343 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001343">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schizosaccharomyces pombe mating type</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001337"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A S. pombe mating type determined by the gene configuration on the mat1 locus.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001343</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0001343">
+        <rdfs:label rdf:datatype="&xsd;string">Schizosaccharomyces pombe mating type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001337"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A S. pombe mating type determined by the gene configuration on the mat1 locus.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001343</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#attribute_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001344 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001344">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha mating type (yeast)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001342"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A S. cerevisiae mating type cells that secrete a pheromone that stimulates a haploids.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001344</oboInOwl:id>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0001344">
+        <rdfs:label rdf:datatype="&xsd;string">alpha mating type (yeast)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001342"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A S. cerevisiae mating type cells that secrete a pheromone that stimulates a haploids.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001344</oboInOwl:id>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">alpha</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001345 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001345">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">h minus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001343"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A S. pombe mating type determined by the mat1-Mc and mat1-Mi on the mat1 locus.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M</oboInOwl:hasExactSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001345</oboInOwl:id>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">h -</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0001345">
+        <rdfs:label rdf:datatype="&xsd;string">h minus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001343"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A S. pombe mating type determined by the mat1-Mc and mat1-Mi on the mat1 locus.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">M</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001345</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">h -</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001346 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001346">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">h plus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001343"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A S. pombe mating type determined by the mat1-Pc and mat1-Pi on the mat1 locus.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P</oboInOwl:hasExactSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001346</oboInOwl:id>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">h+</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0001346">
+        <rdfs:label rdf:datatype="&xsd;string">h plus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001343"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A S. pombe mating type determined by the mat1-Pc and mat1-Pi on the mat1 locus.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">P</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001346</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">h+</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001347 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001347">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F mating type</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001335"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bacterial mating type indicating the presence of F plasmid in a bacterial cell.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001347</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0001347">
+        <rdfs:label rdf:datatype="&xsd;string">F mating type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001335"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A bacterial mating type indicating the presence of F plasmid in a bacterial cell.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001347</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001348 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001348">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F minus mating type</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001335"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bacterial mating type indicating the absence of F plasmid in a bacterial cell.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F-</oboInOwl:hasExactSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001348</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0001348">
+        <rdfs:label rdf:datatype="&xsd;string">F minus mating type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001335"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A bacterial mating type indicating the absence of F plasmid in a bacterial cell.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">F-</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001348</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001349 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001349">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high frequency recombinant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001348"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mating type that indicates that the F plasmid has integrated into the chromosome.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hfr</oboInOwl:hasExactSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001349</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0001349">
+        <rdfs:label rdf:datatype="&xsd;string">high frequency recombinant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001348"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A mating type that indicates that the F plasmid has integrated into the chromosome.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Hfr</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001349</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001827 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001827">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pseudohermaphrodite</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001894"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an individual or a population by virtue of having internal reproductive organs of one sex and external sexual characteristics of the other sex.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001827</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0001827">
+        <rdfs:label rdf:datatype="&xsd;string">pseudohermaphrodite</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001894"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A biological sex quality inhering in an individual or a population by virtue of having internal reproductive organs of one sex and external sexual characteristics of the other sex.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001827</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001828 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001828">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male pseudohermaphrodite</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001827"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an individual or a population by virtue of having internal reproductive organs of male and external sexual characteristics of female.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001828</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0001828">
+        <rdfs:label rdf:datatype="&xsd;string">male pseudohermaphrodite</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001827"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A biological sex quality inhering in an individual or a population by virtue of having internal reproductive organs of male and external sexual characteristics of female.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001828</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001829 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001829">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female pseudohermaphrodite</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001827"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an individual or a population by virtue of having internal reproductive organs of female and external sexual characteristics of male.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001829</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0001829">
+        <rdfs:label rdf:datatype="&xsd;string">female pseudohermaphrodite</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001827"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A biological sex quality inhering in an individual or a population by virtue of having internal reproductive organs of female and external sexual characteristics of male.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001829</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001894 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001894">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenotypic sex</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000047"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001894</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0001894">
+        <rdfs:label rdf:datatype="&xsd;string">phenotypic sex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000047"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001894</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#attribute_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001895 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001895">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mating type</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000047"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an individual or a population that undergo sexual reproduction.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001895</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0001895">
+        <rdfs:label rdf:datatype="&xsd;string">mating type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000047"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A biological sex quality inhering in an individual or a population that undergo sexual reproduction.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001895</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#attribute_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002365 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002365">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intact female</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000383"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-05-03T11:18:41Z</oboInOwl:creation_date>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female quality of having complete, unaltered reproductive organs</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0002365</oboInOwl:id>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gkoutos</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0002365">
+        <rdfs:label rdf:datatype="&xsd;string">intact female</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000383"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-05-03T11:18:41Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Female quality of having complete, unaltered reproductive organs</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0002365</oboInOwl:id>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">gkoutos</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002366 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002366">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intact male</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000384"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-05-03T11:19:06Z</oboInOwl:creation_date>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male quality of having complete, unaltered reproductive organs.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0002366</oboInOwl:id>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gkoutos</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0002366">
+        <rdfs:label rdf:datatype="&xsd;string">intact male</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000384"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-05-03T11:19:06Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Male quality of having complete, unaltered reproductive organs.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0002366</oboInOwl:id>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">gkoutos</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002367 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002367">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">castrated male</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000384"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-05-03T11:22:29Z</oboInOwl:creation_date>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male quality of being incapable to reproduce because of functional loss of the testicles from surgical removal or chemical means.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0002367</oboInOwl:id>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gkoutos</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#value_slim"/>
+    <owl:Class rdf:about="&obo;PATO_0002367">
+        <rdfs:label rdf:datatype="&xsd;string">castrated male</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000384"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-05-03T11:22:29Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Male quality of being incapable to reproduce because of functional loss of the testicles from surgical removal or chemical means.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0002367</oboInOwl:id>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">gkoutos</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;pato.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
     </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
 
