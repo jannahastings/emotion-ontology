@@ -134,7 +134,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000002"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -146,13 +146,13 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000004"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An emotion process is a complex mental process that is a synchronized aggregate of constituent mental processes including an appraisal process as part, and which gives rise to an action tendency.</obo:IAO_0000115>
@@ -1893,9 +1893,9 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <!-- http://purl.obolibrary.org/obo/MFOEM_000161 -->
 
     <owl:Class rdf:about="&obo;MFOEM_000161">
-        <rdfs:label>Speaking in a manner which is disturbed relative to what is the norm for that person. </rdfs:label>
         <rdfs:label>speaking in a disturbed fashion</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000152"/>
+        <obo:IAO_0000115>Speaking in a manner which is disturbed relative to what is the norm for that person. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2056,14 +2056,14 @@ While it is tempting not to categorise this as an appraisal at all, it should be
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000174"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000026"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000132"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000132"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The canonical facial expression associated with the experience of fear. </obo:IAO_0000115>
@@ -2108,14 +2108,14 @@ While it is tempting not to categorise this as an appraisal at all, it should be
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000174"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000126"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000042"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000042"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000126"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The canonical facial expression associated with the experience of happiness. </obo:IAO_0000115>
@@ -2242,14 +2242,14 @@ While it is tempting not to categorise this as an appraisal at all, it should be
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000183"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000056"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000031"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000056"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Voice utterance characteristically associated with the experience of sadness.</obo:IAO_0000115>
@@ -2280,6 +2280,12 @@ While it is tempting not to categorise this as an appraisal at all, it should be
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000174"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
                 <owl:someValuesFrom rdf:resource="&obo;MFOEM_000127"/>
             </owl:Restriction>
@@ -2288,12 +2294,6 @@ While it is tempting not to categorise this as an appraisal at all, it should be
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
                 <owl:someValuesFrom rdf:resource="&obo;MFOEM_000132"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000032"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Characteristic facial expression made when a person is undergoing an experience of surprise. </obo:IAO_0000115>
