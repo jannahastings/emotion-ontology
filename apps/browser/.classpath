@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/OWLTools-Core"/>
+	<classpathentry kind="lib" path="custom-libs/owlapi-bin.jar" sourcepath="custom-libs/owlapi-src.jar"/>
+	<classpathentry kind="lib" path="C:/Work/Source/Java/emonto/custom-libs/mysql-connector-java-5.1.18-bin.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>
