@@ -1801,7 +1801,7 @@
     <!-- http://purl.obolibrary.org/obo/MFOEM_001224 -->
 
     <owl:Class rdf:about="&obo;MFOEM_001224">
-        <rdfs:label rdf:datatype="&xsd;string">Visual perception of pictures of famale faces</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Visual perception of pictures of female faces</rdfs:label>
     </owl:Class>
     
 
@@ -1961,7 +1961,7 @@
     <!-- http://purl.obolibrary.org/obo/MFOEM_001247 -->
 
     <owl:Class rdf:about="&obo;MFOEM_001247">
-        <rdfs:label rdf:datatype="&xsd;string">Performing a task in which participants coount backwords</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Performing a task in which participants count backwords</rdfs:label>
     </owl:Class>
     
 
@@ -2601,7 +2601,7 @@
     <!-- http://purl.obolibrary.org/obo/MFOEM_001344 -->
 
     <owl:Class rdf:about="&obo;MFOEM_001344">
-        <rdfs:label rdf:datatype="&xsd;string">Visual perception of pictures of simple geomtric figures</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Visual perception of pictures of simple geometric figures</rdfs:label>
     </owl:Class>
     
 
