@@ -50,11 +50,6 @@
    	  <artifactId>OWLTools-Core</artifactId>
    	  <version>0.2.1-SNAPSHOT</version>
    	  </dependency> 
-   	  <dependency>
-        <groupId>org.apache.axis2</groupId>
-        <artifactId>axis2</artifactId>
-        <version>1.5.1</version>
-    </dependency>   	  
   </dependencies>
   	<distributionManagement>
     <repository>
@@ -74,16 +69,4 @@
          <url>scp://prod.ebi.ac.uk:/ebi/extserv/seqdb/internal/seqdb/projects/chebi/chebi-prg/${project.artifactId}</url>
      </site>
 	</distributionManagement>
-	<properties><axis.version>1.5.1</axis.version></properties>
-	<build><plugins>
-<!-- 	<plugin><groupId>org.apache.axis2</groupId>
-		<artifactId>axis2-wsdl2code-maven-plugin</artifactId>
-		<version>${axis.version}</version>
-		<executions><execution><goals><goal>wsdl2code</goal>
-		</goals></execution></executions>
-		<configuration><packageName>gov.nih.nlm.ncbi.eutils</packageName>
-		<wsdlFile>http://www.ncbi.nlm.nih.gov/entrez/eutils/soap/v2.0/eutils.wsdl</wsdlFile><skipBuildXML>true</skipBuildXML><syncMode>sync</syncMode><unpackClasses>true</unpackClasses><namespaceURIs><namespaceURI><uri>http://www.ncbi.nlm.nih.gov/soap/eutils/egquery</uri><packageName>gov.nih.nlm.ncbi.eutils.egquery</packageName></namespaceURI><namespaceURI><uri>http://www.ncbi.nlm.nih.gov/soap/eutils/einfo</uri><packageName>gov.nih.nlm.ncbi.eutils.einfo</packageName></namespaceURI><namespaceURI><uri>http://www.ncbi.nlm.nih.gov/soap/eutils/elink</uri><packageName>gov.nih.nlm.ncbi.eutils.elink</packageName></namespaceURI><namespaceURI><uri>http://www.ncbi.nlm.nih.gov/soap/eutils/esearch</uri><packageName>gov.nih.nlm.ncbi.eutils.esearch</packageName></namespaceURI><namespaceURI><uri>http://www.ncbi.nlm.nih.gov/soap/eutils/esummary</uri><packageName>gov.nih.nlm.ncbi.eutils.esummary</packageName></namespaceURI><namespaceURI><uri>http://www.ncbi.nlm.nih.gov/soap/eutils/espell</uri><packageName>gov.nih.nlm.ncbi.eutils.espell</packageName></namespaceURI><namespaceURI><uri>http://www.ncbi.nlm.nih.gov/soap/eutils/epost</uri><packageName>gov.nih.nlm.ncbi.eutils.epost</packageName></namespaceURI></namespaceURIs>
-		</configuration></plugin>  -->
-	</plugins>
-	</build>
 </project>
