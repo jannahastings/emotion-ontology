@@ -115,6 +115,54 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001003 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001003">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0007601"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;IAO_0000185"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="&obo;MFOEM_000125"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="&obo;MF_0000016"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="&obo;BFO_0000159"/>
+                                                                        <owl:someValuesFrom rdf:resource="&obo;PATO_0000383"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFOEM_001004 -->
 
     <rdf:Description rdf:about="&obo;MFOEM_001004">
@@ -1567,6 +1615,7 @@
     <!-- http://purl.obolibrary.org/obo/MFOEM_001073 -->
 
     <rdf:Description rdf:about="&obo;MFOEM_001073">
+        <owl:equivalentClass rdf:resource="&obo;MFOEM_001246"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1662,6 +1711,58 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001102 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001102">
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007605"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001103 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001103">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0007605"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFOEM_000183"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001104 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001104">
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007605"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001105 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001105">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0007613"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFOEM_000001"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -1774,6 +1875,90 @@
 
     <rdf:Description rdf:about="&obo;MFOEM_001134">
         <rdfs:subClassOf rdf:resource="&obo;GO_0007610"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001140 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001140">
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000010"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001146 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001146">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0007601"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;IAO_0000185"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="&obo;MFOEM_000125"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
+                                                        <owl:someValuesFrom rdf:resource="&obo;MF_0000016"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001147 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001147">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0007601"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;IAO_0000185"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="&obo;MFOEM_000174"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
+                                                        <owl:someValuesFrom rdf:resource="&obo;MF_0000016"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </rdf:Description>
     
 
@@ -1928,6 +2113,156 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001223 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001223">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0007601"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;IAO_0000185"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="&obo;MFOEM_000125"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="&obo;MF_0000016"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="&obo;BFO_0000159"/>
+                                                                        <owl:someValuesFrom rdf:resource="&obo;PATO_0000384"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001224 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001224">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0007601"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;IAO_0000185"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="&obo;MFOEM_000125"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="&obo;MF_0000016"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="&obo;BFO_0000159"/>
+                                                                        <owl:someValuesFrom rdf:resource="&obo;PATO_0000383"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001230 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001230">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0007605"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFOEM_000184"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001231 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001231">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0007605"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFOEM_000187"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001232 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001232">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0007605"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFOEM_000188"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFOEM_001235 -->
 
     <rdf:Description rdf:about="&obo;MFOEM_001235">
@@ -1943,6 +2278,61 @@ This is said to disrupt the rhythmic firing patterns of tinnitus-creating audito
 
     <rdf:Description rdf:about="&obo;MFOEM_001240">
         <rdfs:subClassOf rdf:resource="&obo;GO_0007605"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001242 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001242">
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000014"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001246 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001246">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0007613"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFOEM_000042"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001247 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001247">
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001250 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001250">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf rdf:resource="&obo;MFOEM_001249"/>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007600"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001254 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001254">
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000015"/>
     </rdf:Description>
     
 
@@ -2246,10 +2636,144 @@ This is said to disrupt the rhythmic firing patterns of tinnitus-creating audito
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001312 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001312">
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000015"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001317 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001317">
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050975"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001318 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001318">
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050975"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001319 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001319">
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050975"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001321 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001321">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0007605"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                        <owl:someValuesFrom rdf:resource="&obo;NBO_0000037"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001323 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001323">
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000014"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFOEM_001325 -->
 
     <rdf:Description rdf:about="&obo;MFOEM_001325">
         <rdfs:subClassOf rdf:resource="&obo;MF_0000004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001334 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001334">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0007601"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;IAO_0000185"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="&obo;MFOEM_000180"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
+                                                        <owl:someValuesFrom rdf:resource="&obo;MF_0000016"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001335 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001335">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0007601"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;IAO_0000185"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="&obo;MFOEM_000176"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
+                                                        <owl:someValuesFrom rdf:resource="&obo;MF_0000016"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -2279,6 +2803,34 @@ This is said to disrupt the rhythmic firing patterns of tinnitus-creating audito
 
     <rdf:Description rdf:about="&obo;MFOEM_001350">
         <rdfs:subClassOf rdf:resource="&obo;GO_0007613"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001354 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001354">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0007601"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;IAO_0000185"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;MFOEM_000042"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -2403,10 +2955,157 @@ This is said to disrupt the rhythmic firing patterns of tinnitus-creating audito
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001389 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001389">
+        <rdfs:subClassOf rdf:resource="&obo;NBO_0001952"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001390 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001390">
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007605"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001391 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001391">
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007605"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001394 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001394">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;MF_0000010"/>
+                    <rdf:Description rdf:about="&obo;MF_0000011"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001402 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001402">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0007601"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;IAO_0000185"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="&obo;MFOEM_000125"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
+                                                        <owl:someValuesFrom rdf:resource="&obo;MF_0000016"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFOEM_001412 -->
 
     <rdf:Description rdf:about="&obo;MFOEM_001412">
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000164"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001413 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001413">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0050975"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFOEM_000181"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001414 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001414">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0050975"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFOEM_000133"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001415 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001415">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0050975"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MFOEM_000180"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001421 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001421">
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007608"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001422 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001422">
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007608"/>
     </rdf:Description>
     
 
@@ -2559,6 +3258,22 @@ This is said to disrupt the rhythmic firing patterns of tinnitus-creating audito
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001479 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001479">
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_001010"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_001480 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_001480">
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_001007"/>
     </rdf:Description>
     
 
