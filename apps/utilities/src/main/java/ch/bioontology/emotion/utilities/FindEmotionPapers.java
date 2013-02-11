@@ -203,9 +203,9 @@ public class FindEmotionPapers {
 		FindEmotionPapers paperFinder = new FindEmotionPapers() ;
 
 		paperFinder.searchPubMedForPapers();
-		paperFinder.parseFullText();
+//		paperFinder.parseFullText();
 
-		paperFinder.writeResultsToFile();
+//		paperFinder.writeResultsToFile();
 
 	}
 
