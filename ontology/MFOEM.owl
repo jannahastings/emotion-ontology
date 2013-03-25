@@ -37,7 +37,7 @@ The latest version of the ontology can always be found at http://code.google.com
         <rdfs:comment>Sources for definitions:
 OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sander and Klaus Scherer, Oxford University Press, 2009.
 </rdfs:comment>
-        <owl:versionInfo>beta 2012-08-17</owl:versionInfo>
+        <owl:versionInfo>beta 2013-03-25</owl:versionInfo>
         <owl:imports rdf:resource="&obo;MF.owl"/>
         <owl:imports rdf:resource="&obo;bfo.owl"/>
         <owl:imports rdf:resource="&obo;MF/external/GO_import.owl"/>
