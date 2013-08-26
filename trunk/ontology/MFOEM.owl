@@ -2805,6 +2805,25 @@ where (b) is phenomenologically similar to the sort of aversive experience invol
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000214 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000214">
+        <rdfs:label xml:lang="en">physical pleasure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000202"/>
+        <rdfs:comment>Physical pleasure is not named just &apos;pleasure&apos; as that has already been used for emotional pleasure.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000215 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000215">
+        <rdfs:label xml:lang="en">ticklish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000202"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000020 -->
 
     <owl:Class rdf:about="&obo;MF_0000020">
