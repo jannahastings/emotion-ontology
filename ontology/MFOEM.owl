@@ -165,14 +165,8 @@ The latest version of the ontology can always be found at http://code.google.com
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000195"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#hasAgent"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000004"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -184,7 +178,13 @@ The latest version of the ontology can always be found at http://code.google.com
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000003"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MF#hasAgent"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An emotion process is a complex mental process that is a synchronized aggregate of constituent mental processes including an appraisal process as part, and which gives rise to an action tendency.</obo:IAO_0000115>
@@ -199,6 +199,12 @@ The latest version of the ontology can always be found at http://code.google.com
     <owl:Class rdf:about="&obo;MFOEM_000002">
         <rdfs:label>appraisal process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An appraisal process is a mental process that gives rise to an appraisal.</obo:IAO_0000115>
     </owl:Class>
     
@@ -545,6 +551,12 @@ The latest version of the ontology can always be found at http://code.google.com
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000208"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -556,12 +568,6 @@ The latest version of the ontology can always be found at http://code.google.com
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An activated, aversive emotion that motivates attempts to cope with events that provide threats to the survival or well-being of organisms. Characterised by feelings of threat and impending doom, and by an urge to get out of the situation. [Source: OCEAS]</obo:IAO_0000115>
@@ -726,12 +732,6 @@ The latest version of the ontology can always be found at http://code.google.com
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000207"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -743,6 +743,12 @@ The latest version of the ontology can always be found at http://code.google.com
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000207"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:MFOEM_000165>pleased</obo:MFOEM_000165>
@@ -2276,14 +2282,14 @@ While it is tempting not to categorise this as an appraisal at all, it should be
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000174"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000130"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000009"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000130"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The canonical facial expression associated with the experience of anger. </obo:IAO_0000115>
@@ -2346,14 +2352,14 @@ While it is tempting not to categorise this as an appraisal at all, it should be
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000174"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000132"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000026"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000132"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The canonical facial expression associated with the experience of fear. </obo:IAO_0000115>
@@ -2474,14 +2480,14 @@ While it is tempting not to categorise this as an appraisal at all, it should be
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000183"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000153"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000009"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000153"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Vocal utterances canonically associated with the experience of anger</obo:IAO_0000115>
@@ -2544,14 +2550,14 @@ While it is tempting not to categorise this as an appraisal at all, it should be
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000183"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000031"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000056"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000056"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Voice utterance characteristically associated with the experience of sadness.</obo:IAO_0000115>
@@ -2673,6 +2679,12 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000196">
         <rdfs:label xml:lang="en">anxious mood</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000193"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000208"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An anxious mood is a general feeling of mild fearfulness and a heightened disposition to experience fear and other negatively valenced emotions. </obo:IAO_0000115>
     </owl:Class>
     
@@ -2683,6 +2695,12 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000197">
         <rdfs:label xml:lang="en">irritable mood</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000193"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000208"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An irritable mood is a general feeling of mild annoyance, a heightened disposition to anger and other negatively valenced emotions. </obo:IAO_0000115>
     </owl:Class>
     
@@ -2693,6 +2711,12 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="&obo;MFOEM_000198">
         <rdfs:label xml:lang="en">cheerful mood</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000193"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000207"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A cheerful mood is a general feeling of well-being and a heightened disposition to happiness, amusement and other positively valenced emotions.</obo:IAO_0000115>
     </owl:Class>
     
