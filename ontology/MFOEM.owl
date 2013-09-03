@@ -158,6 +158,14 @@ The latest version of the ontology can always be found at http://code.google.com
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0060273 -->
+
+    <rdf:Description rdf:about="&obo;GO_0060273">
+        <owl:equivalentClass rdf:resource="&obo;MFOEM_000031"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFOEM_000001 -->
 
     <owl:Class rdf:about="&obo;MFOEM_000001">
@@ -379,6 +387,7 @@ The latest version of the ontology can always be found at http://code.google.com
 
     <owl:Class rdf:about="&obo;MFOEM_000015">
         <rdfs:label>aggression</rdfs:label>
+        <owl:equivalentClass rdf:resource="&obo;NBO_0000015"/>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000004"/>
         <obo:IAO_0000115>Any behaviour that is intended to harm another person who wants to avoid the harm. [Source: OCEAS]</obo:IAO_0000115>
     </owl:Class>
@@ -653,6 +662,7 @@ The latest version of the ontology can always be found at http://code.google.com
 
     <owl:Class rdf:about="&obo;MFOEM_000031">
         <rdfs:label>crying</rdfs:label>
+        <owl:equivalentClass rdf:resource="&obo;NBO_0000618"/>
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000004"/>
         <obo:IAO_0000115>A multimodal behaviour consisting of tears, non-verbal vocalisations (wails, sobs), and facial expressions of distress. [Source: OCEAS]</obo:IAO_0000115>
         <rdfs:comment>Not sure whether this should be seen as a synonym for &apos;having tears in the eyes&apos; -- there probably need to be different degrees of crying. </rdfs:comment>
@@ -2921,6 +2931,65 @@ where (b) is phenomenologically similar to the sort of aversive experience invol
     <!-- http://purl.obolibrary.org/obo/MF_0000039 -->
 
     <owl:Class rdf:about="&obo;MF_0000039"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NBO_0000003 -->
+
+    <rdf:Description rdf:about="&obo;NBO_0000003">
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000004"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NBO_0000015 -->
+
+    <rdf:Description rdf:about="&obo;NBO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NBO_0000091 -->
+
+    <rdf:Description rdf:about="&obo;NBO_0000091">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NBO_0000092 -->
+
+    <rdf:Description rdf:about="&obo;NBO_0000092">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000028"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NBO_0000230 -->
+
+    <rdf:Description rdf:about="&obo;NBO_0000230">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NBO_0000618 -->
+
+    <rdf:Description rdf:about="&obo;NBO_0000618"/>
 </rdf:RDF>
 
 
