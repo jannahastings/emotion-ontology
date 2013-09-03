@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/MFOEM/internal/em-cogatlas-mapping.owl#"
+     xml:base="http://purl.obolibrary.org/obo/MFOEM/internal/em-cogatlas-mapping.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MFOEM/internal/em-cogatlas-mapping.owl">
+        <owl:versionInfo>2013-09-03</owl:versionInfo>
+        <dc:Contributor>Janna Hastings</dc:Contributor>
+        <rdfs:comment>This file contains the mapping from the Cognitive Atlas ontology to the Emotion Ontology. </rdfs:comment>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl"/>
+        <owl:imports rdf:resource="http://www.cognitiveatlas.org/ontology/cogat.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000001 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MFOEM_000001">
+        <owl:equivalentClass rdf:resource="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00276"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000016 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MFOEM_000016">
+        <owl:equivalentClass rdf:resource="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00605"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000026 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MFOEM_000026">
+        <owl:equivalentClass rdf:resource="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00603"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000032 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MFOEM_000032">
+        <owl:equivalentClass rdf:resource="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00548"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000042 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MFOEM_000042">
+        <owl:equivalentClass rdf:resource="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00606"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000055 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MFOEM_000055">
+        <owl:equivalentClass rdf:resource="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00516"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000056 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MFOEM_000056">
+        <owl:equivalentClass rdf:resource="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00499"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000193 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MFOEM_000193">
+        <owl:equivalentClass rdf:resource="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00404"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000194 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MFOEM_000194">
+        <owl:equivalentClass rdf:resource="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00563"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000203 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MFOEM_000203">
+        <owl:equivalentClass rdf:resource="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00675"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00276 -->
+
+    <rdf:Description rdf:about="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00276"/>
+    
+
+
+    <!-- http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00277 -->
+
+    <rdf:Description rdf:about="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00277">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00404 -->
+
+    <rdf:Description rdf:about="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00404"/>
+    
+
+
+    <!-- http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00499 -->
+
+    <rdf:Description rdf:about="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00499"/>
+    
+
+
+    <!-- http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00516 -->
+
+    <rdf:Description rdf:about="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00516"/>
+    
+
+
+    <!-- http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00548 -->
+
+    <rdf:Description rdf:about="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00548"/>
+    
+
+
+    <!-- http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00563 -->
+
+    <rdf:Description rdf:about="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00563"/>
+    
+
+
+    <!-- http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00603 -->
+
+    <rdf:Description rdf:about="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00603"/>
+    
+
+
+    <!-- http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00605 -->
+
+    <rdf:Description rdf:about="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00605"/>
+    
+
+
+    <!-- http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00606 -->
+
+    <rdf:Description rdf:about="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00606"/>
+    
+
+
+    <!-- http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00675 -->
+
+    <rdf:Description rdf:about="http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00675"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
