@@ -27,17 +27,18 @@
      xmlns:MFO="&obo;MFO#">
     <owl:Ontology rdf:about="&obo;MFOEM.owl">
         <rdfs:label>The Emotion Ontology is an ontology for affective phenomena such as emotions and moods. It is being developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. It builds on the Ontology of Mental Functioning (MFO) and the Basic Formal Ontology (BFO). The latest version of the ontology can always be found at http://code.google.com/p/emotion-ontology/source/browse/#svn%2Ftrunk%2Fontology.</rdfs:label>
+        <owl:versionInfo>beta 2013-07-23</owl:versionInfo>
+        <dc:contributor>Janna Hastings</dc:contributor>
+        <rdfs:comment>Sources for terms and synonyms / translations :
+-- GRID project vocabulary resources (Cristina Soriano)</rdfs:comment>
         <rdfs:comment>Sources for definitions:
 OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sander and Klaus Scherer, Oxford University Press, 2009.
 </rdfs:comment>
-        <dc:title>The Emotion Ontology is an ontology for affective phenomena such as emotions and moods.  It is being developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. It builds on the Ontology of Mental Functioning (MFO) and the Basic Formal Ontology (BFO). 
+        <obo:comment>The Emotion Ontology is an ontology for affective phenomena such as emotions and moods.  It is being developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. It builds on the Ontology of Mental Functioning (MFO) and the Basic Formal Ontology (BFO). 
 
-The latest version of the ontology can always be found at http://code.google.com/p/emotion-ontology/source/browse/#svn%2Ftrunk%2Fontology. </dc:title>
-        <owl:versionInfo>beta 2013-07-23</owl:versionInfo>
-        <dc:contributor>Janna Hastings</dc:contributor>
+The latest version of the ontology can always be found at http://code.google.com/p/emotion-ontology/source/browse/#svn%2Ftrunk%2Fontology. </obo:comment>
+        <dc:title>Emotion Ontology</dc:title>
         <dc:contributor>Barry Smith</dc:contributor>
-        <rdfs:comment>Sources for terms and synonyms / translations :
--- GRID project vocabulary resources (Cristina Soriano)</rdfs:comment>
         <dc:contributor>Kevin Mulligan</dc:contributor>
         <owl:imports rdf:resource="&obo;MF.owl"/>
         <owl:imports rdf:resource="&obo;bfo.owl"/>
@@ -114,6 +115,12 @@ The latest version of the ontology can always be found at http://code.google.com
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000133 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000133"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFOEM_000008 -->
 
     <owl:ObjectProperty rdf:about="&obo;MFOEM_000008">
@@ -174,12 +181,6 @@ The latest version of the ontology can always be found at http://code.google.com
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000195"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#hasAgent"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
                 <owl:someValuesFrom rdf:resource="&obo;MFOEM_000003"/>
             </owl:Restriction>
@@ -188,6 +189,12 @@ The latest version of the ontology can always be found at http://code.google.com
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
                 <owl:someValuesFrom rdf:resource="&obo;MFOEM_000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MF#hasAgent"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -561,12 +568,6 @@ The latest version of the ontology can always be found at http://code.google.com
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000208"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -578,6 +579,12 @@ The latest version of the ontology can always be found at http://code.google.com
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An activated, aversive emotion that motivates attempts to cope with events that provide threats to the survival or well-being of organisms. Characterised by feelings of threat and impending doom, and by an urge to get out of the situation. [Source: OCEAS]</obo:IAO_0000115>
@@ -692,11 +699,11 @@ The latest version of the ontology can always be found at http://code.google.com
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:MFOEM_000165>surprised</obo:MFOEM_000165>
         <obo:IAO_0000115>Surprise is a neutral emotion caused by encountering unexpected events of all kinds. May be experienced as negative if the surprising event is evaluated as negative, or positive if the surprising event is evaluated as positive. [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">Überraschung</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">sorpresa</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">surprise</obo:MFOEM_000010>
+        <obo:MFOEM_000165>surprised</obo:MFOEM_000165>
     </owl:Class>
     
 
@@ -1006,10 +1013,10 @@ The latest version of the ontology can always be found at http://code.google.com
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A self-conscious emotion that occurs when a person brings about a negative outcome by acts of commission or omission. Associated wtih violations of internal or external moral standards. Closely related to embarrassment and shame. [Source: OCEAS]</obo:IAO_0000115>
-        <obo:MFOEM_000010 xml:lang="de">schuld</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">culpa</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">culpabilité</obo:MFOEM_000010>
         <obo:MFOEM_000165>guilty</obo:MFOEM_000165>
+        <obo:MFOEM_000010 xml:lang="de">schuld</obo:MFOEM_000010>
     </owl:Class>
     
 
@@ -2293,14 +2300,14 @@ While it is tempting not to categorise this as an appraisal at all, it should be
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000174"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000130"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000009"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000130"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The canonical facial expression associated with the experience of anger. </obo:IAO_0000115>
@@ -2363,14 +2370,14 @@ While it is tempting not to categorise this as an appraisal at all, it should be
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000174"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000132"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000026"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000132"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The canonical facial expression associated with the experience of fear. </obo:IAO_0000115>
@@ -2427,14 +2434,14 @@ While it is tempting not to categorise this as an appraisal at all, it should be
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000174"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000042"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000126"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000126"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000042"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The canonical facial expression associated with the experience of happiness. </obo:IAO_0000115>
@@ -2599,14 +2606,14 @@ While it is tempting not to categorise this as an appraisal at all, it should be
         <rdfs:subClassOf rdf:resource="&obo;MFOEM_000174"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000032"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000127"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000127"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000032"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
