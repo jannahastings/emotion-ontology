@@ -27,6 +27,7 @@
         <dc:contributor>Barry Smith</dc:contributor>
         <rdfs:comment>Sources for terms and synonyms / translations :
 -- GRID project vocabulary resources (Cristina Soriano)</rdfs:comment>
+        <dc:license>https://creativecommons.org/licenses/by/3.0/</dc:license>
         <rdfs:comment>Sources for definitions:
 OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sander and Klaus Scherer, Oxford University Press, 2009.
 </rdfs:comment>
@@ -34,7 +35,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <obo:comment>The Emotion Ontology is an ontology for affective phenomena such as emotions and moods.  It is being developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. It builds on the Ontology of Mental Functioning (MFO) and the Basic Formal Ontology (BFO). 
 
 The latest version of the ontology can always be found at http://code.google.com/p/emotion-ontology/source/browse/#svn%2Ftrunk%2Fontology. </obo:comment>
-        <owl:versionInfo>beta 2013-07-23</owl:versionInfo>
+        <owl:versionInfo>2017-10-26</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2623,7 +2624,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000191">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>Appraisal that one is being disliked</obo:IAO_0000115>
+        <obo:IAO_0000115>An appraisal that represents a judgement that one is being disliked</obo:IAO_0000115>
         <rdfs:label xml:lang="en">appraisal as being disliked</rdfs:label>
     </owl:Class>
     
@@ -2633,7 +2634,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000192">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>appraisal that one is being liked</obo:IAO_0000115>
+        <obo:IAO_0000115>An appraisal that represents a judgement that one is being liked</obo:IAO_0000115>
         <rdfs:label xml:lang="en">appraisal as being liked</rdfs:label>
     </owl:Class>
     
@@ -2654,6 +2655,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000194">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
+        <obo:IAO_0000115>Valence represents that dimension of a feeling as positive or negative, pleasant or unpleasant, good or bad. Emotions and feelings that are valenced in this way are called affective phenomena. Valence is a part of a process, an affective process.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">valence</rdfs:label>
     </owl:Class>
     
@@ -2810,6 +2812,7 @@ where (b) is phenomenologically similar to the sort of aversive experience invol
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000207">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000194"/>
+        <obo:IAO_0000115>A valence that is pleasant, positive or good.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">positive valence</rdfs:label>
     </owl:Class>
     
@@ -2819,6 +2822,7 @@ where (b) is phenomenologically similar to the sort of aversive experience invol
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000208">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000194"/>
+        <obo:IAO_0000115>A valence that is negative, unpleasant or bad.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">negative valence</rdfs:label>
     </owl:Class>
     
