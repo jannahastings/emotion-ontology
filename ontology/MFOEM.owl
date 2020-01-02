@@ -22,9 +22,11 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/external/GO_import.owl"/>
-        <obo:comment>The Emotion Ontology is an ontology for affective phenomena such as emotions and moods.  It is being developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. It builds on the Ontology of Mental Functioning (MFO) and the Basic Formal Ontology (BFO). 
+        <obo:comment>The Emotion Ontology is an ontology for affective phenomena such as emotions and moods. It was originally developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. 
 
-The latest version of the ontology can always be found at http://code.google.com/p/emotion-ontology/source/browse/#svn%2Ftrunk%2Fontology. </obo:comment>
+It builds on the Ontology of Mental Functioning (MF) and the Basic Formal Ontology (BFO). 
+
+The latest version of the ontology can always be found at http://purl.obolibrary.org/obo/MFOEM.owl.</obo:comment>
         <dc:contributor>Barry Smith</dc:contributor>
         <dc:contributor>Janna Hastings</dc:contributor>
         <dc:contributor>Kevin Mulligan</dc:contributor>
@@ -35,8 +37,8 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 </rdfs:comment>
         <rdfs:comment>Sources for terms and synonyms / translations :
 -- GRID project vocabulary resources (Cristina Soriano)</rdfs:comment>
-        <rdfs:label>The Emotion Ontology is an ontology for affective phenomena such as emotions and moods. It is being developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. It builds on the Ontology of Mental Functioning (MFO) and the Basic Formal Ontology (BFO). The latest version of the ontology can always be found at http://code.google.com/p/emotion-ontology/source/browse/#svn%2Ftrunk%2Fontology.</rdfs:label>
-        <owl:versionInfo>2017-10-26</owl:versionInfo>
+        <rdfs:label>The Emotion Ontology (MFOEM)</rdfs:label>
+        <owl:versionInfo>2020-01-02</owl:versionInfo>
     </owl:Ontology>
     
 
