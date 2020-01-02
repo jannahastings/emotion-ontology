@@ -1,40 +1,41 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/MFOEM#"
      xml:base="http://purl.obolibrary.org/obo/MFOEM"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:MF="http://purl.obolibrary.org/obo/MF#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:go="http://purl.obolibrary.org/obo/go#"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:MFO="http://purl.obolibrary.org/obo/MFO#"
+     xmlns:iao="http://purl.obolibrary.org/obo/iao/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:iao="http://purl.obolibrary.org/obo/iao/"
-     xmlns:MFO="http://purl.obolibrary.org/obo/MFO#"
-     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#"
-     xmlns:MF="http://purl.obolibrary.org/obo/MF#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/external/GO_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <dc:title>Emotion Ontology</dc:title>
-        <dc:contributor>Kevin Mulligan</dc:contributor>
-        <dc:contributor>Janna Hastings</dc:contributor>
-        <dc:contributor>Barry Smith</dc:contributor>
-        <rdfs:comment>Sources for terms and synonyms / translations :
--- GRID project vocabulary resources (Cristina Soriano)</rdfs:comment>
-        <dc:license>https://creativecommons.org/licenses/by/3.0/</dc:license>
-        <rdfs:comment>Sources for definitions:
-OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sander and Klaus Scherer, Oxford University Press, 2009.
-</rdfs:comment>
-        <rdfs:label>The Emotion Ontology is an ontology for affective phenomena such as emotions and moods. It is being developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. It builds on the Ontology of Mental Functioning (MFO) and the Basic Formal Ontology (BFO). The latest version of the ontology can always be found at http://code.google.com/p/emotion-ontology/source/browse/#svn%2Ftrunk%2Fontology.</rdfs:label>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/external/GO_import.owl"/>
         <obo:comment>The Emotion Ontology is an ontology for affective phenomena such as emotions and moods.  It is being developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. It builds on the Ontology of Mental Functioning (MFO) and the Basic Formal Ontology (BFO). 
 
 The latest version of the ontology can always be found at http://code.google.com/p/emotion-ontology/source/browse/#svn%2Ftrunk%2Fontology. </obo:comment>
+        <dc:contributor>Barry Smith</dc:contributor>
+        <dc:contributor>Janna Hastings</dc:contributor>
+        <dc:contributor>Kevin Mulligan</dc:contributor>
+        <dc:license>https://creativecommons.org/licenses/by/3.0/</dc:license>
+        <dc:title>Emotion Ontology</dc:title>
+        <rdfs:comment>Sources for definitions:
+OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sander and Klaus Scherer, Oxford University Press, 2009.
+</rdfs:comment>
+        <rdfs:comment>Sources for terms and synonyms / translations :
+-- GRID project vocabulary resources (Cristina Soriano)</rdfs:comment>
+        <rdfs:label>The Emotion Ontology is an ontology for affective phenomena such as emotions and moods. It is being developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. It builds on the Ontology of Mental Functioning (MFO) and the Basic Formal Ontology (BFO). The latest version of the ontology can always be found at http://code.google.com/p/emotion-ontology/source/browse/#svn%2Ftrunk%2Fontology.</rdfs:label>
         <owl:versionInfo>2017-10-26</owl:versionInfo>
     </owl:Ontology>
     
@@ -70,6 +71,12 @@ The latest version of the ontology can always be found at http://code.google.com
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/MFOEM_000165">
         <rdfs:label>tag display synonym</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/comment -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/comment"/>
     
 
 
@@ -387,7 +394,6 @@ The latest version of the ontology can always be found at http://code.google.com
     <!-- http://purl.obolibrary.org/obo/MFOEM_000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000015">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NBO_0000015"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000004"/>
         <obo:IAO_0000115>Any behaviour that is intended to harm another person who wants to avoid the harm. [Source: OCEAS]</obo:IAO_0000115>
         <rdfs:label>aggression</rdfs:label>
@@ -662,7 +668,6 @@ The latest version of the ontology can always be found at http://code.google.com
     <!-- http://purl.obolibrary.org/obo/MFOEM_000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000031">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NBO_0000618"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000004"/>
         <obo:IAO_0000115>A multimodal behaviour consisting of tears, non-verbal vocalisations (wails, sobs), and facial expressions of distress. [Source: OCEAS]</obo:IAO_0000115>
         <rdfs:comment>Not sure whether this should be seen as a synonym for &apos;having tears in the eyes&apos; -- there probably need to be different degrees of crying. </rdfs:comment>
@@ -2696,7 +2701,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An anxious mood is a general feeling of mild fearfulness and a heightened disposition to experience fear and other negatively valenced emotions. </obo:IAO_0000115>
+        <obo:IAO_0000115>An anxious mood is a general feeling of mild fearfulness and a heightened disposition to experience fear and other negatively valenced emotions.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">anxious mood</rdfs:label>
     </owl:Class>
     
@@ -2753,6 +2758,16 @@ While it is tempting not to categorise this as an appraisal at all, it should be
         <obo:IAO_0000115>A positive emotion reflecting energy and passion for something.</obo:IAO_0000115>
         <obo:MFOEM_000165>enthusiastic</obo:MFOEM_000165>
         <rdfs:label xml:lang="en">enthusiasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000201 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000201">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000193"/>
+        <obo:IAO_0000115>A merry mood is a general feeling of enjoyment and festivity and a heightened disposition to experience happiness, joy and other positively valenced emotions.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">merry mood</rdfs:label>
     </owl:Class>
     
 
@@ -2921,6 +2936,16 @@ where (b) is phenomenologically similar to the sort of aversive experience invol
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000216 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000216">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000193"/>
+        <obo:IAO_0000115>A gloomy mood is a general feeling of being down, having a negative outlook and a heightened disposition to experience negatively valenced emotions.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">gloomy mood</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000020">
@@ -2951,63 +2976,12 @@ where (b) is phenomenologically similar to the sort of aversive experience invol
 
     <!-- http://purl.obolibrary.org/obo/NBO_0000003 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NBO_0000003">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000004"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NBO_0000015 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NBO_0000015"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NBO_0000091 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NBO_0000091">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000026"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NBO_0000092 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NBO_0000092">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000028"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NBO_0000230 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NBO_0000230">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000035"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NBO_0000618 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NBO_0000618"/>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
