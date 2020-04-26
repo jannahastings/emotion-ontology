@@ -19,6 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MFOEM/2020-04-26/MFOEM.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/external/GO_import.owl"/>
@@ -38,7 +39,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <rdfs:comment>Sources for terms and synonyms / translations :
 -- GRID project vocabulary resources (Cristina Soriano)</rdfs:comment>
         <rdfs:label>The Emotion Ontology (MFOEM)</rdfs:label>
-        <owl:versionInfo>2020-01-02</owl:versionInfo>
+        <owl:versionInfo>2020-04-26</owl:versionInfo>
     </owl:Ontology>
     
 
