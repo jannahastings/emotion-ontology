@@ -368,8 +368,11 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000009"/>
+        <obo:IAO_0000115>A negative emotion that is a mild form of anger.</obo:IAO_0000115>
         <obo:MFOEM_000165>annoyed</obo:MFOEM_000165>
+        <rdfs:label xml:lang="de">Verärgerung</rdfs:label>
         <rdfs:label>annoyance</rdfs:label>
+        <rdfs:label xml:lang="fr">la gêne</rdfs:label>
     </owl:Class>
     
 
@@ -378,7 +381,10 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000009"/>
+        <obo:IAO_0000115>An intensely negative emotion that is a very strong form of anger.</obo:IAO_0000115>
         <obo:MFOEM_000165>furious</obo:MFOEM_000165>
+        <rdfs:label xml:lang="de">Wut</rdfs:label>
+        <rdfs:label xml:lang="fr">fureur</rdfs:label>
         <rdfs:label>fury</rdfs:label>
     </owl:Class>
     
@@ -388,8 +394,11 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000009"/>
+        <obo:IAO_0000115>A negative emotion that is a strong form of anger.</obo:IAO_0000115>
         <obo:MFOEM_000165>enraged</obo:MFOEM_000165>
+        <rdfs:label xml:lang="de">Wut</rdfs:label>
         <rdfs:label>rage</rdfs:label>
+        <rdfs:label xml:lang="fr">rage</rdfs:label>
     </owl:Class>
     
 
@@ -416,6 +425,8 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         </rdfs:subClassOf>
         <obo:IAO_0000115>Grief is an intense negative emotion following a bereavement, i.e. the loss of a significant person through that person&apos;s death. [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000165>grieving</obo:MFOEM_000165>
+        <rdfs:label xml:lang="de">Trauer</rdfs:label>
+        <rdfs:label xml:lang="fr">deuil</rdfs:label>
         <rdfs:label>grief</rdfs:label>
     </owl:Class>
     
@@ -602,7 +613,10 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000026"/>
+        <obo:IAO_0000115>An extremely negative emotion that is an overwhelmingly strong fear.</obo:IAO_0000115>
         <obo:MFOEM_000165>terrified</obo:MFOEM_000165>
+        <rdfs:label xml:lang="de">Terror</rdfs:label>
+        <rdfs:label xml:lang="fr">la terreur</rdfs:label>
         <rdfs:label>terror</rdfs:label>
     </owl:Class>
     
@@ -876,8 +890,11 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000043">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000042"/>
+        <obo:IAO_0000115>An emotional state that is positively valenced, calm, peaceful and untroubled.</obo:IAO_0000115>
         <obo:MFOEM_000165>serene</obo:MFOEM_000165>
+        <rdfs:label xml:lang="de">Gelassenheit</rdfs:label>
         <rdfs:label>serenity</rdfs:label>
+        <rdfs:label xml:lang="fr">sérénité</rdfs:label>
     </owl:Class>
     
 
@@ -886,8 +903,11 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000044">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000042"/>
+        <obo:IAO_0000115>A positive emotion that accompanies appraisal of an object, situation or event as humourous.</obo:IAO_0000115>
         <obo:MFOEM_000165>amused</obo:MFOEM_000165>
+        <rdfs:label xml:lang="de">Spaß</rdfs:label>
         <rdfs:label>amusement</rdfs:label>
+        <rdfs:label xml:lang="fr">divertissement</rdfs:label>
     </owl:Class>
     
 
@@ -896,8 +916,11 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000042"/>
+        <obo:IAO_0000115>A very positive emotion accompanied by feelings of exhilaration.</obo:IAO_0000115>
         <obo:MFOEM_000165>elated</obo:MFOEM_000165>
+        <rdfs:label xml:lang="de">Hochgefühl</rdfs:label>
         <rdfs:label>elation</rdfs:label>
+        <rdfs:label xml:lang="fr">elation</rdfs:label>
     </owl:Class>
     
 
@@ -906,8 +929,11 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000046">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000042"/>
+        <obo:IAO_0000115>An intensely positive emotion and strong feeling of excitement.</obo:IAO_0000115>
         <obo:MFOEM_000165>euphoric</obo:MFOEM_000165>
+        <rdfs:label xml:lang="de">Euphorie</rdfs:label>
         <rdfs:label>euphoria</rdfs:label>
+        <rdfs:label xml:lang="fr">l&apos;euphorie</rdfs:label>
     </owl:Class>
     
 
@@ -1033,7 +1059,9 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:MFOEM_000165>embarrassed</obo:MFOEM_000165>
+        <rdfs:label xml:lang="de">Verlegenheit</rdfs:label>
         <rdfs:label>embarrassment</rdfs:label>
+        <rdfs:label xml:lang="fr">l&apos;embarras</rdfs:label>
     </owl:Class>
     
 
@@ -1048,6 +1076,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A negative emotion that is about a negative evaluation of oneself or one&apos;s behaviour.</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="fr">honte</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="de">scham</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">vengüenza</obo:MFOEM_000010>
@@ -2193,7 +2222,9 @@ While it is tempting not to categorise this as an appraisal at all, it should be
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000026"/>
         <obo:IAO_0000115>A severe episode of fear with strong associated discomfort and thoughts of impending harm. </obo:IAO_0000115>
         <obo:MFOEM_000165>panicked</obo:MFOEM_000165>
+        <rdfs:label xml:lang="de">Panik</rdfs:label>
         <rdfs:label>panic</rdfs:label>
+        <rdfs:label xml:lang="fr">panique</rdfs:label>
     </owl:Class>
     
 
@@ -2208,8 +2239,11 @@ While it is tempting not to categorise this as an appraisal at all, it should be
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A negative emotion that is the appraisal of one&apos;s current surroundings and activities as not interesting or stimulating.</obo:IAO_0000115>
         <obo:MFOEM_000165>bored</obo:MFOEM_000165>
+        <rdfs:label xml:lang="de">Langeweile</rdfs:label>
         <rdfs:label>boredom</rdfs:label>
+        <rdfs:label xml:lang="fr">l&apos;ennui</rdfs:label>
     </owl:Class>
     
 
@@ -2224,9 +2258,12 @@ While it is tempting not to categorise this as an appraisal at all, it should be
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000207"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A positive emotion that is an interest and engagement in an object or situation with a desire to know more.</obo:IAO_0000115>
         <obo:MFOEM_000010>intrigued</obo:MFOEM_000010>
         <obo:MFOEM_000165>curious</obo:MFOEM_000165>
+        <rdfs:label xml:lang="fr">curieux</rdfs:label>
         <rdfs:label xml:lang="en">curiosity</rdfs:label>
+        <rdfs:label xml:lang="de">neugierig</rdfs:label>
     </owl:Class>
     
 
@@ -2241,24 +2278,11 @@ While it is tempting not to categorise this as an appraisal at all, it should be
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A negative emotion that is a mild form of worry about a particular object or situation.</obo:IAO_0000115>
         <obo:MFOEM_000165>concerned</obo:MFOEM_000165>
+        <rdfs:label xml:lang="de">betreffen</rdfs:label>
         <rdfs:label xml:lang="en">concern</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOEM_000169 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000169">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000207"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:MFOEM_000165>amused</obo:MFOEM_000165>
-        <rdfs:label xml:lang="en">amusement</rdfs:label>
+        <rdfs:label xml:lang="fr">concernent</rdfs:label>
     </owl:Class>
     
 
@@ -2273,7 +2297,9 @@ While it is tempting not to categorise this as an appraisal at all, it should be
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A negative emotion accompanying uncertainty about a judgement or decision.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">dubious</rdfs:label>
+        <rdfs:label xml:lang="de">zweifelhaft</rdfs:label>
     </owl:Class>
     
 
@@ -2288,7 +2314,10 @@ While it is tempting not to categorise this as an appraisal at all, it should be
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A negative emotion that is about a future or possible object or event that is appraised negatively.</obo:IAO_0000115>
         <obo:MFOEM_000165 xml:lang="en">worried</obo:MFOEM_000165>
+        <rdfs:label xml:lang="de">Sorgen</rdfs:label>
+        <rdfs:label xml:lang="fr">s&apos;inquiéter</rdfs:label>
         <rdfs:label>worry</rdfs:label>
     </owl:Class>
     
@@ -2326,8 +2355,11 @@ While it is tempting not to categorise this as an appraisal at all, it should be
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A negative emotion that is about a sense of uncertainty or bewilderment within oneself.</obo:IAO_0000115>
         <obo:MFOEM_000165>confused</obo:MFOEM_000165>
+        <rdfs:label xml:lang="de">Verwirrung</rdfs:label>
         <rdfs:label xml:lang="en">confusion</rdfs:label>
+        <rdfs:label xml:lang="fr">confusion</rdfs:label>
     </owl:Class>
     
 
@@ -2358,7 +2390,10 @@ While it is tempting not to categorise this as an appraisal at all, it should be
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000207"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A positive emotion that involves the anticipation that something desirable will occur.</obo:IAO_0000115>
         <obo:MFOEM_000010>anticipative</obo:MFOEM_000010>
+        <rdfs:label xml:lang="de">Erwartung</rdfs:label>
+        <rdfs:label xml:lang="fr">anticipation</rdfs:label>
         <rdfs:label xml:lang="en">expectant</rdfs:label>
     </owl:Class>
     
@@ -2396,7 +2431,10 @@ While it is tempting not to categorise this as an appraisal at all, it should be
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000207"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A positive emotion that is a longing for something to happen with an appraisal of its happening as both possible and positive.</obo:IAO_0000115>
         <obo:MFOEM_000165>hopeful</obo:MFOEM_000165>
+        <rdfs:label xml:lang="de">Hoffnung</rdfs:label>
+        <rdfs:label xml:lang="fr">espoir</rdfs:label>
         <rdfs:label xml:lang="en">hope</rdfs:label>
     </owl:Class>
     
@@ -2412,7 +2450,10 @@ While it is tempting not to categorise this as an appraisal at all, it should be
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000207"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A positive emotion that is associated with a motivation and an idea to do or create something.</obo:IAO_0000115>
         <obo:MFOEM_000165>inspired</obo:MFOEM_000165>
+        <rdfs:label xml:lang="de">Inspiration</rdfs:label>
+        <rdfs:label xml:lang="fr">inspiration</rdfs:label>
         <rdfs:label xml:lang="en">inspiration (emotion)</rdfs:label>
     </owl:Class>
     
@@ -2760,6 +2801,8 @@ While it is tempting not to categorise this as an appraisal at all, it should be
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
         <obo:IAO_0000115>A positive emotion reflecting energy and passion for something.</obo:IAO_0000115>
         <obo:MFOEM_000165>enthusiastic</obo:MFOEM_000165>
+        <rdfs:label xml:lang="de">Begeisterung</rdfs:label>
+        <rdfs:label xml:lang="fr">enthousiasme</rdfs:label>
         <rdfs:label xml:lang="en">enthusiasm</rdfs:label>
     </owl:Class>
     
@@ -2945,6 +2988,18 @@ where (b) is phenomenologically similar to the sort of aversive experience invol
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000193"/>
         <obo:IAO_0000115>A gloomy mood is a general feeling of being down, having a negative outlook and a heightened disposition to experience negatively valenced emotions.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">gloomy mood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000218 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000218">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000042"/>
+        <obo:IAO_0000115>A positive emotion that is about an ongoing experience and reflects that the experience is being appraised as pleasurable.</obo:IAO_0000115>
+        <rdfs:label xml:lang="de">Genuss</rdfs:label>
+        <rdfs:label>enjoyment</rdfs:label>
+        <rdfs:label xml:lang="fr">jouissance</rdfs:label>
     </owl:Class>
     
 
