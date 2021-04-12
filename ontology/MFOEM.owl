@@ -19,7 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MFOEM/2021-03-09/MFOEM.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MFOEM/2021-04-12/MFOEM.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/external/GO_import.owl"/>
@@ -39,7 +39,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <rdfs:comment>Sources for terms and synonyms / translations :
 -- GRID project vocabulary resources (Cristina Soriano)</rdfs:comment>
         <rdfs:label>The Emotion Ontology (MFOEM)</rdfs:label>
-        <owl:versionInfo>2021-03-09</owl:versionInfo>
+        <owl:versionInfo>2021-04-12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1038,7 +1038,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A self-conscious emotion that occurs when a person brings about a negative outcome by acts of commission or omission. Associated wtih violations of internal or external moral standards. Closely related to embarrassment and shame. [Source: OCEAS]</obo:IAO_0000115>
+        <obo:IAO_0000115>A self-evaluative emotion that occurs when a person brings about a negative outcome by acts of commission or omission. Associated wtih violations of internal or external moral standards. Closely related to embarrassment and shame. [Amended from source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="es">culpa</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">culpabilité</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="de">schuld</obo:MFOEM_000010>
