@@ -224,6 +224,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An appraisal process is a mental process that gives rise to an appraisal.</obo:IAO_0000115>
+        <obo:MFOEM_000010>appraising</obo:MFOEM_000010>
         <rdfs:label>appraisal process</rdfs:label>
     </owl:Class>
     
