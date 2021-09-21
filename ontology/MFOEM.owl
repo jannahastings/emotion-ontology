@@ -19,7 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MFOEM/2021-07-06/MFOEM.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MFOEM/2021-09-21/MFOEM.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/external/GO_import.owl"/>
@@ -39,7 +39,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <rdfs:comment>Sources for terms and synonyms / translations :
 -- GRID project vocabulary resources (Cristina Soriano)</rdfs:comment>
         <rdfs:label>The Emotion Ontology (MFOEM)</rdfs:label>
-        <owl:versionInfo>2021-07-06</owl:versionInfo>
+        <owl:versionInfo>2021-09-21</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -473,11 +473,12 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A negative emotion which guards the body against dangerous foods and microbial infections. The basic physiological disgust has also culturally evolved to incorporate moral disgust which protects the self from nonphysical threats such as moral violations.  [Source: OCEAS]</obo:IAO_0000115>
+        <obo:IAO_0000115>A negative emotion that is characterised by a need to get rid of, or distance oneself from, a stimulus that is appraised as repulsing.</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="es">asco</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">dégoût</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="de">ekel</obo:MFOEM_000010>
         <obo:MFOEM_000165>disgusted</obo:MFOEM_000165>
+        <rdfs:comment>Disgust is thought to have evolved to guard the body against dangerous foods and microbial infections. This basic physiological disgust has also culturally evolved to incorporate moral disgust which protects the self from nonphysical threats such as moral violations.</rdfs:comment>
         <rdfs:label>disgust</rdfs:label>
     </owl:Class>
     
@@ -600,11 +601,12 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An activated, aversive emotion that motivates attempts to cope with events that provide threats to the survival or well-being of organisms. Characterised by feelings of threat and impending doom, and by an urge to get out of the situation. [Source: OCEAS]</obo:IAO_0000115>
+        <obo:IAO_0000115>A negative emotion that is provoked by events that provide immediate threats to the survival or well-being of the organism.</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">angst</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">miedo</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">peur</obo:MFOEM_000010>
         <obo:MFOEM_000165>afraid</obo:MFOEM_000165>
+        <rdfs:comment>Fear is characterised by feelings of threat and impending doom, and by an urge to get out of the situation.</rdfs:comment>
         <rdfs:label>fear</rdfs:label>
     </owl:Class>
     
@@ -633,7 +635,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A negative, aversive emotion provoked by the prospect of future threat. Distinguished from fear since it is triggered by a distal threat whereas fear is triggered by an immediate threat. Often gradual and long-lasting, whereas fear usually has sudden onset and offset.   [Source: OCEAS]</obo:IAO_0000115>
+        <obo:IAO_0000115>A negative emotion provoked by the prospect of future threat. Distinguished from fear since it is triggered by a distal threat whereas fear is triggered by an immediate threat. Often gradual and long-lasting, whereas fear usually has sudden onset and offset.   [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="es">ansiedad</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">anxiété</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="de">besorgnis</obo:MFOEM_000010>
@@ -714,11 +716,12 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Surprise is a neutral emotion caused by encountering unexpected events of all kinds. May be experienced as negative if the surprising event is evaluated as negative, or positive if the surprising event is evaluated as positive. [Source: OCEAS]</obo:IAO_0000115>
+        <obo:IAO_0000115>An emotion caused by encountering unexpected events.</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="es">sorpresa</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">surprise</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="de">Überraschung</obo:MFOEM_000010>
         <obo:MFOEM_000165>surprised</obo:MFOEM_000165>
+        <obo:comment>Surprise may be experienced as negative if the surprising event is evaluated as negative, or positive if the surprising event is evaluated as positive.</obo:comment>
         <rdfs:label>surprise</rdfs:label>
     </owl:Class>
     
@@ -784,7 +787,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A positively experienced emotion which is sought out (approached) and is associated with happiness, enjoyment, and satisfaction.  [Source: OCEAS]</obo:IAO_0000115>
+        <obo:IAO_0000115>A positive emotion which is sought out (approached) and is associated with happiness, enjoyment, and satisfaction.  [Source: OCEAS]</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="es">placer</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">plaisir</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="de">vergnügen</obo:MFOEM_000010>
@@ -841,6 +844,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000035"/>
+        <obo:IAO_0000115>A pleasure that is associated with happiness, enjoyment and satisfaction as a result of sexual activities.</obo:IAO_0000115>
         <obo:MFOEM_000165>sexual pleasure</obo:MFOEM_000165>
         <rdfs:label>sexual pleasure</rdfs:label>
     </owl:Class>
@@ -1039,11 +1043,12 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A self-evaluative emotion that occurs when a person brings about a negative outcome by acts of commission or omission. Associated wtih violations of internal or external moral standards. Closely related to embarrassment and shame. [Amended from source: OCEAS]</obo:IAO_0000115>
+        <obo:IAO_0000115>A negative self-evaluative emotion that occurs when a person brings about a negative outcome by acts of commission or omission.</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="es">culpa</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">culpabilité</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="de">schuld</obo:MFOEM_000010>
         <obo:MFOEM_000165>guilty</obo:MFOEM_000165>
+        <obo:comment>Guilt is associated wtih violations of internal or external moral standards. Closely related to embarrassment and shame.</obo:comment>
         <rdfs:label>guilt</rdfs:label>
     </owl:Class>
     
@@ -1097,7 +1102,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A negative emotion felt when an event is appraised as unpleasant, obstructive to one&apos;s goals and concerns, and one feels unable to cope with it or modify it. [Source: OCEAS]</obo:IAO_0000115>
+        <obo:IAO_0000115>A negative emotion felt when an event is appraised as unpleasant, resulting in loss or failure, and one feels hurt as a result of it.</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">trauer</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">tristesse</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">tristeza</obo:MFOEM_000010>
@@ -1315,7 +1320,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000076">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000075"/>
-        <obo:IAO_0000115>An appraisal that represents an evaluation that an event was caused by the self. </obo:IAO_0000115>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an event was caused by oneself.</obo:IAO_0000115>
         <obo:MFOEM_000165>this is being caused by me</obo:MFOEM_000165>
         <rdfs:label>appraisal as caused by self</rdfs:label>
     </owl:Class>
@@ -1610,7 +1615,8 @@ May want to distinguish violation of &apos;standards&apos; from that of &apos;id
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000103">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An appraisal which represents an evaluation of the dangerousness of an object or situation. </obo:IAO_0000115>
+        <obo:IAO_0000115>An appraisal which represents an evaluation of how threatening an object or situation is.</obo:IAO_0000115>
+        <obo:comment>Dangerousness or level of threat may refer to physical, emotional or social dangers or threats.</obo:comment>
         <rdfs:label>appraisal of dangerousness</rdfs:label>
     </owl:Class>
     
@@ -1620,7 +1626,7 @@ May want to distinguish violation of &apos;standards&apos; from that of &apos;id
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000104">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000103"/>
-        <obo:IAO_0000115>An appraisal that represents an evaluation that an object or situation is dangerous to the person. </obo:IAO_0000115>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an object or situation presents a threat to the person.</obo:IAO_0000115>
         <obo:MFOEM_000165>this is dangerous</obo:MFOEM_000165>
         <rdfs:label>appraisal as dangerous</rdfs:label>
     </owl:Class>
@@ -1631,7 +1637,7 @@ May want to distinguish violation of &apos;standards&apos; from that of &apos;id
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000105">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000103"/>
-        <obo:IAO_0000115>An appraisal that represents an evaluation that an object or situation is not dangerous to the person. </obo:IAO_0000115>
+        <obo:IAO_0000115>An appraisal that represents an evaluation that an object or situation does not present a threat to the person.</obo:IAO_0000115>
         <obo:MFOEM_000165>this is not dangerous</obo:MFOEM_000165>
         <rdfs:label>appraisal as not dangerous</rdfs:label>
     </owl:Class>
@@ -1834,8 +1840,9 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000124">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000115>The subjective feeling of being not at ease, of being anxious or nervous or agitated. </obo:IAO_0000115>
+        <obo:IAO_0000115>An affective feeling of being not at ease or agitated.</obo:IAO_0000115>
         <obo:MFOEM_000165>nervous</obo:MFOEM_000165>
+        <rdfs:comment>Note that &apos;feeling nervous&apos; is related to &apos;anxiety&apos; but is not identical with it. Feeling nervous is the subjective experience of nervousness, while anxiety is a full-blown emotion process. Affective feelings are process parts of emotion processes.</rdfs:comment>
         <rdfs:label>feeling nervous</rdfs:label>
     </owl:Class>
     
@@ -2839,6 +2846,8 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000202">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000195"/>
+        <obo:IAO_0000115>An affective process involving sensory experience of physiological stimuli.</obo:IAO_0000115>
+        <obo:comment>Bodily feelings have a positive or negative valence.</obo:comment>
         <rdfs:label xml:lang="en">bodily feeling</rdfs:label>
     </owl:Class>
     
