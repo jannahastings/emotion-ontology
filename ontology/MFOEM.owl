@@ -287,7 +287,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
 
 </rdfs:comment>
-        <rdfs:label>subjective emotional feeling</rdfs:label>
+        <rdfs:label>subjective affective feeling</rdfs:label>
     </owl:Class>
     
 
@@ -478,7 +478,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <obo:MFOEM_000010 xml:lang="fr">dégoût</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="de">ekel</obo:MFOEM_000010>
         <obo:MFOEM_000165>disgusted</obo:MFOEM_000165>
-        <rdfs:comment>Disgust is thought to have evolved to guard the body against dangerous foods and microbial infections. This basic physiological disgust has also culturally evolved to incorporate moral disgust which protects the self from nonphysical threats such as moral violations.</rdfs:comment>
+        <rdfs:comment>Disgust is thought to have evolved to guard the body against dangerous foods and microbial infections. This basic physiological disgust has also culturally evolved to incorporate both moral and interpersonal disgust which protect the self from social threats.</rdfs:comment>
         <rdfs:label>disgust</rdfs:label>
     </owl:Class>
     
@@ -498,7 +498,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000019"/>
-        <obo:IAO_0000115>Disgust elicited by poor hygeine, inappropriate sex, gore or violations of bodily boundaries, and death or the odor of decay. [Source: OCEAS]</obo:IAO_0000115>
+        <obo:IAO_0000115>Disgust elicited by poor hygiene, inappropriate sex, gore or violations of bodily boundaries, and death or the odor of decay. [Source: OCEAS]</obo:IAO_0000115>
         <rdfs:label>animal-nature disgust</rdfs:label>
     </owl:Class>
     
@@ -2753,7 +2753,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
-        <obo:IAO_0000115>An affective process is any process that has positive or negative valence. </obo:IAO_0000115>
+        <obo:IAO_0000115>A mental process that has positive or negative valence.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">affective process</rdfs:label>
     </owl:Class>
     
