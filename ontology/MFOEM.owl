@@ -19,7 +19,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MFOEM/2021-09-21/MFOEM.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MFOEM/2021-11-17/MFOEM.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/external/GO_import.owl"/>
@@ -28,9 +28,11 @@
 It builds on the Ontology of Mental Functioning (MF) and the Basic Formal Ontology (BFO). 
 
 The latest version of the ontology can always be found at http://purl.obolibrary.org/obo/MFOEM.owl.</obo:comment>
+        <dc:contributor>Alison Wright</dc:contributor>
         <dc:contributor>Barry Smith</dc:contributor>
         <dc:contributor>Janna Hastings</dc:contributor>
         <dc:contributor>Kevin Mulligan</dc:contributor>
+        <dc:contributor>Paulina Schenk</dc:contributor>
         <dc:license>https://creativecommons.org/licenses/by/3.0/</dc:license>
         <dc:title>Emotion Ontology</dc:title>
         <rdfs:comment>Sources for definitions:
@@ -39,7 +41,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
         <rdfs:comment>Sources for terms and synonyms / translations :
 -- GRID project vocabulary resources (Cristina Soriano)</rdfs:comment>
         <rdfs:label>The Emotion Ontology (MFOEM)</rdfs:label>
-        <owl:versionInfo>2021-09-21</owl:versionInfo>
+        <owl:versionInfo>2021-11-17</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -205,9 +207,18 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An emotion process is a mental process that is a synchronized aggregate of constituent mental processes including an appraisal process, which is valenced, has an object, and gives rise to an action tendency.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MF#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An affective process that is a synchronized aggregate of constituent mental processes including an appraisal process, which is valenced, has an object, and gives rise to an action tendency.</obo:IAO_0000115>
         <obo:MFOEM_000010>occurrent emotion</obo:MFOEM_000010>
         <obo:MFOEM_000010>short-term emotion</obo:MFOEM_000010>
+        <rdfs:comment>Emotion processes are distinguished from other affective processes (e.g., mood) by having an object. Even if an emotion is experienced due to physiological reasons, they would be felt as being about something or someone. For instance, a person might be angry at a situation that they would normally not be angry at, because they are hungry. However, that person would still be angry at a specific situation.</rdfs:comment>
+        <rdfs:comment>There is no rigid sequence of the entities that are part of the emotion process (e.g., an appraisal process does not necessarily precede a physiological process part of the emotion process).</rdfs:comment>
+        <rdfs:comment>Valence refers to the &apos;the subjective value of an event, object, person, or other entity in the life space of the individual&apos; (https://dictionary.apa.org/valence). Valence ranges from negative to positive.</rdfs:comment>
         <rdfs:label>emotion process</rdfs:label>
     </owl:Class>
     
@@ -223,7 +234,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An appraisal process is a mental process that gives rise to an appraisal.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mental process that gives rise to an appraisal.</obo:IAO_0000115>
         <obo:MFOEM_000010>appraising</obo:MFOEM_000010>
         <rdfs:label>appraisal process</rdfs:label>
     </owl:Class>
@@ -234,8 +245,9 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
-        <obo:IAO_0000115>A physiological response to emotion process is a bodily process which encompasses all the neurophysiological changes caused by the appraisal, which take place in the central nervous system (CNS), neuro-endocrine system (NES) and autonomous nervous system (ANS).</obo:IAO_0000115>
-        <rdfs:label>physiological response to emotion process</rdfs:label>
+        <obo:IAO_0000115>A bodily process that encompasses all the neurophysiological changes accompanying an emotion, which take place in the central nervous system (CNS), neuro-endocrine system (NES) and autonomous nervous system (ANS).</obo:IAO_0000115>
+        <obo:IAO_0000118>physiological response to emotion process</obo:IAO_0000118>
+        <rdfs:label>physiological process involved in an emotion</rdfs:label>
     </owl:Class>
     
 
@@ -262,6 +274,8 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An appraisal is a cognitive representation which represents an evaluation of the relevance of some triggering object or event to the organism. </obo:IAO_0000115>
+        <rdfs:comment>Appraisals are a part of emotion processes, representing how a triggering stimulus is relevant to the self. Appraisal captures the ‘aboutness’ of an emotion process. For example, a stimulus such as an image of a tiger can produce different emotion processes depending on how the relevance of this stimulus is evaluated. If the image of a tiger was on TV, this would likely not be evaluated as dangerous. However, an image of a tiger two meters away from a person would be relevant to a person in terms of its dangerousness. Therefore, an appraisal of the dangerouness of the tiger would be part of the emotion process &apos;fear&apos;.</rdfs:comment>
+        <rdfs:comment>There is no rigid sequence of the entities that are part of the emotion process -- an appraisal does not necessarily precede a physiological process part of the emotion process.</rdfs:comment>
         <rdfs:label>appraisal</rdfs:label>
     </owl:Class>
     
@@ -271,14 +285,11 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000195"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>The subjective emotional feeling is that (fiat) part of the emotion process by which the organism experiences its own emotion.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective process that involves the experience of internal or external sensory stimuli.</obo:IAO_0000115>
         <obo:MFOEM_000010>affective consciousness</obo:MFOEM_000010>
+        <oboInOwl:hasAlternativeId>http://purl.obolibrary.org/obo/MFOEM_000202</oboInOwl:hasAlternativeId>
+        <rdfs:comment>As a subclass of &apos;affective process&apos;, subjective affective feelings have valence. Valence refers to the &apos;the subjective value of an event, object, person, or other entity in the life space of the individual&apos; (https://dictionary.apa.org/valence). Valence ranges from negative to positive.</rdfs:comment>
+        <rdfs:comment>Bodily sensations and the experiences of emotions (e.g., feeling calm) would both qualify as examples of &apos;subjective affective feeling&apos;.</rdfs:comment>
         <rdfs:comment>Excluded the following subjective feelings which appear on the GRID questionnaire since they seem debatable to what extent they are really *feelings* and to what extent they are actually *evaluations* or other things:
 
 -- felt submissive/dominant
@@ -287,6 +298,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
 
 </rdfs:comment>
+        <rdfs:comment>Subjective affective feeling can have greater or weaker physiological or mental components. The bodily processes that are experienced will usually involve some mental process.</rdfs:comment>
         <rdfs:label>subjective affective feeling</rdfs:label>
     </owl:Class>
     
@@ -295,14 +307,15 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
     <!-- http://purl.obolibrary.org/obo/MFOEM_000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000032"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MF#inheresIn"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000087"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An emotional action tendency is a disposition to behaviour that inheres in an organism by virtue of the physical changes brought about by an emotion process.</obo:IAO_0000115>
+        <obo:IAO_0000115>A bodily disposition to behaviour that inheres in an organism by virtue of the physical changes brought about by an emotion process.</obo:IAO_0000115>
+        <rdfs:comment>Emotional action tendency involves dispositions that proceed a behavior relating to emotions. For example, fight or flight action tendencies influence a person&apos;s behaviour in reponse to a threat.</rdfs:comment>
         <rdfs:label>emotional action tendency</rdfs:label>
     </owl:Class>
     
@@ -601,12 +614,12 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A negative emotion that is provoked by events that provide immediate threats to the survival or well-being of the organism.</obo:IAO_0000115>
+        <obo:IAO_0000115>A negative emotion that is aversive and characterised by feelings of threat and impending doom, and by an urge to get out of the situation.</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">angst</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">miedo</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">peur</obo:MFOEM_000010>
         <obo:MFOEM_000165>afraid</obo:MFOEM_000165>
-        <rdfs:comment>Fear is characterised by feelings of threat and impending doom, and by an urge to get out of the situation.</rdfs:comment>
+        <rdfs:comment>Distinguished from anxiety since it usually has sudden onset and offset. Anxiety is often gradual and long-lasting and is triggered by a distal threat.</rdfs:comment>
         <rdfs:label>fear</rdfs:label>
     </owl:Class>
     
@@ -635,11 +648,15 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A negative emotion provoked by the prospect of future threat. Distinguished from fear since it is triggered by a distal threat whereas fear is triggered by an immediate threat. Often gradual and long-lasting, whereas fear usually has sudden onset and offset.   [Source: OCEAS]</obo:IAO_0000115>
+        <obo:IAO_0000115>A negative emotion that is aversive and provoked by the prospect of distal threat.</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="es">ansiedad</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">anxiété</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="de">besorgnis</obo:MFOEM_000010>
         <obo:MFOEM_000165>anxious</obo:MFOEM_000165>
+        <rdfs:comment>Distinguished from fear since it is triggered by a distal threat whereas fear is triggered by an immediate threat. Often gradual and long-lasting, whereas fear usually has sudden onset and offset.   [Source: OCEAS]</rdfs:comment>
+        <rdfs:comment>Experiencing &apos;anxious mood&apos; can give rise to &apos;anxiety&apos;. An &apos;anxious mood&apos; does not have an object, but involves generalised feeling of anxiety that a person experiences. In contrast, &apos;anxiety&apos; will be about something, even if this object is not well-specified.
+
+The term &apos;distal&apos; can refer to future threats or geographically distant threats.</rdfs:comment>
         <rdfs:label>anxiety</rdfs:label>
     </owl:Class>
     
@@ -787,7 +804,8 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A positive emotion which is sought out (approached) and is associated with happiness, enjoyment, and satisfaction.  [Source: OCEAS]</obo:IAO_0000115>
+        <obo:IAO_0000115>A positive emotion which is sought out and is associated with happiness and satisfaction.</obo:IAO_0000115>
+        <obo:IAO_0000118>enjoyment</obo:IAO_0000118>
         <obo:MFOEM_000010 xml:lang="es">placer</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">plaisir</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="de">vergnügen</obo:MFOEM_000010>
@@ -844,7 +862,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000035"/>
-        <obo:IAO_0000115>A pleasure that is associated with happiness, enjoyment and satisfaction as a result of sexual activities.</obo:IAO_0000115>
+        <obo:IAO_0000115>Pleasure that is experienced as a result of sexual activities.</obo:IAO_0000115>
         <obo:MFOEM_000165>sexual pleasure</obo:MFOEM_000165>
         <rdfs:label>sexual pleasure</rdfs:label>
     </owl:Class>
@@ -1043,7 +1061,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A negative self-evaluative emotion that occurs when a person brings about a negative outcome by acts of commission or omission.</obo:IAO_0000115>
+        <obo:IAO_0000115>A negative self-evaluative emotion that occurs when a person brings about a negative outcome by acts of commission or omission that violate internal or external moral standards.</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="es">culpa</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">culpabilité</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="de">schuld</obo:MFOEM_000010>
@@ -1082,7 +1100,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A negative emotion that is about a negative evaluation of oneself or one&apos;s behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000115>A negative emotion that is distressing and occurs when one appraises one&apos;s behaviour or circumstance as wrong, dishonourable, immodest or indecorous.</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="fr">honte</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="de">scham</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">vengüenza</obo:MFOEM_000010>
@@ -1102,7 +1120,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A negative emotion felt when an event is appraised as unpleasant, resulting in loss or failure, and one feels hurt as a result of it.</obo:IAO_0000115>
+        <obo:IAO_0000115>A negative emotion felt when an event is appraised as unpleasant and resulting in loss or failure.</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="de">trauer</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="fr">tristesse</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="es">tristeza</obo:MFOEM_000010>
@@ -1365,7 +1383,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000115>The subjective emotional feeling of tiredness, needing sleep.</obo:IAO_0000115>
+        <obo:IAO_0000115>A subjective affective feeling of tiredness, needing sleep.</obo:IAO_0000115>
         <obo:MFOEM_000165>tired</obo:MFOEM_000165>
         <rdfs:label>feeling tired</rdfs:label>
     </owl:Class>
@@ -1718,7 +1736,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000112">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000080"/>
-        <obo:IAO_0000115>The subjective emotional feeling of exhaustion, an extremely strong form of feeling tired. </obo:IAO_0000115>
+        <obo:IAO_0000115>Feeling tired to an extremely strong degree.</obo:IAO_0000115>
         <obo:MFOEM_000165>exhausted</obo:MFOEM_000165>
         <rdfs:label>feeling exhausted</rdfs:label>
     </owl:Class>
@@ -2728,7 +2746,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000194">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
-        <obo:IAO_0000115>Valence represents that dimension of a feeling as positive or negative, pleasant or unpleasant, good or bad. Emotions and feelings that are valenced in this way are called affective phenomena. Valence is a part of a process, an affective process.</obo:IAO_0000115>
+        <obo:IAO_0000115>Valence is a process profile of an emotion, mood, or affective bodily feeling (such as pleasure and pain). Valence can be positive or negative, with different strengths in both directions. For example, pleasure is positively valenced while pain is negatively valenced.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">valence</rdfs:label>
     </owl:Class>
     
@@ -2823,6 +2841,12 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000200">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000207"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A positive emotion reflecting energy and passion for something.</obo:IAO_0000115>
         <obo:MFOEM_000165>enthusiastic</obo:MFOEM_000165>
         <rdfs:label xml:lang="de">Begeisterung</rdfs:label>
@@ -2842,25 +2866,13 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOEM_000202 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000202">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000195"/>
-        <obo:IAO_0000115>An affective process involving sensory experience of physiological stimuli.</obo:IAO_0000115>
-        <obo:comment>Bodily feelings have a positive or negative valence.</obo:comment>
-        <rdfs:label xml:lang="en">bodily feeling</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MFOEM_000203 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000203">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000202"/>
-        <obo:IAO_0000115>pain is a bodily process in an organism S, involving two integrated levels: 
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+        <obo:IAO_0000115>A subjective affective feeling in an organism S, involving two integrated levels: 
 (a) activation of the nociceptive system and associated emotion generating brain components of S, and 
-(b) a simultaneous aversive sensory and emotional experience on the part of S, 
-where (b) is phenomenologically similar to the sort of aversive experience involved in pain with concordant tissue damage.</obo:IAO_0000115>
+(b) a simultaneous aversive sensory and emotional experience on the part of S, where (b) is phenomenologically similar to the sort of aversive experience involved in pain with concordant tissue damage.</obo:IAO_0000115>
         <rdfs:comment>Here `phenomenologically similar&apos; means inter alia: (1) that the experience is `of&apos; or is `targeted towards&apos; some region R of the body of S, so that all pain is in this sense (and however diffusely) localized; (2) that the experience involves a dimension of unpleasantness which -- as is shown by the case of pain asymbolia -- is not necessarily of the sort that involves suffering or aversion on the part of the subject S. </rdfs:comment>
         <rdfs:label xml:lang="en">pain</rdfs:label>
     </owl:Class>
@@ -2880,7 +2892,8 @@ where (b) is phenomenologically similar to the sort of aversive experience invol
     <!-- http://purl.obolibrary.org/obo/MFOEM_000205 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000205">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000202"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+        <obo:IAO_0000115>A subjective affective feeling that involves discomfort and is associated with a need to consume food.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">hunger</rdfs:label>
     </owl:Class>
     
@@ -2889,7 +2902,7 @@ where (b) is phenomenologically similar to the sort of aversive experience invol
     <!-- http://purl.obolibrary.org/obo/MFOEM_000206 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000206">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000202"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
         <rdfs:label xml:lang="en">thirst</rdfs:label>
     </owl:Class>
     
@@ -2926,6 +2939,8 @@ where (b) is phenomenologically similar to the sort of aversive experience invol
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Surprise with a positive valence</obo:IAO_0000115>
+        <obo:IAO_0000118>astonishment</obo:IAO_0000118>
+        <obo:IAO_0000118>wonder</obo:IAO_0000118>
         <rdfs:label xml:lang="en">positive surprise</rdfs:label>
     </owl:Class>
     
@@ -2992,7 +3007,7 @@ where (b) is phenomenologically similar to the sort of aversive experience invol
     <!-- http://purl.obolibrary.org/obo/MFOEM_000214 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000214">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000202"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
         <rdfs:comment>Physical pleasure is not named just &apos;pleasure&apos; as that has already been used for emotional pleasure.</rdfs:comment>
         <rdfs:label xml:lang="en">physical pleasure</rdfs:label>
     </owl:Class>
@@ -3002,7 +3017,7 @@ where (b) is phenomenologically similar to the sort of aversive experience invol
     <!-- http://purl.obolibrary.org/obo/MFOEM_000215 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000215">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000202"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
         <rdfs:label xml:lang="en">ticklish</rdfs:label>
     </owl:Class>
     
@@ -3014,6 +3029,22 @@ where (b) is phenomenologically similar to the sort of aversive experience invol
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000193"/>
         <obo:IAO_0000115>A gloomy mood is a general feeling of being down, having a negative outlook and a heightened disposition to experience negatively valenced emotions.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">gloomy mood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000217 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000217">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A negative emotion that occurs when a person wishes they chose or acted differently in the past, due to the consequences of that choice or action being unfavourable.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">regret</rdfs:label>
     </owl:Class>
     
 
@@ -3032,9 +3063,7 @@ where (b) is phenomenologically similar to the sort of aversive experience invol
 
     <!-- http://purl.obolibrary.org/obo/MF_0000020 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000020">
-        <obo:IAO_0000115>Valence is a process profile of an emotion, mood, or affective bodily feeling (such as pleasure and pain). Valence can be positive or negative, with different strengths in both directions. For example, pleasure is positively valenced while pain is negatively valenced.  </obo:IAO_0000115>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000020"/>
     
 
 
@@ -3048,7 +3077,11 @@ where (b) is phenomenologically similar to the sort of aversive experience invol
 
     <!-- http://purl.obolibrary.org/obo/MF_0000031 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000031"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000031">
+        <rdfs:comment>When a belief is activated, the content of that belief is a cognitive representation.
+
+The use of the phrase ‘an anatomical structure in the cognitive system’ in the formal definition means that a specific cognitive representation will depend on parts of the brain, rather than involving the whole brain.</rdfs:comment>
+    </owl:Class>
     
 
 
