@@ -33,6 +33,7 @@ The latest version of the ontology can always be found at http://purl.obolibrary
         <dc:contributor>Janna Hastings</dc:contributor>
         <dc:contributor>Kevin Mulligan</dc:contributor>
         <dc:contributor>Paulina Schenk</dc:contributor>
+        <dc:contributor>Robert West</dc:contributor>
         <dc:license>https://creativecommons.org/licenses/by/3.0/</dc:license>
         <dc:title>Emotion Ontology</dc:title>
         <rdfs:comment>Sources for definitions:
@@ -273,7 +274,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An appraisal is a cognitive representation which represents an evaluation of the relevance of some triggering object or event to the organism. </obo:IAO_0000115>
+        <obo:IAO_0000115>A cognitive representation of the emotional relevance of an object or event to the organism.</obo:IAO_0000115>
         <rdfs:comment>Appraisals are a part of emotion processes, representing how a triggering stimulus is relevant to the self. Appraisal captures the ‘aboutness’ of an emotion process. For example, a stimulus such as an image of a tiger can produce different emotion processes depending on how the relevance of this stimulus is evaluated. If the image of a tiger was on TV, this would likely not be evaluated as dangerous. However, an image of a tiger two meters away from a person would be relevant to a person in terms of its dangerousness. Therefore, an appraisal of the dangerouness of the tiger would be part of the emotion process &apos;fear&apos;.</rdfs:comment>
         <rdfs:comment>There is no rigid sequence of the entities that are part of the emotion process -- an appraisal does not necessarily precede a physiological process part of the emotion process.</rdfs:comment>
         <rdfs:label>appraisal</rdfs:label>
