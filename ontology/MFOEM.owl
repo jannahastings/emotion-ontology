@@ -1372,7 +1372,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000079">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000115>The subjective emotional feeling of feeling good, positive.  </obo:IAO_0000115>
+        <obo:IAO_0000115>A subjective affective feeling that is positively valenced.</obo:IAO_0000115>
         <obo:MFOEM_000010>feeling positive</obo:MFOEM_000010>
         <obo:MFOEM_000165>good</obo:MFOEM_000165>
         <rdfs:label>feeling good</rdfs:label>
@@ -1384,7 +1384,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000115>A subjective affective feeling of tiredness, needing sleep.</obo:IAO_0000115>
+        <obo:IAO_0000115>A subjective affective feeling of a need for sleep.</obo:IAO_0000115>
         <obo:MFOEM_000165>tired</obo:MFOEM_000165>
         <rdfs:label>feeling tired</rdfs:label>
     </owl:Class>
@@ -1681,7 +1681,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000107">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000115>The subjective emotional feeling of being at ease, comfortable, relaxed. </obo:IAO_0000115>
+        <obo:IAO_0000115>A subjective affective feeling of being at ease, comfortable, relaxed.</obo:IAO_0000115>
         <obo:MFOEM_000165>at ease</obo:MFOEM_000165>
         <rdfs:label>feeling at ease</rdfs:label>
     </owl:Class>
@@ -1692,7 +1692,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000108">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000115>The subjective emotional feeling of feeling bad, negative.</obo:IAO_0000115>
+        <obo:IAO_0000115>A subjective affective feeling that is negatively valenced.</obo:IAO_0000115>
         <obo:MFOEM_000010>feeling negative</obo:MFOEM_000010>
         <obo:MFOEM_000165>bad</obo:MFOEM_000165>
         <rdfs:label>feeling bad</rdfs:label>
@@ -1704,7 +1704,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000109">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000115>The subjective emotional feeling of having lots of energy, being energetic. </obo:IAO_0000115>
+        <obo:IAO_0000115>A subjective affective feeling of having lots of energy, being energetic.</obo:IAO_0000115>
         <obo:MFOEM_000165>energetic</obo:MFOEM_000165>
         <rdfs:label>feeling energetic</rdfs:label>
     </owl:Class>
@@ -1715,7 +1715,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000110">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000115>The subjective emotional feeling that one is in control of oneself, that one is fully the agent of one&apos;s behavior. </obo:IAO_0000115>
+        <obo:IAO_0000115>A subjective affective feeling that one is in control of oneself, that one is fully the agent of one&apos;s behavior.</obo:IAO_0000115>
         <obo:MFOEM_000165>in control</obo:MFOEM_000165>
         <rdfs:label>feeling in control</rdfs:label>
     </owl:Class>
@@ -1726,7 +1726,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000111">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000115>The subjective emotional feeling of restlessness, a state of not being calm, of an agitation to do something. </obo:IAO_0000115>
+        <obo:IAO_0000115>A subjective affective feeling of restlessness, a state of not being calm, of an agitation to do something.</obo:IAO_0000115>
         <obo:MFOEM_000165>restless</obo:MFOEM_000165>
         <rdfs:label>feeling restless</rdfs:label>
     </owl:Class>
@@ -1758,7 +1758,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000114">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000115>The subjective feeling of being calm, being relaxed, being at peace. </obo:IAO_0000115>
+        <obo:IAO_0000115>A subjective affective feeling of being calm, being relaxed, being at peace.</obo:IAO_0000115>
         <obo:MFOEM_000165>calm</obo:MFOEM_000165>
         <rdfs:label>feeling calm</rdfs:label>
     </owl:Class>
@@ -1778,7 +1778,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000116">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000115>The subjective feeling of not being in control, not being able to gain agency of one&apos;s own behavior. </obo:IAO_0000115>
+        <obo:IAO_0000115>A subjective affective feeling of not being in control, not being able to gain agency of one&apos;s own behavior.</obo:IAO_0000115>
         <obo:MFOEM_000165>out of control</obo:MFOEM_000165>
         <rdfs:comment>May have an evaluative component as well as a feeling component. Needs discussing.</rdfs:comment>
         <rdfs:label>feeling out of control</rdfs:label>
@@ -1799,7 +1799,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000118">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000115>The subjective feeling of strength, capability, energy and capacity to do things. </obo:IAO_0000115>
+        <obo:IAO_0000115>A subjective affective feeling of strength, capability, energy and capacity to do things.</obo:IAO_0000115>
         <obo:MFOEM_000165>strong</obo:MFOEM_000165>
         <rdfs:label>feeling strong</rdfs:label>
     </owl:Class>
@@ -1810,7 +1810,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000119">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000115>The subjective feeling of weakness, lack of energy and/or capability, faintness, absence of strength. </obo:IAO_0000115>
+        <obo:IAO_0000115>A subjective affective feeling of weakness, lack of energy and/or capability, faintness, absence of strength.</obo:IAO_0000115>
         <obo:MFOEM_000165>weak</obo:MFOEM_000165>
         <rdfs:label>feeling weak</rdfs:label>
     </owl:Class>
@@ -1830,7 +1830,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000121">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000115>The subjective feeling of being wide awake, alert, having active attention and perception. </obo:IAO_0000115>
+        <obo:IAO_0000115>A subjective affective feeling of being wide awake, alert, having active attention and perception.</obo:IAO_0000115>
         <obo:MFOEM_000165>alert</obo:MFOEM_000165>
         <rdfs:label>feeling alert</rdfs:label>
     </owl:Class>
@@ -1859,9 +1859,9 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000124">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <obo:IAO_0000115>An affective feeling of being not at ease or agitated.</obo:IAO_0000115>
+        <obo:IAO_0000115>A subjective affective feeling of being not at ease or agitated.</obo:IAO_0000115>
         <obo:MFOEM_000165>nervous</obo:MFOEM_000165>
-        <rdfs:comment>Note that &apos;feeling nervous&apos; is related to &apos;anxiety&apos; but is not identical with it. Feeling nervous is the subjective experience of nervousness, while anxiety is a full-blown emotion process. Affective feelings are process parts of emotion processes.</rdfs:comment>
+        <rdfs:comment>Note that &apos;feeling nervous&apos; is related to &apos;anxiety&apos; but is not identical with it. Feeling nervous is the subjective experience of nervousness, while anxiety is a full-blown emotion process. Subjective affective feelings are process parts of emotion processes.</rdfs:comment>
         <rdfs:label>feeling nervous</rdfs:label>
     </owl:Class>
     
@@ -2904,6 +2904,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000206">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+        <obo:IAO_0000115>A subjective affective feeling that involves discomfort and is associated with a need to consume water.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">thirst</rdfs:label>
     </owl:Class>
     
@@ -3008,7 +3009,8 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <!-- http://purl.obolibrary.org/obo/MFOEM_000214 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000214">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000079"/>
+        <obo:IAO_0000115>A feeling good that is located in the body and is strongly positively valenced.</obo:IAO_0000115>
         <rdfs:comment>Physical pleasure is not named just &apos;pleasure&apos; as that has already been used for emotional pleasure.</rdfs:comment>
         <rdfs:label xml:lang="en">physical pleasure</rdfs:label>
     </owl:Class>
