@@ -2788,7 +2788,8 @@ While it is tempting not to categorise this as an appraisal at all, it should be
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An anxious mood is a general feeling of mild fearfulness and a heightened disposition to experience fear and other negatively valenced emotions.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mood process that is a generalised feeling of fearfulness and gives rise to a heightened disposition to experience anxiety, fear and other negatively valenced emotions.</obo:IAO_0000115>
+        <rdfs:comment>Experiencing &apos;anxious mood&apos; can give rise to &apos;anxiety&apos;. An &apos;anxious mood&apos; does not have an object, but involves generalised feeling of anxiety that a person experiences. In contrast, &apos;anxiety&apos; will be about something, even if this object is not well-specified.</rdfs:comment>
         <rdfs:label xml:lang="en">anxious mood</rdfs:label>
     </owl:Class>
     
@@ -2804,7 +2805,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An irritable mood is a general feeling of mild annoyance, a heightened disposition to anger and other negatively valenced emotions. </obo:IAO_0000115>
+        <obo:IAO_0000115>A mood process that is a general feeling of annoyance and gives rise to a heightened disposition to anger and other negatively valenced emotions.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">irritable mood</rdfs:label>
     </owl:Class>
     
@@ -2820,7 +2821,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000207"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A cheerful mood is a general feeling of well-being and a heightened disposition to happiness, amusement and other positively valenced emotions.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mood process that is is a general feeling of well-being and gives rise to a heightened disposition to happiness, amusement and other positively valenced emotions.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cheerful mood</rdfs:label>
     </owl:Class>
     
@@ -2861,7 +2862,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000201">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000193"/>
-        <obo:IAO_0000115>A merry mood is a general feeling of enjoyment and festivity and a heightened disposition to experience happiness, joy and other positively valenced emotions.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mood process that is a general feeling of enjoyment and festivity and gives rise to a heightened disposition to experience happiness, joy and other positively valenced emotions.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">merry mood</rdfs:label>
     </owl:Class>
     
@@ -2875,7 +2876,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 (a) activation of the nociceptive system and associated emotion generating brain components of S, and 
 (b) a simultaneous aversive sensory and emotional experience on the part of S, where (b) is phenomenologically similar to the sort of aversive experience involved in pain with concordant tissue damage.</obo:IAO_0000115>
         <rdfs:comment>Here `phenomenologically similar&apos; means inter alia: (1) that the experience is `of&apos; or is `targeted towards&apos; some region R of the body of S, so that all pain is in this sense (and however diffusely) localized; (2) that the experience involves a dimension of unpleasantness which -- as is shown by the case of pain asymbolia -- is not necessarily of the sort that involves suffering or aversion on the part of the subject S. </rdfs:comment>
-        <rdfs:label xml:lang="en">pain</rdfs:label>
+        <rdfs:label xml:lang="en">feeling of pain</rdfs:label>
     </owl:Class>
     
 
@@ -2895,7 +2896,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000205">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
         <obo:IAO_0000115>A subjective affective feeling that involves discomfort and is associated with a need to consume food.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">hunger</rdfs:label>
+        <rdfs:label xml:lang="en">feeling of hunger</rdfs:label>
     </owl:Class>
     
 
@@ -2905,7 +2906,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000206">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
         <obo:IAO_0000115>A subjective affective feeling that involves discomfort and is associated with a need to consume water.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">thirst</rdfs:label>
+        <rdfs:label xml:lang="en">feeling of thirst</rdfs:label>
     </owl:Class>
     
 
@@ -3021,7 +3022,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000215">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
-        <rdfs:label xml:lang="en">ticklish</rdfs:label>
+        <rdfs:label xml:lang="en">feeling ticklish</rdfs:label>
     </owl:Class>
     
 
@@ -3030,8 +3031,11 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000216">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000193"/>
-        <obo:IAO_0000115>A gloomy mood is a general feeling of being down, having a negative outlook and a heightened disposition to experience negatively valenced emotions.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mood process that is a general feeling of being down, having a negative outlook and gives rise to a heightened disposition to experience negatively valenced emotions.</obo:IAO_0000115>
+        <obo:IAO_0000118>depressed mood</obo:IAO_0000118>
+        <rdfs:comment>There is a gradient of negative mood valence and subjective level of distress which leads to a clinically significant depressed mood at the negative extreme.</rdfs:comment>
         <rdfs:label xml:lang="en">gloomy mood</rdfs:label>
+        <rdfs:seeAlso>To indicate a clinically confirmed depressed mood episode, use http://purl.obolibrary.org/obo/MFOMD_0000013 (depressed mood episode).</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -3060,6 +3064,57 @@ While it is tempting not to categorise this as an appraisal at all, it should be
         <rdfs:label xml:lang="de">Genuss</rdfs:label>
         <rdfs:label>enjoyment</rdfs:label>
         <rdfs:label xml:lang="fr">jouissance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000219 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000219">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000193"/>
+        <obo:IAO_0000115>A mood process that is a generalised feeling of enthusiasm, eagerness and energy, and gives rise to a heightened disposition to experience positively valenced emotions.</obo:IAO_0000115>
+        <obo:IAO_0000118>excitement</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">excited mood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000220 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000220">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+        <obo:IAO_0000115>A subjective affective feeling that involves attraction to an imagined state of affairs.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">feeling of desire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000221 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000221">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000220"/>
+        <obo:IAO_0000115>A feeling of desire that involves anticipated pleasure or satisfaction from an imagined state of affairs.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">feeling of want</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000222 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000222">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000220"/>
+        <obo:IAO_0000115>A feeling of desire that involves anticipated relief from mental or physical discomfort.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">feeling of need</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000223 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000223">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+        <obo:IAO_0000115>A subjective affective feeling that involves a subjective experience of an impulse to engage in a behaviour.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">feeling of urge</rdfs:label>
     </owl:Class>
     
 
