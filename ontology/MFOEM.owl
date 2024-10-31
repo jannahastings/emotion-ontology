@@ -9966,6 +9966,38 @@ recognition of the meaning of the utterance through their knowledge of the langu
     
 
 
+    <!-- https://purl.obolibrary.org/obo/MFOEM_000224 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/MFOEM_000224">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000207"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A positive emotion characterized by assured reliance regarding the honesty, fairness, or abilities of an entity (e.g., person, object, or situation). This process involves an appraisal that the entity is reliable, safe, good and/or honest.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">trust</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/MFOEM:000225 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/MFOEM:000225">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A negative emotion involving feelings of suspicion or doubt regarding the honesty, fairness, or abilities of an entity (e.g., person, object, or situation). This process includes an appraisal that the entity may be unreliable, potentially harmful and/or deceptive.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">mistrust</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
