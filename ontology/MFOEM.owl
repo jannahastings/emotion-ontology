@@ -24,6 +24,7 @@ The latest version of the ontology can always be found at http://purl.obolibrary
         <dc:contributor>Barry Smith</dc:contributor>
         <dc:contributor>Janna Hastings</dc:contributor>
         <dc:contributor>Kevin Mulligan</dc:contributor>
+        <dc:contributor>Maya Braun</dc:contributor>
         <dc:contributor>Paulina Schenk</dc:contributor>
         <dc:contributor>Robert West</dc:contributor>
         <dc:license>https://creativecommons.org/licenses/by/3.0/</dc:license>
@@ -35,7 +36,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 -- GRID project vocabulary resources (Cristina Soriano)</rdfs:comment>
         <rdfs:comment>The ontology is now released as a single merged file with all modules included, built using the ROBOT library&apos;s &apos;merge&apos; function.</rdfs:comment>
         <rdfs:label>The Emotion Ontology (MFOEM)</rdfs:label>
-        <owl:versionInfo>2022-07-19</owl:versionInfo>
+        <owl:versionInfo>2024-10-31</owl:versionInfo>
     </owl:Ontology>
     
 
