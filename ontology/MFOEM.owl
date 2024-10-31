@@ -14,7 +14,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MFOEM/2022-07-19/MFOEM.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MFOEM/2024-10-31/MFOEM.owl"/>
         <obo:comment>The Emotion Ontology is an ontology for affective phenomena such as emotions and moods. It was originally developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. 
 
 It builds on the Ontology of Mental Functioning (MF) and the Basic Formal Ontology (BFO). 
