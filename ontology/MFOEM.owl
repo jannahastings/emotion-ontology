@@ -14,7 +14,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MFOEM/2024-10-31/MFOEM.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MFOEM/2025-01-06/MFOEM.owl"/>
         <obo:comment>The Emotion Ontology is an ontology for affective phenomena such as emotions and moods. It was originally developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. 
 
 It builds on the Ontology of Mental Functioning (MF) and the Basic Formal Ontology (BFO). 
@@ -36,7 +36,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 -- GRID project vocabulary resources (Cristina Soriano)</rdfs:comment>
         <rdfs:comment>The ontology is now released as a single merged file with all modules included, built using the ROBOT library&apos;s &apos;merge&apos; function.</rdfs:comment>
         <rdfs:label>The Emotion Ontology (MFOEM)</rdfs:label>
-        <owl:versionInfo>2024-10-31</owl:versionInfo>
+        <owl:versionInfo>2025-01-06</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -5635,7 +5635,7 @@ No imports</obo:IAO_0000115>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A mental process that gives rise to an appraisal.</obo:IAO_0000115>
         <obo:MFOEM_000010>appraising</obo:MFOEM_000010>
-        <rdfs:label>appraisal process</rdfs:label>
+        <rdfs:label>emotional-relevance appraisal process</rdfs:label>
     </owl:Class>
     
 
@@ -5675,7 +5675,7 @@ No imports</obo:IAO_0000115>
         <obo:IAO_0000115>A cognitive representation of the emotional relevance of an object or event to the organism.</obo:IAO_0000115>
         <rdfs:comment>Appraisals are a part of emotion processes, representing how a triggering stimulus is relevant to the self. Appraisal captures the ‘aboutness’ of an emotion process. For example, a stimulus such as an image of a tiger can produce different emotion processes depending on how the relevance of this stimulus is evaluated. If the image of a tiger was on TV, this would likely not be evaluated as dangerous. However, an image of a tiger two meters away from a person would be relevant to a person in terms of its dangerousness. Therefore, an appraisal of the dangerouness of the tiger would be part of the emotion process &apos;fear&apos;.</rdfs:comment>
         <rdfs:comment>There is no rigid sequence of the entities that are part of the emotion process -- an appraisal does not necessarily precede a physiological process part of the emotion process.</rdfs:comment>
-        <rdfs:label>appraisal</rdfs:label>
+        <rdfs:label>emotional-relevance appraisal</rdfs:label>
     </owl:Class>
     
 
@@ -6533,7 +6533,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000057">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An appraisal which represents an evaluation of how suddenly an event occurred. </obo:IAO_0000115>
+        <obo:IAO_0000115>An emotional-relevance appraisal which represents an evaluation of how suddenly an event occurred.</obo:IAO_0000115>
         <rdfs:label>appraisal of suddenness</rdfs:label>
     </owl:Class>
     
@@ -6543,7 +6543,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000058">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An appraisal that represents an evaluation of how familiar an object or event is. </obo:IAO_0000115>
+        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of how familiar an object or event is.</obo:IAO_0000115>
         <rdfs:label>appraisal of familiarity</rdfs:label>
     </owl:Class>
     
@@ -6553,7 +6553,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000059">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An appraisal that represents an evaluation of how predictable an event was. </obo:IAO_0000115>
+        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of how predictable an event was.</obo:IAO_0000115>
         <rdfs:label>appraisal of predictability</rdfs:label>
     </owl:Class>
     
@@ -6563,7 +6563,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000060">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An appraisal that represents an evaluation of whether an event was expected to occur. </obo:IAO_0000115>
+        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of whether an event was expected to occur.</obo:IAO_0000115>
         <rdfs:label>appraisal of expectedness</rdfs:label>
     </owl:Class>
     
@@ -6573,7 +6573,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000061">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An appraisal that represents an evaluation of the pleasantness of an object or event. </obo:IAO_0000115>
+        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of the pleasantness of an object or event.</obo:IAO_0000115>
         <rdfs:comment>GRID questionnaire distinguishes between appraisal of pleasantness FOR SELF and appraisal of pleasantness FOR SOME OTHER.  So far we have defined appraisal as evaluation of relevance FOR SELF, thus, we only include one appraisal of pleasantness (for the time being), although we may expand this later -- although I suspect that all or most of the appraisal types would have to be so qualified. </rdfs:comment>
         <rdfs:label>appraisal of pleasantness</rdfs:label>
     </owl:Class>
@@ -6694,7 +6694,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000072">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An appraisal that represents an evaluation of whether an event or object is important to the person&apos;s goals or needs. </obo:IAO_0000115>
+        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of whether an event or object is important to the person&apos;s goals or needs.</obo:IAO_0000115>
         <rdfs:comment>Like pleasantness, the GRID questionnaire distinguishes between evaluations of goal importance/relevance for SELF and for an OTHER. </rdfs:comment>
         <rdfs:label>appraisal of goal importance</rdfs:label>
     </owl:Class>
@@ -6727,7 +6727,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000075">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An appraisal that represents an evaluation of who or what caused an event. </obo:IAO_0000115>
+        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of who or what caused an event.</obo:IAO_0000115>
         <rdfs:label>appraisal of causal agency</rdfs:label>
     </owl:Class>
     
@@ -6804,7 +6804,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An appraisal that represents an evaluation of the causal intent of the person who (is evaluated to have) caused an event.</obo:IAO_0000115>
+        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of the causal intent of the person who (is evaluated to have) caused an event.</obo:IAO_0000115>
         <rdfs:label>appraisal of causal intent</rdfs:label>
     </owl:Class>
     
@@ -6835,8 +6835,8 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
     <!-- http://purl.obolibrary.org/obo/MFOEM_000085 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000085">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An appraisal that represents an evaluation of the desirability of the expected consequences of an event. </obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000226"/>
+        <obo:IAO_0000115>An appraisal of desirability that represents an evaluation of the desirability of the expected consequences of an event.</obo:IAO_0000115>
         <rdfs:comment>Distinguished in GRID questionnaire between FOR SELF and FOR OTHER. </rdfs:comment>
         <rdfs:label>appraisal of desirability of consequences</rdfs:label>
     </owl:Class>
@@ -6869,7 +6869,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000088">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An appraisal that represents an evaluation of the urgency of responding to an event. </obo:IAO_0000115>
+        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of the urgency of responding to an event.</obo:IAO_0000115>
         <rdfs:label>appraisal of urgency of response</rdfs:label>
     </owl:Class>
     
@@ -6901,7 +6901,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000091">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An appraisal which represents a judgement about how avoidable the expected consequences of an event will be. </obo:IAO_0000115>
+        <obo:IAO_0000115>An emotional-relevance appraisal which represents a judgement about how avoidable the expected consequences of an event will be.</obo:IAO_0000115>
         <rdfs:label>appraisal of avoidability of consequences</rdfs:label>
     </owl:Class>
     
@@ -6933,7 +6933,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000094">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An appraisal which represents a judgement about whether an event is consistent with the person&apos;s standards or ideals. </obo:IAO_0000115>
+        <obo:IAO_0000115>An emotional-relevance appraisal which represents a judgement about whether an event is consistent with the person&apos;s standards or ideals.</obo:IAO_0000115>
         <rdfs:comment>Can also be defined FOR SELF and FOR OTHER, where a special case of OTHER is &apos;society&apos; (=&gt; a judgement that an event violated laws or socially accepted norms)
 
 May want to distinguish violation of &apos;standards&apos; from that of &apos;ideals&apos;, &apos;norms&apos; and &apos;laws&apos;. At the moment they are all lumped together. </rdfs:comment>
@@ -6968,7 +6968,7 @@ May want to distinguish violation of &apos;standards&apos; from that of &apos;id
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000097">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An appraisal which represents a judgement about the direction and nature of the social attention surrounding an event. </obo:IAO_0000115>
+        <obo:IAO_0000115>An emotional-relevance appraisal which represents a judgement about the direction and nature of the social attention surrounding an event.</obo:IAO_0000115>
         <rdfs:label>appraisal of social attention</rdfs:label>
     </owl:Class>
     
@@ -7000,7 +7000,7 @@ May want to distinguish violation of &apos;standards&apos; from that of &apos;id
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000100">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>Appraisal which represents an evaluation of whether the person was treated justly or unjustly by another person. </obo:IAO_0000115>
+        <obo:IAO_0000115>An emotional-relevance appraisal which represents an evaluation of whether the person was treated justly or unjustly by another person.</obo:IAO_0000115>
         <rdfs:label>appraisal of justice of treatment</rdfs:label>
     </owl:Class>
     
@@ -7032,7 +7032,7 @@ May want to distinguish violation of &apos;standards&apos; from that of &apos;id
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000103">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An appraisal which represents an evaluation of how threatening an object or situation is.</obo:IAO_0000115>
+        <obo:IAO_0000115>An emotional-relevance appraisal which represents an evaluation of how threatening an object or situation is.</obo:IAO_0000115>
         <obo:comment>Dangerousness or level of threat may refer to physical, emotional or social dangers or threats.</obo:comment>
         <rdfs:label>appraisal of dangerousness</rdfs:label>
     </owl:Class>
@@ -7065,7 +7065,7 @@ May want to distinguish violation of &apos;standards&apos; from that of &apos;id
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000106">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An appraisal that represents a belief that something or someone that is important to the person has been lost to the person. </obo:IAO_0000115>
+        <obo:IAO_0000115>An emotional-relevance appraisal that represents a belief that something or someone that is important to the person has been lost to the person.</obo:IAO_0000115>
         <obo:MFOEM_000165>I have irrevocably lost something important</obo:MFOEM_000165>
         <rdfs:comment>This appraisal category stands alone:  appraisal of loss is not a continuum like the others (pleasant---unpleasant; expected---unexpected).  Rather it is quite discrete, loss or no loss, and is better defined by WHAT has been lost, or at least, in which relation the thing that has been lost stands to the person experiencing the emotion.  Loss of a loved person, loss of the expectation of achieving a hoped for life goal, and loss of a limb are all kinds of loss.  
 
@@ -8114,7 +8114,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000191">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An appraisal that represents a judgement that one is being disliked</obo:IAO_0000115>
+        <obo:IAO_0000115>An emotional-relevance appraisal that represents a judgement that one is being disliked</obo:IAO_0000115>
         <rdfs:label xml:lang="en">appraisal as being disliked</rdfs:label>
     </owl:Class>
     
@@ -8124,7 +8124,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000192">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An appraisal that represents a judgement that one is being liked</obo:IAO_0000115>
+        <obo:IAO_0000115>An emotional-relevance appraisal that represents a judgement that one is being liked</obo:IAO_0000115>
         <rdfs:label xml:lang="en">appraisal as being liked</rdfs:label>
     </owl:Class>
     
@@ -8517,6 +8517,16 @@ While it is tempting not to categorise this as an appraisal at all, it should be
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000226 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000226">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
+        <obo:IAO_0000115>An emotional-relevance appraisal of the extent to which something is good or beneficial.</obo:IAO_0000115>
+        <rdfs:label>appraisal of desirability</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000000">
@@ -8745,9 +8755,8 @@ While it is tempting not to categorise this as an appraisal at all, it should be
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000073"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Consciousness is an inseparable part of all mental processes. It is that part of the mental process that:
-a) confers a subjective perspective, a phenomenology, an experience of the mental process of which it is a part; and
-b) intends the object or event that the mental process is about, should such exist; i.e., it confers intentionality on the mental process.</obo:IAO_0000115>
+        <obo:IAO_0000115>Consciousness is an inseparable part of some mental processes. It is that part of the mental process that: a) confers a subjective perspective, a phenomenology, an experience of the mental process of which it is a part; and b) intends the object or event that the mental process is about, should such exist; i.e., it confers intentionality on the mental process.</obo:IAO_0000115>
+        <obo:MFOEM_000010>conscious awareness</obo:MFOEM_000010>
         <rdfs:comment>Note that while there are different modes of consciousness corresponding to the different senses, the whole of conscious experience at any one time is largely experienced as a unity, that is, as a fused whole. Mental processes which are simultaneously ongoing are separable only in fiat, not in essence. </rdfs:comment>
         <rdfs:label xml:lang="en">consciousness</rdfs:label>
     </owl:Class>
@@ -8808,7 +8817,7 @@ c) in which the relevant part of the environment is thereby represented to the o
     <!-- http://purl.obolibrary.org/obo/MF_0000021 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051705"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000167"/>
@@ -8816,7 +8825,7 @@ c) in which the relevant part of the environment is thereby represented to the o
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A process in which at least two human beings are agents.</obo:IAO_0000115>
+        <obo:IAO_0000115>A bodily process in which at least two human beings are agents.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interpersonal process</rdfs:label>
     </owl:Class>
@@ -9686,8 +9695,9 @@ recognition of the meaning of the utterance through their knowledge of the langu
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000202">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000032"/>
-        <obo:IAO_0000115>A personality is a complex sum of dispositions and predispositions towards mental processes and behaviour. It inheres in a person.</obo:IAO_0000115>
+        <obo:IAO_0000115>A bodily disposition that is an aggregate of complex dispositions, endures over a period of years and is realised as emotion, belief, mood, motivational processes or behaviour.</obo:IAO_0000115>
         <rdfs:comment>Personality is not the same as mood, although a person may have a personality that includes a predisposition to moods of certain types, moods may come and go but a personality stays relatively constant, not appearing and disappearing. Personality typically changes slowly over time.</rdfs:comment>
+        <rdfs:comment>This class is intended to be broad enough to capture all the main personality constructs, including trait theories, type theories, and biopsychosocial theories.</rdfs:comment>
         <rdfs:label xml:lang="en">personality</rdfs:label>
     </owl:Class>
     
