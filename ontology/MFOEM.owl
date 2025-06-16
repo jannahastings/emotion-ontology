@@ -14,7 +14,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MFOEM/2025-01-06/MFOEM.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MFOEM/2025-06-16/MFOEM.owl"/>
         <obo:comment>The Emotion Ontology is an ontology for affective phenomena such as emotions and moods. It was originally developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. 
 
 It builds on the Ontology of Mental Functioning (MF) and the Basic Formal Ontology (BFO). 
@@ -5962,7 +5962,7 @@ No imports</obo:IAO_0000115>
         <obo:MFOEM_000010 xml:lang="es">odio</obo:MFOEM_000010>
         <obo:MFOEM_000165>hateful</obo:MFOEM_000165>
         <rdfs:comment>The linguistic use of the verb &apos;hate&apos; in English is ambiguous between registering any kind of aversion (e.g. in the sentence &apos;I hate spinach&apos;), and the much stronger meaning which is associated with descriptions of the emotion hatred. [Source: OCEAS]</rdfs:comment>
-        <rdfs:label>hate</rdfs:label>
+        <rdfs:label xml:lang="en">hate</rdfs:label>
     </owl:Class>
     
 
@@ -6383,7 +6383,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
         <obo:MFOEM_000010 xml:lang="fr">amour</obo:MFOEM_000010>
         <obo:MFOEM_000010 xml:lang="de">liebe</obo:MFOEM_000010>
         <obo:MFOEM_000165>loving</obo:MFOEM_000165>
-        <rdfs:label>love</rdfs:label>
+        <rdfs:label xml:lang="en">love</rdfs:label>
     </owl:Class>
     
 
