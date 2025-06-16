@@ -36,7 +36,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 -- GRID project vocabulary resources (Cristina Soriano)</rdfs:comment>
         <rdfs:comment>The ontology is now released as a single merged file with all modules included, built using the ROBOT library&apos;s &apos;merge&apos; function.</rdfs:comment>
         <rdfs:label>The Emotion Ontology (MFOEM)</rdfs:label>
-        <owl:versionInfo>2025-01-06</owl:versionInfo>
+        <owl:versionInfo>2025-06-16</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -5635,7 +5635,7 @@ No imports</obo:IAO_0000115>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A mental process that gives rise to an appraisal.</obo:IAO_0000115>
         <obo:MFOEM_000010>appraising</obo:MFOEM_000010>
-        <rdfs:label>emotional-relevance appraisal process</rdfs:label>
+        <rdfs:label>affective appraisal process</rdfs:label>
     </owl:Class>
     
 
@@ -5675,7 +5675,7 @@ No imports</obo:IAO_0000115>
         <obo:IAO_0000115>A cognitive representation of the emotional relevance of an object or event to the organism.</obo:IAO_0000115>
         <rdfs:comment>Appraisals are a part of emotion processes, representing how a triggering stimulus is relevant to the self. Appraisal captures the ‘aboutness’ of an emotion process. For example, a stimulus such as an image of a tiger can produce different emotion processes depending on how the relevance of this stimulus is evaluated. If the image of a tiger was on TV, this would likely not be evaluated as dangerous. However, an image of a tiger two meters away from a person would be relevant to a person in terms of its dangerousness. Therefore, an appraisal of the dangerouness of the tiger would be part of the emotion process &apos;fear&apos;.</rdfs:comment>
         <rdfs:comment>There is no rigid sequence of the entities that are part of the emotion process -- an appraisal does not necessarily precede a physiological process part of the emotion process.</rdfs:comment>
-        <rdfs:label>emotional-relevance appraisal</rdfs:label>
+        <rdfs:label>affective apraisal</rdfs:label>
     </owl:Class>
     
 
@@ -6533,7 +6533,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000057">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An emotional-relevance appraisal which represents an evaluation of how suddenly an event occurred.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal which represents an evaluation of how suddenly an event occurred.</obo:IAO_0000115>
         <rdfs:label>appraisal of suddenness</rdfs:label>
     </owl:Class>
     
@@ -6543,7 +6543,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000058">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of how familiar an object or event is.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal that represents an evaluation of how familiar an object or event is.</obo:IAO_0000115>
         <rdfs:label>appraisal of familiarity</rdfs:label>
     </owl:Class>
     
@@ -6553,7 +6553,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000059">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of how predictable an event was.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal that represents an evaluation of how predictable an event was.</obo:IAO_0000115>
         <rdfs:label>appraisal of predictability</rdfs:label>
     </owl:Class>
     
@@ -6563,7 +6563,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000060">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of whether an event was expected to occur.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal that represents an evaluation of whether an event was expected to occur.</obo:IAO_0000115>
         <rdfs:label>appraisal of expectedness</rdfs:label>
     </owl:Class>
     
@@ -6573,7 +6573,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000061">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of the pleasantness of an object or event.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal that represents an evaluation of the pleasantness of an object or event.</obo:IAO_0000115>
         <rdfs:comment>GRID questionnaire distinguishes between appraisal of pleasantness FOR SELF and appraisal of pleasantness FOR SOME OTHER.  So far we have defined appraisal as evaluation of relevance FOR SELF, thus, we only include one appraisal of pleasantness (for the time being), although we may expand this later -- although I suspect that all or most of the appraisal types would have to be so qualified. </rdfs:comment>
         <rdfs:label>appraisal of pleasantness</rdfs:label>
     </owl:Class>
@@ -6694,7 +6694,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000072">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of whether an event or object is important to the person&apos;s goals or needs.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal that represents an evaluation of whether an event or object is important to the person&apos;s goals or needs.</obo:IAO_0000115>
         <rdfs:comment>Like pleasantness, the GRID questionnaire distinguishes between evaluations of goal importance/relevance for SELF and for an OTHER. </rdfs:comment>
         <rdfs:label>appraisal of goal importance</rdfs:label>
     </owl:Class>
@@ -6727,7 +6727,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000075">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of who or what caused an event.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal that represents an evaluation of who or what caused an event.</obo:IAO_0000115>
         <rdfs:label>appraisal of causal agency</rdfs:label>
     </owl:Class>
     
@@ -6804,7 +6804,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of the causal intent of the person who (is evaluated to have) caused an event.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal that represents an evaluation of the causal intent of the person who (is evaluated to have) caused an event.</obo:IAO_0000115>
         <rdfs:label>appraisal of causal intent</rdfs:label>
     </owl:Class>
     
@@ -6869,7 +6869,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000088">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An emotional-relevance appraisal that represents an evaluation of the urgency of responding to an event.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal that represents an evaluation of the urgency of responding to an event.</obo:IAO_0000115>
         <rdfs:label>appraisal of urgency of response</rdfs:label>
     </owl:Class>
     
@@ -6901,7 +6901,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000091">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An emotional-relevance appraisal which represents a judgement about how avoidable the expected consequences of an event will be.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal which represents a judgement about how avoidable the expected consequences of an event will be.</obo:IAO_0000115>
         <rdfs:label>appraisal of avoidability of consequences</rdfs:label>
     </owl:Class>
     
@@ -6933,7 +6933,7 @@ The term &apos;distal&apos; can refer to future threats or geographically distan
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000094">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An emotional-relevance appraisal which represents a judgement about whether an event is consistent with the person&apos;s standards or ideals.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal which represents a judgement about whether an event is consistent with the person&apos;s standards or ideals.</obo:IAO_0000115>
         <rdfs:comment>Can also be defined FOR SELF and FOR OTHER, where a special case of OTHER is &apos;society&apos; (=&gt; a judgement that an event violated laws or socially accepted norms)
 
 May want to distinguish violation of &apos;standards&apos; from that of &apos;ideals&apos;, &apos;norms&apos; and &apos;laws&apos;. At the moment they are all lumped together. </rdfs:comment>
@@ -6968,7 +6968,7 @@ May want to distinguish violation of &apos;standards&apos; from that of &apos;id
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000097">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An emotional-relevance appraisal which represents a judgement about the direction and nature of the social attention surrounding an event.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal which represents a judgement about the direction and nature of the social attention surrounding an event.</obo:IAO_0000115>
         <rdfs:label>appraisal of social attention</rdfs:label>
     </owl:Class>
     
@@ -7000,7 +7000,7 @@ May want to distinguish violation of &apos;standards&apos; from that of &apos;id
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000100">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An emotional-relevance appraisal which represents an evaluation of whether the person was treated justly or unjustly by another person.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal which represents an evaluation of whether the person was treated justly or unjustly by another person.</obo:IAO_0000115>
         <rdfs:label>appraisal of justice of treatment</rdfs:label>
     </owl:Class>
     
@@ -7032,7 +7032,7 @@ May want to distinguish violation of &apos;standards&apos; from that of &apos;id
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000103">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An emotional-relevance appraisal which represents an evaluation of how threatening an object or situation is.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal which represents an evaluation of how threatening an object or situation is.</obo:IAO_0000115>
         <obo:comment>Dangerousness or level of threat may refer to physical, emotional or social dangers or threats.</obo:comment>
         <rdfs:label>appraisal of dangerousness</rdfs:label>
     </owl:Class>
@@ -7065,7 +7065,7 @@ May want to distinguish violation of &apos;standards&apos; from that of &apos;id
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000106">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An emotional-relevance appraisal that represents a belief that something or someone that is important to the person has been lost to the person.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal that represents a belief that something or someone that is important to the person has been lost to the person.</obo:IAO_0000115>
         <obo:MFOEM_000165>I have irrevocably lost something important</obo:MFOEM_000165>
         <rdfs:comment>This appraisal category stands alone:  appraisal of loss is not a continuum like the others (pleasant---unpleasant; expected---unexpected).  Rather it is quite discrete, loss or no loss, and is better defined by WHAT has been lost, or at least, in which relation the thing that has been lost stands to the person experiencing the emotion.  Loss of a loved person, loss of the expectation of achieving a hoped for life goal, and loss of a limb are all kinds of loss.  
 
@@ -8114,7 +8114,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000191">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An emotional-relevance appraisal that represents a judgement that one is being disliked</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective apraisal that represents a judgement that one is being disliked</obo:IAO_0000115>
         <rdfs:label xml:lang="en">appraisal as being disliked</rdfs:label>
     </owl:Class>
     
@@ -8124,7 +8124,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000192">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An emotional-relevance appraisal that represents a judgement that one is being liked</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal that represents a judgement that one is being liked</obo:IAO_0000115>
         <rdfs:label xml:lang="en">appraisal as being liked</rdfs:label>
     </owl:Class>
     
@@ -8521,7 +8521,7 @@ While it is tempting not to categorise this as an appraisal at all, it should be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000226">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
-        <obo:IAO_0000115>An emotional-relevance appraisal of the extent to which something is good or beneficial.</obo:IAO_0000115>
+        <obo:IAO_0000115>An affective appraisal of the extent to which something is good or beneficial.</obo:IAO_0000115>
         <rdfs:label>appraisal of desirability</rdfs:label>
     </owl:Class>
     
@@ -9117,7 +9117,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
         <obo:IAO_0000119>https://github.com/NCOR-US/Capabilities/wiki/The-Account-of-Capabilities</obo:IAO_0000119>
         <rdfs:comment>Note that, as discussed in https://philpapers.org/archive/MERMC.pdf, both organisms and artifacts can bear capabilities. However, this capability class is just applicable to organismal capabilities (as a subclass of &apos;bodily disposition&apos;) and the definition has been amended from that of the definition source accordingly.</rdfs:comment>
         <rdfs:comment>The phrase &apos;ordinarily brings benefits to an organism or group of organism&apos; is used to explain that capabilities normally provide a benefit. For exampoe, having a musical ability is usually an ability that is positive for a person (e.g., they enjoy playing music, they receive positive feedback about their ability). However, in certain exceptional cases (e.g., a neighbour becoming annoyed with a person playing the piano and expressing this annoyance), the ability might not bring benefits.</rdfs:comment>
-        <rdfs:label xml:lang="en">capability</rdfs:label>
+        <rdfs:label xml:lang="en">personal capability</rdfs:label>
     </owl:Class>
     
 
@@ -9126,7 +9126,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000044">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000043"/>
-        <obo:IAO_0000115>A capability that is realised in an activity of producing or interpreting music.</obo:IAO_0000115>
+        <obo:IAO_0000115>A personal capability that is realised in an activity of producing or interpreting music.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">musical capability</rdfs:label>
     </owl:Class>
     
