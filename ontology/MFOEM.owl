@@ -14,7 +14,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MFOEM/2025-06-16/MFOEM.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MFOEM/2025-07-31/MFOEM.owl"/>
         <obo:comment>The Emotion Ontology is an ontology for affective phenomena such as emotions and moods. It was originally developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. 
 
 It builds on the Ontology of Mental Functioning (MF) and the Basic Formal Ontology (BFO). 
@@ -36,7 +36,7 @@ OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sa
 -- GRID project vocabulary resources (Cristina Soriano)</rdfs:comment>
         <rdfs:comment>The ontology is now released as a single merged file with all modules included, built using the ROBOT library&apos;s &apos;merge&apos; function.</rdfs:comment>
         <rdfs:label>The Emotion Ontology (MFOEM)</rdfs:label>
-        <owl:versionInfo>2025-06-16</owl:versionInfo>
+        <owl:versionInfo>2025-07-31</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -9993,9 +9993,9 @@ recognition of the meaning of the utterance through their knowledge of the langu
     
 
 
-    <!-- https://purl.obolibrary.org/obo/MFOEM:000225 -->
+    <!-- https://purl.obolibrary.org/obo/MFOEM_000225 -->
 
-    <owl:Class rdf:about="https://purl.obolibrary.org/obo/MFOEM:000225">
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/MFOEM_000225">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -10005,6 +10005,34 @@ recognition of the meaning of the utterance through their knowledge of the langu
         </rdfs:subClassOf>
         <obo:IAO_0000115>A negative emotion involving feelings of suspicion or doubt regarding the honesty, fairness, or abilities of an entity (e.g., person, object, or situation). This process includes an appraisal that the entity may be unreliable, potentially harmful and/or deceptive.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">mistrust</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/MFOEM_000227 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/MFOEM_000227">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000208"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A negative emotion arising from perceiving one’s social needs not being met by the quantity or quality of one’s social relationships.</obo:IAO_0000115>
+        <obo:MFOEM_000010 xml:lang="de">Einsamkeit</obo:MFOEM_000010>
+        <rdfs:label xml:lang="en">loneliness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/MFOEM_000228 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/MFOEM_000228">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+        <obo:IAO_0000115 xml:lang="en">A subjective affective feeling that is negatively valenced and arises from perceiving one’s social needs not being met by the quantity or quality of one’s social relationships.</obo:IAO_0000115>
+        <obo:MFOEM_000165 xml:lang="en">lonely</obo:MFOEM_000165>
+        <rdfs:label xml:lang="en">feeling lonely</rdfs:label>
     </owl:Class>
     
 
